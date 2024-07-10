@@ -1,0 +1,60 @@
+.section-title {
+  font-size: 25px; /* Adjust the size as needed */
+  color: #253e6d; /* Dark blue color */
+  margin-bottom: 10px; /* Space below the title */
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+.section-description {
+  font-size: 18px; /* Adjust the size as needed */
+  color: #170827; /* Main text color */
+  margin-bottom: 20px; /* Space below the paragraph */
+  text-align: justify; /* Justify the text for a clean look */
+  padding: 0 15%; /* Padding on the sides */
+}
+
+.button {
+  background-color: #ceb378; /* Button color */
+  color: #170827; /* Button text color */
+  text-decoration: none; /* Remove underline from the link */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-weight: bold; /* Make the text bold */
+  display: inline-block; /* Allows padding and margin on the link */
+  margin: 20px auto; /* Center the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #ab8e4f; /* Button hover color */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+#team img {
+  width: 100%;
+  margin-top: 100px;
+  top: 100px;
+}
+
+.about-title {
+  color: white; /* Or any color from your theme */
+  text-decoration: underline #ceb378 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .section-title {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .section-description {
+    padding: 0 5%;
+  }
+}

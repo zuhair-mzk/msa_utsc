@@ -1,0 +1,100 @@
+/* src/styles/resources.css */
+.resources {
+  padding: 50px;
+  background-color: #e6e6e6;
+}
+
+.resources-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.greeting-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.salam-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.greeting-title {
+  color: #170827;
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+.table-title {
+  color: #170827;
+  margin-bottom: 5px;
+  text-align: left;
+  text-decoration: underline #ceb378 5px;
+}
+
+.table-subtitle {
+  color: #170827;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.prayer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #170827;
+}
+
+.prayer-table th,
+.prayer-table td {
+  border: 1px solid #253e6d;
+  padding: 10px;
+  text-align: center;
+  background-color: #fafcfd;
+}
+
+.prayer-table th {
+  background-color: #253e6d;
+  color: white;
+}
+
+.prayer-table tr:nth-child(even) {
+  background-color: #fafcfd;
+}
+
+.prayer-table tr:hover {
+  background-color: #b1d4ed;
+}
+
+.iqamah-note {
+  color: #170827;
+  margin-top: 20px;
+}
+
+.prayer-spaces-link {
+  color: #253e6d;
+  text-decoration: none;
+}
+
+.prayer-spaces-link:hover {
+  text-decoration: underline;
+}
+
+.jumuah-info {
+  margin-top: 50px;
+}
+
+.feedback-button {
+  background-color: #ab8e4f;
+  color: #fafcfd;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.feedback-button:hover {
+  background-color: #ceb378;
+}

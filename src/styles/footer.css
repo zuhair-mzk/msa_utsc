@@ -1,0 +1,100 @@
+#footer {
+  background-color: #170827;
+  color: #fafcfd;
+  font-family: Arial, sans-serif;
+  padding: 40px 0;
+  text-align: center;
+  overflow: auto;
+  margin-top: 200px;
+}
+
+.footer-top,
+.footer-middle,
+.footer-bottom {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.signup-button {
+  background-color: #ceb378;
+  color: #170827;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.signup-button:hover {
+  background-color: #ab8e4f;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  color: #b1d4ed;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ceb378;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ceb378;
+}
+
+.linktree-link {
+  display: inline-block;
+  color: #fafcfd;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.linktree-link:hover {
+  color: #ceb378;
+}

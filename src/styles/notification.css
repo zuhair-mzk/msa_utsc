@@ -1,0 +1,41 @@
+#notification-bar {
+  background-color: #ab8e4f;
+  color: #fafcfd;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1000;
+  border-bottom: 2px solid black;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.notification-link {
+  color: #b1d4ed;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.notification-link:hover {
+  color: #ceb378;
+  text-decoration: underline;
+}
+
+.close-notification {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fafcfd;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-notification:focus {
+  outline: none;
+}

@@ -1,0 +1,45 @@
+#welcome {
+  text-align: center;
+  color: white;
+  padding: 50px 10px;
+}
+
+.welcome-text {
+  font-size: 50px;
+  margin-bottom: 200px;
+  margin-top: 150px;
+  display: block;
+  font-family: Fjalla One, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
+.welcome-text p {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #fafcfd;
+  font-weight: lighter;
+}
+
+.p3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fafcfd;
+  letter-spacing: 10px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.calligraphy-image {
+  width: 500px;
+  height: auto;
+  margin-bottom: 0px;
+  border-radius: 30px;
+}

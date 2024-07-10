@@ -1,0 +1,70 @@
+#programs img {
+  width: 100%;
+  margin-top: 100px;
+  top: 100px;
+}
+
+.event-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  flex: 0 0 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.event-text h3 {
+  color: #170827;
+  margin: 10px 0;
+}
+
+.event-text a {
+  color: #ab8e4f;
+}
+
+.event-p {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+}
+
+#events img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.view-all-events-button {
+  background-color: #ab8e4f;
+  color: #fafcfd;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.view-all-events-button:hover,
+.register-button:hover {
+  background-color: #ceb378;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .event-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+}

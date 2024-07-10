@@ -1,0 +1,144 @@
+nav {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 5%;
+  height: 100px;
+  background-color: #170827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #ceb378;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+nav .logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav .logo-container img {
+  max-width: 60px;
+  max-height: 60px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+nav .logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+
+nav .main-text {
+  font-size: 24px;
+}
+
+nav .subtext {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+nav .links {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .links li {
+  position: relative;
+  border-radius: 10px;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em 1.5em;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s, border-radius 0.3s;
+  border-bottom: 2px solid transparent;
+  border-radius: 10px;
+}
+
+nav .links a:hover {
+  background-color: #ceb378;
+  border-radius: 10px;
+  color: #000;
+}
+
+nav .links .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(18, 21, 27, 0.5);
+  width: auto;
+  min-width: 150px;
+  z-index: 1000;
+  border: 1px solid #ceb378;
+  border-radius: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav .links li:hover .dropdown-content {
+  display: block;
+}
+
+nav i {
+  padding-right: 2px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .logo {
+    margin-bottom: 10px;
+  }
+
+  nav .links {
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(37, 62, 109, 0.8);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  nav .links.open {
+    transform: translateY(0);
+  }
+
+  nav .links a {
+    font-size: 20px;
+    padding: 1em 2em;
+    border-radius: 10px;
+  }
+
+  nav .links .dropdown-content {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
