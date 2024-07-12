@@ -1,0 +1,134 @@
+/* Get Involved Section Styles */
+
+#get-involved {
+  background-color: #f4f4f4; /* Or any other color you used in the Resources section */
+  padding: 50px 0;
+  text-align: center; /* Centering the title and description */
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.get-involved-title {
+  color: #170827; /* Adjust the color to match your website's theme */
+  margin-bottom: 10px; /* Spacing between title and description */
+  font-size: 2.5em; /* Adjust size as needed */
+  text-decoration: underline #ceb378 5px;
+}
+
+.get-involved-description {
+  color: #555; /* Subdued text color for the description */
+  margin-bottom: 30px; /* Spacing between description and content */
+}
+
+.get-involved-container {
+  display: flex;
+  justify-content: space-around; /* Evenly space the child elements */
+  flex-wrap: wrap; /* Wrap onto the next line if not enough space */
+  padding: 0 20px;
+}
+
+.get-involved-section {
+  background-color: #fff; /* White background for each section */
+  padding: 20px;
+  margin: 20px; /* Spacing between sections */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 5px; /* Slight rounding of corners */
+  width: 30%; /* Width of each section, adjust as necessary */
+  min-width: 280px; /* Minimum width so text doesn't get too squished */
+}
+
+.get-involved-section h2 {
+  color: #253e6d; /* Color for headings, matching the Resources section */
+  margin-bottom: 15px;
+}
+
+.get-involved-section p {
+  color: #666; /* Paragraph color, for readability */
+  line-height: 1.6;
+  text-align: left; /* Aligning text to the left within the section */
+}
+
+.register-button {
+  background-color: #ab8e4f; /* Button color */
+  color: #fafcfd; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 1em;
+  margin-top: 20px; /* Space above the button */
+}
+
+.register-button:hover {
+  background-color: #ceb378; /* Button hover color */
+  color: #170827; /* Button text hover color */
+}
+
+/* FAQ Section Styles */
+#faq-section {
+  background-color: #f4f4f4; /* This should match your website's color scheme */
+  padding: 50px;
+  text-align: center; /* Center aligns the title */
+  margin-bottom: 100px;
+}
+
+.faq-title {
+  color: #170827; /* Adjust the color to match your website's theme */
+  margin-bottom: 20px; /* Spacing between title and description */
+  font-size: 2.5em; /* Adjust size as needed */
+  text-align: center; /* Centers the title */
+  text-decoration: underline #ceb378 5px; /* Underline with color */
+}
+
+.accordion {
+  max-width: 1000px; /* Adjust width as necessary for a wider accordion */
+  margin: 0 auto;
+  text-align: left; /* Aligns the text of the accordion to the left */
+}
+
+.accordion-item {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button {
+  background-color: #253e6d; /* Button color */
+  color: #fff; /* Text color */
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.25em; /* Makes the text inside the buttons larger */
+  padding: 15px; /* Increase padding for larger touch area and visual space */
+}
+
+.accordion-button:hover {
+  background-color: #ceb378; /* Gold color on hover, matching the register button */
+}
+
+.accordion-button::after {
+  content: "\002B"; /* Unicode plus sign */
+  color: #fff;
+  float: right;
+}
+
+.accordion-button.active::after {
+  content: "\2212"; /* Unicode minus sign */
+}
+
+.accordion-content {
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  border-radius: 0 0 5px 5px;
+  font-size: 1em; /* Adjust the font size as needed */
+  padding: 0 20px; /* Increase padding for more space inside the content area */
+}

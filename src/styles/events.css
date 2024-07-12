@@ -55,7 +55,8 @@
   border-radius: 16px; /* Optional: rounded corners */
 }
 
-.view-all-events-button {
+.view-all-events-button,
+.event-text .register-button {
   background-color: #ab8e4f;
   color: #fafcfd;
   border: none;
@@ -71,7 +72,7 @@
 }
 
 .view-all-events-button:hover,
-.register-button:hover {
+.event-text .register-button:hover {
   background-color: #ceb378;
 }
 

@@ -1,0 +1,82 @@
+#about-us-section {
+  background-color: #e6e6e6;
+  margin-top: 300px;
+  padding-top: 100px; /* Add this line to add space above the title */
+}
+
+#about-us-section .event-title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#about-us-section .section-title {
+  font-size: 25px;
+  color: #253e6d;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+#about-us-section .section-description {
+  font-size: 18px;
+  color: #170827;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 0 15%;
+}
+
+#about-us-section .button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 100px 0px; /* Add some vertical margin */
+}
+
+#about-us-section .button {
+  background-color: #ceb378;
+  color: #170827;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 100px;
+}
+
+#about-us-section .button:hover {
+  background-color: #ab8e4f;
+  text-decoration: none;
+}
+
+#team {
+  margin-top: 100px;
+  text-align: center;
+  padding: 100px 0; /* Add padding to separate from the other sections */
+  background-color: #e6e6e6; /* Keep the same background color */
+}
+
+#team img {
+  width: 100%;
+}
+
+#team .about-title {
+  color: #170827;
+  text-decoration: underline #ceb378 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #about-us-section .section-title {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  #about-us-section .section-description {
+    padding: 0 5%;
+  }
+}

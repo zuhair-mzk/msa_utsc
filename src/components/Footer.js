@@ -1,6 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../styles/footer.css";
-import logo from "../images/Logo.jpg"; // Adjust path as needed
+import logo from "../images/Logo.jpg";
+import sponsor1 from "../images/aryanmotors.png";
+import sponsor2 from "../images/memon.png";
+import sponsor3 from "../images/IIT_logo.png";
+import sponsor4 from "../images/bboyz.png";
 
 const Footer = () => (
   <footer id="footer">
@@ -10,6 +22,15 @@ const Footer = () => (
         <p>© 2024 University of Toronto Scarborough MSA</p>
         <p>Address: 1265 Military Trail, Scarborough, ON</p>
         <p>Email: utscmsa1@gmail.com</p>
+      </div>
+      <div className="footer-center">
+        <h3>Charity Week Sponsors</h3>
+        <div className="sponsors">
+          <img src={sponsor1} alt="Sponsor 1" />
+          <img src={sponsor2} alt="Sponsor 2" />
+          <img src={sponsor3} alt="Sponsor 3" />
+          <img src={sponsor4} alt="Sponsor 4" />
+        </div>
       </div>
       <div className="footer-right">
         <h3>Newsletter</h3>
@@ -28,38 +49,43 @@ const Footer = () => (
             href="https://www.instagram.com/msa_utsc"
             className="social-icon"
             target="_blank"
+            rel="noreferrer"
           >
-            <i className="fa-brands fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="mailto:" className="social-icon">
-            <i className="fa-solid fa-envelope"></i>
+          <a href="mailto:utscmsa1@gmail.com" className="social-icon">
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
           <a
             href="https://www.twitter.com/msa_utsc"
             className="social-icon"
             target="_blank"
+            rel="noreferrer"
           >
-            <i className="fa-brands fa-x-twitter"></i>
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a
             href="https://www.linkedin.com/company/msa-utsc/"
             className="social-icon"
             target="_blank"
+            rel="noreferrer"
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
             href="https://www.facebook.com/msautsc/"
             className="social-icon"
             target="_blank"
+            rel="noreferrer"
           >
-            <i className="fa-brands fa-facebook"></i>
+            <FontAwesomeIcon icon={faFacebook} />
           </a>
         </div>
         <a
           href="https://linktr.ee/utsc.msa"
           className="linktree-link"
           target="_blank"
+          rel="noreferrer"
         >
           MSA Linktree
         </a>

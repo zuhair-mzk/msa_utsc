@@ -1,5 +1,5 @@
-// src/components/ResourcesSection.js
 import React, { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import "../styles/resources.css";
 import salam from "../images/salam.png"; // Adjust path as needed
 import moment from "moment";
@@ -91,9 +91,9 @@ const ResourcesSection = () => {
           <p>
             At UTSC MSA, we seek to create a community that is open and dynamic,
             which caters to the best interests of all Muslims on campus.{" "}
-            <a href="aboutus.html" className="mission-link">
+            <HashLink to="/aboutus#about-us-section" className="mission-link">
               Read more on our mission here.
-            </a>
+            </HashLink>
           </p>
         </div>
         <h2 className="table-title left-aligned">Prayer Times</h2>
@@ -143,29 +143,33 @@ const ResourcesSection = () => {
         <p className="iqamah-note">
           All iqamah prayers are held in SL 281. Timings are based on{" "}
           <a href="https://masjidomarfarooq.com/">Masjid Omar Farooq.</a>{" "}
-          <a href="prayer-areas.html" className="prayer-spaces-link">
+          <HashLink to="/resources#prayer-areas" className="prayer-spaces-link">
             View all prayer spaces here.
-          </a>
+          </HashLink>
         </p>
 
         <div className="jumuah-info">
           <h2 className="table-title">Jumu'ah on Campus</h2>
           <table className="prayer-table jumuah-table">
-            <tr className="prayer-table-row">
-              <th className="prayer-table-heading">Jumu'ah</th>
-              <th className="prayer-table-heading">Location</th>
-              <th className="prayer-table-heading">Time</th>
-            </tr>
-            <tr>
-              <td>Jumu'ah 1</td>
-              <td>HW 305</td>
-              <td>12:30 PM</td>
-            </tr>
-            <tr>
-              <td>Jumu'ah 2</td>
-              <td>HW 305</td>
-              <td>1:45 PM</td>
-            </tr>
+            <thead>
+              <tr className="prayer-table-row">
+                <th className="prayer-table-heading">Jumu'ah</th>
+                <th className="prayer-table-heading">Location</th>
+                <th className="prayer-table-heading">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jumu'ah 1</td>
+                <td>HW 305</td>
+                <td>12:30 PM</td>
+              </tr>
+              <tr>
+                <td>Jumu'ah 2</td>
+                <td>HW 305</td>
+                <td>1:45 PM</td>
+              </tr>
+            </tbody>
           </table>
           <br />
           <br />

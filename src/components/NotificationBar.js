@@ -1,38 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/notification.css";
 
 const NotificationBar = () => {
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
-    const notificationBar = document.getElementById("notification-bar");
-    const closeNotification = () => {
-      notificationBar.style.display = "none";
-      sessionStorage.setItem("notificationClosed", "true");
-    };
-
-    if (sessionStorage.getItem("notificationClosed") !== "true") {
-      notificationBar.style.display = "block";
-      setTimeout(closeNotification, 10000);
+    const notificationClosed = sessionStorage.getItem("notificationClosed");
+    if (!notificationClosed) {
+      setVisible(true);
+      setTimeout(() => setVisible(false), 10000);
     }
-
-    const closeButton = document.getElementById("close-notification");
-    closeButton.addEventListener("click", closeNotification);
-
-    return () => {
-      closeButton.removeEventListener("click", closeNotification);
-    };
   }, []);
 
+  const closeNotification = () => {
+    setVisible(false);
+    sessionStorage.setItem("notificationClosed", "true");
+  };
+
   return (
-    <div id="notification-bar">
-      Check out the recent{" "}
-      <a href="#announcements" className="notification-link">
-        charity week event
-      </a>{" "}
-      as we raise $32,181! 🎉🎉
-      <button id="close-notification" className="close-notification">
-        &times;
-      </button>
-    </div>
+    visible && (
+      <div id="notification-bar">
+        Check out the recent{" "}
+        <a href="#announcements" className="notification-link">
+          charity week event
+        </a>{" "}
+        as we raise $32,181! 🎉🎉
+        <button
+          id="close-notification"
+          className="close-notification"
+          onClick={closeNotification}
+        >
+          &times;
+        </button>
+      </div>
+    )
   );
 };
 
