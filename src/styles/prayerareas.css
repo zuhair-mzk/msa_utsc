@@ -1,10 +1,8 @@
-/* src/styles/prayerareas.css */
-
 #prayer-areas-page {
   background-color: #fafcfd;
   padding: 50px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 20px; /* Add top margin */
 }
 
 .event-title {
@@ -12,12 +10,14 @@
   text-decoration: underline #ceb378 5px;
   margin-bottom: 20px;
   font-size: 2em;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .event-description {
-  font-size: 20px;
+  font-size: 1em; /* Ensure consistent font size */
   color: #170827;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .calendar-container {
@@ -33,6 +33,14 @@ iframe {
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
+  .event-title {
+    font-size: 1.5em;
+  }
+
+  .event-description {
+    font-size: 0.9em;
+  }
+
   iframe {
     width: 100%;
     height: auto;

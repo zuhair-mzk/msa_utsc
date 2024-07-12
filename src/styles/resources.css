@@ -1,17 +1,20 @@
-/* src/styles/resources.css */
 .resources {
   padding: 50px;
   background-color: #e6e6e6;
+  margin-top: 20px; /* Add top margin */
 }
 
 .resources-content {
   max-width: 1200px;
   margin: auto;
+  padding: 20px; /* Add some padding for content spacing */
+  border-radius: 10px; /* Add some border-radius for better aesthetics */
 }
 
 .greeting-container {
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 50px; /* Add padding to move the greeting down */
 }
 
 .salam-image {
@@ -24,6 +27,7 @@
   color: #170827;
   margin: 10px 0;
   font-size: 2em;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .table-title {
@@ -31,12 +35,15 @@
   margin-bottom: 5px;
   text-align: left;
   text-decoration: underline #ceb378 5px;
+  font-size: 1.5em; /* Adjust font size for consistency */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .table-subtitle {
   color: #170827;
-  font-size: 0.9em;
+  font-size: 1em; /* Adjust font size */
   margin-bottom: 20px;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .prayer-table {
@@ -44,6 +51,7 @@
   border-collapse: collapse;
   margin-top: 20px;
   color: #170827;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .prayer-table th,
@@ -52,11 +60,13 @@
   padding: 10px;
   text-align: center;
   background-color: #fafcfd;
+  font-size: 1em; /* Ensure consistent font size */
 }
 
 .prayer-table th {
   background-color: #253e6d;
   color: white;
+  font-size: 1.1em; /* Ensure consistent font size */
 }
 
 .prayer-table tr:nth-child(even) {
@@ -70,11 +80,14 @@
 .iqamah-note {
   color: #170827;
   margin-top: 20px;
+  font-size: 1em; /* Ensure consistent font size */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .prayer-spaces-link {
   color: #253e6d;
   text-decoration: none;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .prayer-spaces-link:hover {
@@ -93,8 +106,36 @@
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: 10px;
+  font-size: 1em; /* Ensure consistent font size */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 .feedback-button:hover {
   background-color: #ceb378;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .greeting-title {
+    font-size: 1.5em;
+  }
+
+  .table-title {
+    font-size: 1.2em;
+  }
+
+  .prayer-table th,
+  .prayer-table td {
+    font-size: 0.9em;
+  }
+
+  .feedback-button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
 }

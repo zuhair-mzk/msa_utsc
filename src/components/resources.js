@@ -4,7 +4,7 @@ import "../styles/resources.css";
 import salam from "../images/salam.png"; // Adjust path as needed
 import moment from "moment";
 
-const ResourcesSection = () => {
+const Resources = () => {
   const [prayerTimes, setPrayerTimes] = useState({});
   const [hijriDate, setHijriDate] = useState("");
 
@@ -96,7 +96,9 @@ const ResourcesSection = () => {
             </HashLink>
           </p>
         </div>
-        <h2 className="table-title left-aligned">Prayer Times</h2>
+        <h2 id="prayer-timings" className="table-title left-aligned">
+          Prayer Times
+        </h2>
         <p className="table-subtitle">{hijriDate}</p>
         <table className="prayer-table">
           <thead>
@@ -175,9 +177,26 @@ const ResourcesSection = () => {
           <br />
           <button className="feedback-button">Jumu'ah Feedback</button>
         </div>
+        <section id="prayer-areas">
+          <h2 className="event-title">Prayer Areas</h2>
+          <p className="event-description">
+            Here is a video demonstrating how to get to praying areas on campus.
+          </p>
+          <div className="calendar-container">
+            <iframe
+              width="1200"
+              height="600"
+              src="https://www.youtube.com/embed/I32Id_tQ4mM?si=I7LtwqW0sSlG7Sav"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
       </div>
     </section>
   );
 };
 
-export default ResourcesSection;
+export default Resources;

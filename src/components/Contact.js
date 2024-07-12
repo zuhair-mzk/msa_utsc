@@ -1,6 +1,10 @@
 import React from "react";
 import "../styles/contact.css";
-import "../styles/faq.css";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Contact = () => (
   <div>
@@ -31,6 +35,7 @@ const Contact = () => (
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdb2E8Mwa_wv53wjFyNH8xbXw-8PBhfWyjfetgcyiLz2yVPTg/viewform"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <button className="register-button">Register</button>
           </a>
@@ -55,6 +60,7 @@ const Contact = () => (
           <a
             href="https://docs.google.com/forms/d/1fwNxlOoIcFn0Tbi5Op8nddx7Qy6-UqxHv-F9SiqiFOQ/viewform?edit_requested=true"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <button className="register-button">Register</button>
           </a>
@@ -77,59 +83,77 @@ const Contact = () => (
     <section id="faq-section">
       <h2 className="faq-title">FAQ</h2>
       <div className="accordion">
-        <div className="accordion-item">
-          <button className="accordion-button">
-            Q. How do I get involved with MSA?
-          </button>
-          <div className="accordion-content">
-            <p>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography>Q. How do I get involved with MSA?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
               A. The easiest way to get involved with MSA is to attend events,
               join programs, and become a general member. You can also volunteer
               with MSA. During the summer semester, hiring occurs for directors
               of the board.
-            </p>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <button className="accordion-button">
-            Q. How do I become part of the executive team?
-          </button>
-          <div className="accordion-content">
-            <p>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            <Typography>
+              Q. How do I become part of the executive team?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
               A. The executive team consists of the President and Vice
               Presidents of each team. Each year, an election takes place, as
               outlined in the Constitution, where general members of the MSA
               have the right to vote. In order to apply, you must have at least
               one prior year of experience on the MSA board. Applications open
               during March/April.
-            </p>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <button className="accordion-button">
-            Q. Where can I pray on campus?
-          </button>
-          <div className="accordion-content">
-            <p>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="panel3-content"
+            id="panel3-header"
+          >
+            <Typography>Q. Where can I pray on campus?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
               A. There are two multi-faith spaces on campus: one upstairs in the
               Student Centre in SL281, and one in EV150, beside the Catalyst
               Centre. Check out the Prayer Spaces page, which includes our video
               guide on where to find SL281. If you ever need to pray on campus,
               find SL281.
-            </p>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <button className="accordion-button">
-            Q. Is Jummah open to sisters?
-          </button>
-          <div className="accordion-content">
-            <p>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="panel4-content"
+            id="panel4-header"
+          >
+            <Typography>Q. Is Jummah open to sisters?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
               A. Yes! We have a separate sisters section for Jummah, and sisters
               are welcome and invited to join us.
-            </p>
-          </div>
-        </div>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </div>
     </section>
   </div>

@@ -41,7 +41,6 @@ const Home = () => (
     <Resources />
     <AnnouncementsSection />
     <EventsSection />
-    <SponsorsBanner />
   </div>
 );
 

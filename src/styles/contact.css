@@ -87,48 +87,26 @@
   text-align: left; /* Aligns the text of the accordion to the left */
 }
 
-.accordion-item {
+.MuiAccordion-root {
   background-color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.accordion-button {
-  background-color: #253e6d; /* Button color */
-  color: #fff; /* Text color */
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: background-color 0.3s ease;
-  border-radius: 5px 5px 0 0;
-  font-size: 1.25em; /* Makes the text inside the buttons larger */
-  padding: 15px; /* Increase padding for larger touch area and visual space */
-}
-
-.accordion-button:hover {
-  background-color: #ceb378; /* Gold color on hover, matching the register button */
-}
-
-.accordion-button::after {
-  content: "\002B"; /* Unicode plus sign */
+.MuiAccordionSummary-root {
+  background-color: #253e6d;
   color: #fff;
-  float: right;
+  border-radius: 5px;
 }
 
-.accordion-button.active::after {
-  content: "\2212"; /* Unicode minus sign */
+.MuiAccordionSummary-root:hover {
+  background-color: #ceb378;
 }
 
-.accordion-content {
-  background-color: white;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  border-radius: 0 0 5px 5px;
-  font-size: 1em; /* Adjust the font size as needed */
-  padding: 0 20px; /* Increase padding for more space inside the content area */
+.MuiAccordionDetails-root {
+  background-color: #fafcfd;
+  color: #170827;
+  font-size: 1em;
+  padding: 20px;
 }

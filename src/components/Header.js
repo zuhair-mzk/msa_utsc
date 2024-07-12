@@ -32,68 +32,68 @@ const Header = () => (
     </div>
     <ul className="links">
       <li>
-        <Link to="/aboutus#about-us-section">
+        <Link to="/aboutus">
           <FontAwesomeIcon icon={faNetworkWired} /> About Us
         </Link>
         <div className="dropdown-content">
-          <Link to="/aboutus#our-mission">
+          <Link smooth to="/aboutus#our-mission">
             <FontAwesomeIcon icon={faPersonPraying} /> Mission & Values
           </Link>
-          <Link to="/aboutus#our-constitution">
+          <Link smooth to="/aboutus#our-constitution">
             <FontAwesomeIcon icon={faMosque} /> Constitution
           </Link>
-          <Link to="/aboutus#team">
+          <Link smooth to="/aboutus#team">
             <FontAwesomeIcon icon={faHeart} /> The Team
           </Link>
         </div>
       </li>
       <li>
-        <Link to="/resources#resources">
+        <Link to="/resources">
           <FontAwesomeIcon icon={faKaaba} /> Islamic Resources
         </Link>
         <div className="dropdown-content">
-          <Link to="/resources#prayer-timings">
+          <Link smooth to="/resources#prayer-timings">
             <FontAwesomeIcon icon={faPersonPraying} /> Prayer timings
           </Link>
-          <Link to="/prayer-areas#prayer-areas">
+          <Link smooth to="/resources#prayer-areas">
             <FontAwesomeIcon icon={faMosque} /> Praying Areas
           </Link>
-          <Link to="/resources#mental-health">
+          <Link smooth to="/resources#mental-health">
             <FontAwesomeIcon icon={faHeart} /> Mental Health
           </Link>
-          <Link to="/resources#advocacy">
+          <Link smooth to="/resources#advocacy">
             <FontAwesomeIcon icon={faBullhorn} /> Advocacy
           </Link>
         </div>
       </li>
       <li>
-        <Link to="/events#events-section">
+        <Link to="/events">
           <FontAwesomeIcon icon={faCalendar} /> Programs & Events
         </Link>
         <div className="dropdown-content">
-          <Link to="/announcements#announcements">
+          <Link to="/announcements">
             <FontAwesomeIcon icon={faBullhorn} /> Announcements
           </Link>
-          <Link to="/events#events-section">
+          <Link to="/events">
             <FontAwesomeIcon icon={faCalendar} /> Events
           </Link>
-          <Link to="/programs#programs-section">
+          <Link to="/programs">
             <FontAwesomeIcon icon={faUsers} /> Programs
           </Link>
-          <Link to="/osp#osp-section">
+          <Link to="/osp">
             <FontAwesomeIcon icon={faChild} /> OSP
           </Link>
         </div>
       </li>
       <li>
-        <Link to="/contact#get-involved">
+        <Link to="/contact">
           <FontAwesomeIcon icon={faLink} /> Connect
         </Link>
         <div className="dropdown-content">
-          <Link to="/contact#get-involved">
+          <Link smooth to="/contact#get-involved">
             <FontAwesomeIcon icon={faHandshake} /> Get Involved
           </Link>
-          <Link to="/contact#faq-section">
+          <Link smooth to="/contact#faq-section">
             <FontAwesomeIcon icon={faQuestion} /> FAQ
           </Link>
         </div>
