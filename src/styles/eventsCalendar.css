@@ -1,0 +1,50 @@
+/* src/styles/eventsCalendar.css */
+#events-calendar {
+  text-align: center;
+  padding: 50px;
+  background-color: #e6e6e6; /* Or any color from your theme */
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.event-title {
+  color: #170827; /* Or any color from your theme */
+  text-decoration: underline #ceb378 5px;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Adjust size as needed */
+}
+
+.event-description {
+  margin-bottom: 20px;
+  color: black; /* Or any color from your theme */
+  font-size: 1.1em;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the iframe */
+}
+
+.calendar-container iframe {
+  border: none; /* Removes the border */
+  margin-bottom: 20px; /* Adds space between the iframe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendar-container iframe {
+    width: 100%; /* Makes the iframe responsive */
+    height: 600px; /* Adjust height as needed */
+  }
+
+  .event-title {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .event-description {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,99 +1,47 @@
-#announcements {
-  display: block;
-  text-align: center;
-  padding: 100px;
-  width: auto;
-  margin: auto;
-  font-size: larger;
+/* src/styles/announcements.css */
+#announcements-page {
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin-top: 200px;
 }
 
-.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1;
-}
-
-.mySlides {
-  display: none;
-  padding: 80px;
+.section-title {
+  color: #170827;
+  text-decoration: underline #ceb378 5px;
+  margin-bottom: 20px;
+  font-size: 2em;
   text-align: center;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  position: absolute;
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.dot-container {
+.section-description {
   text-align: center;
-  padding: 20px;
-  background: #ddd;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1.1em;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-q {
-  font-style: italic;
-}
-
-.author {
-  color: cornflowerblue;
-}
-
-.view-all-button {
-  background-color: #ceb378;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.announcements-table {
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 20px;
-  font-size: 20px;
 }
 
-.view-all-button:hover {
+.announcements-table th,
+.announcements-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.announcements-table th {
   background-color: #253e6d;
+  color: white;
+  text-align: left;
+}
+
+.announcements-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.announcements-table tr:hover {
+  background-color: #ddd;
 }

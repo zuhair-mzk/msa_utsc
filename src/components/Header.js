@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "../styles/navbar.css";
-import logo from "../images/Logo.jpg"; // Adjust path as needed
+import logo from "../images/Logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faNetworkWired,
@@ -67,20 +67,23 @@ const Header = () => (
         </div>
       </li>
       <li>
-        <Link to="/events">
+        <Link to="/programs-events#announcements-page">
           <FontAwesomeIcon icon={faCalendar} /> Programs & Events
         </Link>
         <div className="dropdown-content">
-          <Link to="/announcements">
+          <Link smooth to="/programs-events#announcements-page">
             <FontAwesomeIcon icon={faBullhorn} /> Announcements
           </Link>
-          <Link to="/events">
+          <Link smooth to="/programs-events#events">
             <FontAwesomeIcon icon={faCalendar} /> Events
           </Link>
-          <Link to="/programs">
+          <Link smooth to="/programs-events#programs">
             <FontAwesomeIcon icon={faUsers} /> Programs
           </Link>
-          <Link to="/osp">
+          <Link smooth to="/programs-events#events-calendar">
+            <FontAwesomeIcon icon={faCalendar} /> Calendar
+          </Link>
+          <Link smooth to="/programs-events#osp">
             <FontAwesomeIcon icon={faChild} /> OSP
           </Link>
         </div>

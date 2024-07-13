@@ -1,5 +1,7 @@
+// src/components/AnnouncementsSection.js
 import React, { useEffect, useState } from "react";
-import "../styles/announcements.css";
+import { HashLink } from "react-router-hash-link";
+import "../styles/announcementsSection.css";
 
 const AnnouncementsSection = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -79,9 +81,9 @@ const AnnouncementsSection = () => {
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
       </div>
-      <a href="https://www.utscmsa.com/progs-events/#announcements">
+      <HashLink to="/programs-events#announcements">
         <button className="view-all-button"> View All Announcements</button>
-      </a>
+      </HashLink>
     </section>
   );
 };

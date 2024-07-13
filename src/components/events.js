@@ -3,6 +3,7 @@ import "../styles/events.css";
 import ospImage from "../images/OSP.png"; // Adjust path as needed
 import selfDefenceImage from "../images/self-defence.png"; // Adjust path as needed
 import skiImage from "../images/Ski.png"; // Adjust path as needed
+import { HashLink as Link } from "react-router-hash-link";
 
 const EventsSection = () => (
   <section id="events">
@@ -13,9 +14,12 @@ const EventsSection = () => (
         community. Check out the latest events below or visit the link below to
         see all past and future events!
       </p>
-      <a href="events.html" className="view-all-events-button">
+      <Link
+        to="/programs-events#events-calendar"
+        className="view-all-events-button"
+      >
         View All Events
-      </a>
+      </Link>
     </div>
     <div className="event-card-container">
       <div className="event-card">
