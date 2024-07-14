@@ -15,13 +15,14 @@ import WelcomeSection from "./components/WelcomeSection";
 import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
 import Advocacy from "./components/Advocacy";
-import SpeedInsights from "@vercel/speed-insights";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
 
 function App() {
   return (
     <Router>
       <div>
+        <SpeedInsights />
         <Header />
         <NotificationBar />
         <Routes>
@@ -36,7 +37,6 @@ function App() {
           <Route path="/advocacy" element={<Advocacy />} />
         </Routes>
         <Footer />
-        <SpeedInsights />
       </div>
     </Router>
   );
