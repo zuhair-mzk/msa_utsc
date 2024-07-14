@@ -21,7 +21,7 @@
   color: #170827;
   text-decoration: underline #ceb378 5px;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2rem; /* Use rem for responsive font size */
 }
 
 .event-card {
@@ -46,7 +46,7 @@
 .event-p {
   width: 90%;
   margin: auto;
-  font-size: 20px;
+  font-size: 1.25rem; /* Use rem for responsive font size */
 }
 
 #events img {
@@ -61,13 +61,13 @@
   color: #fafcfd;
   border: none;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Use rem for responsive padding */
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
   display: inline-block; /* This will prevent the button from stretching */
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 1rem; /* Use rem for responsive font size */
   text-decoration: none; /* Remove the underline from the link */
 }
 

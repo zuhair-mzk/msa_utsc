@@ -9,10 +9,12 @@ import Contact from "./components/Contact";
 import ProgramsAndEvents from "./components/ProgramsAndEvents";
 import Resources from "./components/resources";
 import PrayerAreas from "./components/PrayerAreas";
-import AnnouncementsSection from "./components/AnnouncementsSection"; // Make sure this is imported
-import EventsSection from "./components/events"; // Make sure this is imported
+import AnnouncementsSection from "./components/AnnouncementsSection";
+import EventsSection from "./components/events";
 import WelcomeSection from "./components/WelcomeSection";
-import EventsCalendar from "./components/EventsCalendar"; // Import the EventsCalendar component
+import EventsCalendar from "./components/EventsCalendar";
+import MentalHealth from "./components/MentalHealth";
+import Advocacy from "./components/Advocacy";
 import "./styles/main.css";
 
 function App() {
@@ -28,8 +30,9 @@ function App() {
           <Route path="/programs-events" element={<ProgramsAndEvents />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/prayer-areas" element={<PrayerAreas />} />
-          <Route path="/calendar" element={<EventsCalendar />} />{" "}
-          {/* Add the route for the calendar */}
+          <Route path="/calendar" element={<EventsCalendar />} />
+          <Route path="/mental-health" element={<MentalHealth />} />
+          <Route path="/advocacy" element={<Advocacy />} />
         </Routes>
         <Footer />
       </div>

@@ -29,11 +29,11 @@
   background-color: #ceb378;
   color: #170827;
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Use rem for responsive padding */
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 1rem; /* Use rem for responsive font size */
   margin-top: 10px;
   text-decoration: none;
 }
@@ -50,7 +50,7 @@
   display: inline-block;
   margin-right: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 2rem; /* Use rem for responsive font size */
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@
 .linktree-link {
   display: inline-block;
   color: #fafcfd;
-  font-size: 18px;
+  font-size: 1.125rem; /* Use rem for responsive font size */
   margin-top: 20px;
   text-decoration: none;
 }

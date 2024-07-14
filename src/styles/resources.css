@@ -1,3 +1,4 @@
+/* src/styles/resources.css */
 .resources {
   padding: 50px;
   background-color: #e6e6e6;
@@ -112,6 +113,13 @@
 
 .feedback-button:hover {
   background-color: #ceb378;
+}
+
+.jumuah-note {
+  color: #170827;
+  margin-top: 20px;
+  font-size: 1em; /* Ensure consistent font size */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
 /* Responsive adjustments */

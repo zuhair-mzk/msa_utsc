@@ -4,12 +4,12 @@
   padding: 100px;
   width: auto;
   margin: auto;
-  font-size: larger;
+  font-size: 1.25rem; /* Use rem for responsive font size */
 }
 
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #f1f1f1;
 }
 
 .mySlides {
@@ -28,7 +28,7 @@
   padding: 16px;
   color: #888;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem; /* Use rem for responsive font size */
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -91,7 +91,7 @@ q {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 1.25rem; /* Use rem for responsive font size */
 }
 
 .view-all-button:hover {

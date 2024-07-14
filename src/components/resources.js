@@ -1,3 +1,4 @@
+// src/components/resources.js
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "../styles/resources.css";
@@ -157,22 +158,29 @@ const Resources = () => {
               <tr className="prayer-table-row">
                 <th className="prayer-table-heading">Jumu'ah</th>
                 <th className="prayer-table-heading">Location</th>
-                <th className="prayer-table-heading">Time</th>
+                <th className="prayer-table-heading">Khutbah Time</th>
+                <th className="prayer-table-heading">Salah Time</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Jumu'ah 1</td>
-                <td>HW 305</td>
-                <td>12:30 PM</td>
+                <td>SL281 + SL279</td>
+                <td>1:25 PM</td>
+                <td>1:45 PM</td>
               </tr>
               <tr>
                 <td>Jumu'ah 2</td>
-                <td>HW 305</td>
-                <td>1:45 PM</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
               </tr>
             </tbody>
           </table>
+          <p className="jumuah-note">
+            Please note that these timings may not be completely accurate. Check
+            our Instagram page for the latest updates @msa_utsc.
+          </p>
           <br />
           <br />
           <button className="feedback-button">Jumu'ah Feedback</button>

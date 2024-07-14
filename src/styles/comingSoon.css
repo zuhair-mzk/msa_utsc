@@ -1,0 +1,23 @@
+/* src/styles/comingSoon.css */
+#coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6e6;
+}
+
+.coming-soon-content {
+  text-align: center;
+  color: #170827;
+}
+
+.coming-soon-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-decoration: underline #ceb378 5px;
+}
+
+.coming-soon-description {
+  font-size: 1.2em;
+}

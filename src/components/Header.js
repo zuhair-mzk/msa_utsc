@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "../styles/navbar.css";
 import logo from "../images/Logo.jpg";
@@ -18,96 +18,148 @@ import {
   faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => (
-  <nav>
-    <div
-      className="logo-container"
-      onClick={() => (window.location.href = "/")}
-    >
-      <img src={logo} alt="Logo" />
-      <div className="logo-text">
-        <span className="main-text">University of Toronto Scarborough</span>
-        <span className="subtext">Muslim Students' Association</span>
+const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState({
+    aboutUs: false,
+    resources: false,
+    programs: false,
+    contact: false,
+  });
+
+  const toggleNav = () => setNavOpen(!navOpen);
+  const toggleDropdown = (menu) => {
+    setDropdownOpen((prevState) => ({
+      ...prevState,
+      [menu]: !prevState[menu],
+    }));
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
+    setDropdownOpen({
+      aboutUs: false,
+      resources: false,
+      programs: false,
+      contact: false,
+    });
+  };
+
+  return (
+    <nav>
+      <div
+        className="logo-container"
+        onClick={() => (window.location.href = "/")}
+      >
+        <img src={logo} alt="Logo" />
+        <div className="logo-text">
+          <span className="main-text">University of Toronto Scarborough</span>
+          <span className="subtext">Muslim Students' Association</span>
+        </div>
       </div>
-    </div>
-    <ul className="links">
-      <li>
-        <Link to="/aboutus">
-          <FontAwesomeIcon icon={faNetworkWired} /> About Us
-        </Link>
-        <div className="dropdown-content">
-          <Link smooth to="/aboutus#our-mission">
-            <FontAwesomeIcon icon={faPersonPraying} /> Mission & Values
+      <ul className={`links ${navOpen ? "open" : ""}`}>
+        <li>
+          <Link to="/aboutus">
+            <FontAwesomeIcon icon={faNetworkWired} /> About Us
           </Link>
-          <Link smooth to="/aboutus#our-constitution">
-            <FontAwesomeIcon icon={faMosque} /> Constitution
+          <div
+            className={`dropdown-content ${dropdownOpen.aboutUs ? "open" : ""}`}
+            onClick={() => toggleDropdown("aboutUs")}
+          >
+            <Link smooth to="/aboutus#our-mission" onClick={closeNav}>
+              <FontAwesomeIcon icon={faPersonPraying} /> Mission & Values
+            </Link>
+            <Link smooth to="/aboutus#our-constitution" onClick={closeNav}>
+              <FontAwesomeIcon icon={faMosque} /> Constitution
+            </Link>
+            <Link smooth to="/aboutus#team" onClick={closeNav}>
+              <FontAwesomeIcon icon={faHeart} /> The Team
+            </Link>
+          </div>
+        </li>
+        <li>
+          <Link to="/resources#prayer-timings">
+            <FontAwesomeIcon icon={faKaaba} /> Islamic Resources
           </Link>
-          <Link smooth to="/aboutus#team">
-            <FontAwesomeIcon icon={faHeart} /> The Team
+          <div
+            className={`dropdown-content ${
+              dropdownOpen.resources ? "open" : ""
+            }`}
+            onClick={() => toggleDropdown("resources")}
+          >
+            <Link smooth to="/resources#prayer-timings" onClick={closeNav}>
+              <FontAwesomeIcon icon={faPersonPraying} /> Prayer timings
+            </Link>
+            <Link smooth to="/resources#prayer-areas" onClick={closeNav}>
+              <FontAwesomeIcon icon={faMosque} /> Praying Areas
+            </Link>
+            <Link to="/mental-health" onClick={closeNav}>
+              <FontAwesomeIcon icon={faHeart} /> Mental Health
+            </Link>
+            <Link to="/advocacy" onClick={closeNav}>
+              <FontAwesomeIcon icon={faBullhorn} /> Advocacy
+            </Link>
+          </div>
+        </li>
+        <li>
+          <Link to="/programs-events#announcements-page">
+            <FontAwesomeIcon icon={faCalendar} /> Programs & Events
           </Link>
-        </div>
-      </li>
-      <li>
-        <Link to="/resources">
-          <FontAwesomeIcon icon={faKaaba} /> Islamic Resources
-        </Link>
-        <div className="dropdown-content">
-          <Link smooth to="/resources#prayer-timings">
-            <FontAwesomeIcon icon={faPersonPraying} /> Prayer timings
+          <div
+            className={`dropdown-content ${
+              dropdownOpen.programs ? "open" : ""
+            }`}
+            onClick={() => toggleDropdown("programs")}
+          >
+            <Link
+              smooth
+              to="/programs-events#announcements-page"
+              onClick={closeNav}
+            >
+              <FontAwesomeIcon icon={faBullhorn} /> Announcements
+            </Link>
+            <Link smooth to="/programs-events#events" onClick={closeNav}>
+              <FontAwesomeIcon icon={faCalendar} /> Events
+            </Link>
+            <Link smooth to="/programs-events#programs" onClick={closeNav}>
+              <FontAwesomeIcon icon={faUsers} /> Programs
+            </Link>
+            <Link
+              smooth
+              to="/programs-events#events-calendar"
+              onClick={closeNav}
+            >
+              <FontAwesomeIcon icon={faCalendar} /> Calendar
+            </Link>
+            <Link smooth to="/programs-events#osp" onClick={closeNav}>
+              <FontAwesomeIcon icon={faChild} /> OSP
+            </Link>
+          </div>
+        </li>
+        <li>
+          <Link to="/contact#get-involved">
+            <FontAwesomeIcon icon={faLink} /> Connect
           </Link>
-          <Link smooth to="/resources#prayer-areas">
-            <FontAwesomeIcon icon={faMosque} /> Praying Areas
-          </Link>
-          <Link smooth to="/resources#mental-health">
-            <FontAwesomeIcon icon={faHeart} /> Mental Health
-          </Link>
-          <Link smooth to="/resources#advocacy">
-            <FontAwesomeIcon icon={faBullhorn} /> Advocacy
-          </Link>
-        </div>
-      </li>
-      <li>
-        <Link to="/programs-events#announcements-page">
-          <FontAwesomeIcon icon={faCalendar} /> Programs & Events
-        </Link>
-        <div className="dropdown-content">
-          <Link smooth to="/programs-events#announcements-page">
-            <FontAwesomeIcon icon={faBullhorn} /> Announcements
-          </Link>
-          <Link smooth to="/programs-events#events">
-            <FontAwesomeIcon icon={faCalendar} /> Events
-          </Link>
-          <Link smooth to="/programs-events#programs">
-            <FontAwesomeIcon icon={faUsers} /> Programs
-          </Link>
-          <Link smooth to="/programs-events#events-calendar">
-            <FontAwesomeIcon icon={faCalendar} /> Calendar
-          </Link>
-          <Link smooth to="/programs-events#osp">
-            <FontAwesomeIcon icon={faChild} /> OSP
-          </Link>
-        </div>
-      </li>
-      <li>
-        <Link to="/contact">
-          <FontAwesomeIcon icon={faLink} /> Connect
-        </Link>
-        <div className="dropdown-content">
-          <Link smooth to="/contact#get-involved">
-            <FontAwesomeIcon icon={faHandshake} /> Get Involved
-          </Link>
-          <Link smooth to="/contact#faq-section">
-            <FontAwesomeIcon icon={faQuestion} /> FAQ
-          </Link>
-        </div>
-      </li>
-    </ul>
-    <label htmlFor="nav-toggle" className="icon-burger">
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-    </label>
-  </nav>
-);
+          <div
+            className={`dropdown-content ${dropdownOpen.contact ? "open" : ""}`}
+            onClick={() => toggleDropdown("contact")}
+          >
+            <Link smooth to="/contact#get-involved" onClick={closeNav}>
+              <FontAwesomeIcon icon={faHandshake} /> Get Involved
+            </Link>
+            <Link smooth to="/contact#faq-section" onClick={closeNav}>
+              <FontAwesomeIcon icon={faQuestion} /> FAQ
+            </Link>
+          </div>
+        </li>
+      </ul>
+      <div className="icon-burger" onClick={toggleNav}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+    </nav>
+  );
+};
 
 export default Header;

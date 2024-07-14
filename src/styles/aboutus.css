@@ -11,7 +11,7 @@
 }
 
 #about-us-section .section-title {
-  font-size: 25px;
+  font-size: 1.5rem; /* Use rem for responsive font size */
   color: #253e6d;
   margin-bottom: 10px;
   text-align: left;
@@ -20,7 +20,7 @@
 }
 
 #about-us-section .section-description {
-  font-size: 18px;
+  font-size: 1rem; /* Use rem for responsive font size */
   color: #170827;
   margin-bottom: 20px;
   text-align: justify;
@@ -37,7 +37,7 @@
   background-color: #ceb378;
   color: #170827;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Use rem for responsive padding */
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s;
@@ -65,7 +65,7 @@
   text-decoration: underline #ceb378 5px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem; /* Use rem for responsive font size */
 }
 
 /* Responsiveness */

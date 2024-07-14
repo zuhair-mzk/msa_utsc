@@ -39,12 +39,12 @@ nav .logo-text {
 }
 
 nav .main-text {
-  font-size: 24px;
+  font-size: 1.5rem; /* Use rem for responsive font size */
 }
 
 nav .subtext {
   font-style: italic;
-  font-size: 14px;
+  font-size: 0.875rem; /* Use rem for responsive font size */
   font-weight: lighter;
 }
 
@@ -65,7 +65,7 @@ nav .links li {
 nav .links a {
   display: block;
   padding: 1em 1.5em;
-  font-size: 16px;
+  font-size: 1rem; /* Use rem for responsive font size */
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s, border-radius 0.3s;
@@ -93,7 +93,8 @@ nav .links .dropdown-content {
   text-align: center;
 }
 
-nav .links li:hover .dropdown-content {
+nav .links li:hover .dropdown-content,
+nav .links .dropdown-content.open {
   display: block;
 }
 
@@ -101,30 +102,48 @@ nav i {
   padding-right: 2px;
 }
 
+.icon-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.links.open {
+  display: flex;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 768px) {
   nav {
-    height: auto;
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
+    height: auto;
   }
 
-  nav .logo {
+  nav .logo-container {
     margin-bottom: 10px;
   }
 
   nav .links {
+    display: none;
     flex-direction: column;
     width: 100%;
-    background-color: rgba(37, 62, 109, 0.8);
+    background-color: #170827;
     position: absolute;
     top: 100px;
     left: 0;
     right: 0;
     transform: translateY(-100%);
     transition: transform 0.3s;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   nav .links.open {
@@ -132,13 +151,18 @@ nav i {
   }
 
   nav .links a {
-    font-size: 20px;
-    padding: 1em 2em;
+    font-size: 1.125rem; /* Use rem for responsive font size */
+    padding: 1em 1.5em;
     border-radius: 10px;
   }
 
   nav .links .dropdown-content {
     width: 100%;
     border-radius: 10px;
+    position: static;
+  }
+
+  .icon-burger {
+    display: flex;
   }
 }
