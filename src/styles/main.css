@@ -13,6 +13,13 @@ body {
   background-size: cover;
 }
 
+/* Responsive adjustments for the background image */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover; /* Ensure the background image fits the screen */
+  }
+}
+
 .container {
   position: relative;
   margin-top: 100px;

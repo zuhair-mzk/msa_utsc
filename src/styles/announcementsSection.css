@@ -97,3 +97,24 @@ q {
 .view-all-button:hover {
   background-color: #253e6d;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #announcements {
+    padding: 50px;
+  }
+
+  .mySlides {
+    padding: 40px;
+  }
+
+  .prev,
+  .next {
+    font-size: 1rem;
+  }
+
+  .view-all-button {
+    font-size: 1rem;
+    padding: 15px 25px;
+  }
+}

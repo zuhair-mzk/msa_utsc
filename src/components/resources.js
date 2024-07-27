@@ -79,6 +79,10 @@ const Resources = () => {
       });
   };
 
+  const handleFeedbackClick = () => {
+    alert("The Jumu'ah Feedback form is currently unavailable.");
+  };
+
   return (
     <section id="resources" className="resources">
       <div className="resources-content">
@@ -183,7 +187,9 @@ const Resources = () => {
           </p>
           <br />
           <br />
-          <button className="feedback-button">Jumu'ah Feedback</button>
+          <button className="feedback-button" onClick={handleFeedbackClick}>
+            Jumu'ah Feedback
+          </button>
         </div>
         <section id="prayer-areas">
           <h2 className="event-title">Prayer Areas</h2>
