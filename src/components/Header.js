@@ -45,6 +45,10 @@ const Header = () => {
     });
   };
 
+  const handleLinkClick = () => {
+    closeNav();
+  };
+
   return (
     <nav>
       <div
@@ -59,26 +63,30 @@ const Header = () => {
       </div>
       <ul className={`links ${navOpen ? "open" : ""}`}>
         <li>
-          <Link to="/aboutus">
+          <Link to="/aboutus#our-mission" onClick={handleLinkClick}>
             <FontAwesomeIcon icon={faNetworkWired} /> About Us
           </Link>
           <div
             className={`dropdown-content ${dropdownOpen.aboutUs ? "open" : ""}`}
             onClick={() => toggleDropdown("aboutUs")}
           >
-            <Link smooth to="/aboutus#our-mission" onClick={closeNav}>
+            <Link smooth to="/aboutus#our-mission" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faPersonPraying} /> Mission & Values
             </Link>
-            <Link smooth to="/aboutus#our-constitution" onClick={closeNav}>
+            <Link
+              smooth
+              to="/aboutus#our-constitution"
+              onClick={handleLinkClick}
+            >
               <FontAwesomeIcon icon={faMosque} /> Constitution
             </Link>
-            <Link smooth to="/aboutus#team" onClick={closeNav}>
+            <Link smooth to="/aboutus#team" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faHeart} /> The Team
             </Link>
           </div>
         </li>
         <li>
-          <Link to="/resources#prayer-timings">
+          <Link to="/resources#prayer-timings" onClick={handleLinkClick}>
             <FontAwesomeIcon icon={faKaaba} /> Islamic Resources
           </Link>
           <div
@@ -87,22 +95,29 @@ const Header = () => {
             }`}
             onClick={() => toggleDropdown("resources")}
           >
-            <Link smooth to="/resources#prayer-timings" onClick={closeNav}>
+            <Link
+              smooth
+              to="/resources#prayer-timings"
+              onClick={handleLinkClick}
+            >
               <FontAwesomeIcon icon={faPersonPraying} /> Prayer timings
             </Link>
-            <Link smooth to="/resources#prayer-areas" onClick={closeNav}>
+            <Link smooth to="/resources#prayer-areas" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faMosque} /> Praying Areas
             </Link>
-            <Link to="/mental-health" onClick={closeNav}>
+            <Link to="/mental-health" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faHeart} /> Mental Health
             </Link>
-            <Link to="/advocacy" onClick={closeNav}>
+            <Link to="/advocacy" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faBullhorn} /> Advocacy
             </Link>
           </div>
         </li>
         <li>
-          <Link to="/programs-events#announcements-page">
+          <Link
+            to="/programs-events#announcements-page"
+            onClick={handleLinkClick}
+          >
             <FontAwesomeIcon icon={faCalendar} /> Programs & Events
           </Link>
           <div
@@ -114,40 +129,44 @@ const Header = () => {
             <Link
               smooth
               to="/programs-events#announcements-page"
-              onClick={closeNav}
+              onClick={handleLinkClick}
             >
               <FontAwesomeIcon icon={faBullhorn} /> Announcements
             </Link>
-            <Link smooth to="/programs-events#events" onClick={closeNav}>
+            <Link smooth to="/programs-events#events" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faCalendar} /> Events
             </Link>
-            <Link smooth to="/programs-events#programs" onClick={closeNav}>
+            <Link
+              smooth
+              to="/programs-events#programs"
+              onClick={handleLinkClick}
+            >
               <FontAwesomeIcon icon={faUsers} /> Programs
             </Link>
             <Link
               smooth
               to="/programs-events#events-calendar"
-              onClick={closeNav}
+              onClick={handleLinkClick}
             >
               <FontAwesomeIcon icon={faCalendar} /> Calendar
             </Link>
-            <Link smooth to="/programs-events#osp" onClick={closeNav}>
+            <Link smooth to="/programs-events#osp" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faChild} /> OSP
             </Link>
           </div>
         </li>
         <li>
-          <Link to="/contact#get-involved">
+          <Link to="/contact#get-involved" onClick={handleLinkClick}>
             <FontAwesomeIcon icon={faLink} /> Connect
           </Link>
           <div
             className={`dropdown-content ${dropdownOpen.contact ? "open" : ""}`}
             onClick={() => toggleDropdown("contact")}
           >
-            <Link smooth to="/contact#get-involved" onClick={closeNav}>
+            <Link smooth to="/contact#get-involved" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faHandshake} /> Get Involved
             </Link>
-            <Link smooth to="/contact#faq-section" onClick={closeNav}>
+            <Link smooth to="/contact#faq-section" onClick={handleLinkClick}>
               <FontAwesomeIcon icon={faQuestion} /> FAQ
             </Link>
           </div>

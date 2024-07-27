@@ -1,3 +1,4 @@
+/* Welcome section styles */
 #welcome {
   text-align: center;
   color: white;
@@ -42,4 +43,26 @@
   height: auto;
   margin-bottom: 0px;
   border-radius: 30px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .welcome-text {
+    font-size: 2rem; /* Adjusted for smaller screens */
+    margin-top: 150px;
+    margin-bottom: 75px;
+  }
+
+  .calligraphy-image {
+    width: 90%; /* Ensure the image fits within the screen */
+  }
+
+  .p2 {
+    font-size: 0.875em; /* Adjusted for smaller screens */
+  }
+
+  .p3 {
+    font-size: 0.875em; /* Adjusted for smaller screens */
+    letter-spacing: 5px; /* Adjusted for better readability */
+  }
 }

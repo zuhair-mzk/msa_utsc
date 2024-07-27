@@ -75,13 +75,32 @@
   margin: 0 10px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     text-align: center;
   }
 
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .signup-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .linktree-link {
+    font-size: 1rem;
+  }
+
   .sponsors img {
+    max-width: 80px;
     margin: 10px;
   }
 }
