@@ -57,7 +57,7 @@ const AboutUs = () => (
 const MeetTheTeam = () => (
   <section id="team">
     <h2 className="about-title">Meet The Team</h2>
-    <p>Coming Soon....</p>
+    <p>Coming Soon...</p>
   </section>
 );
 
