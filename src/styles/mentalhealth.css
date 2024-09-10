@@ -1,0 +1,33 @@
+/* src/styles/mentalhealth.css */
+#mental-health {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6e6;
+  }
+  
+  .mental-health-content {
+    text-align: center;
+    /* color: #170827; */
+  }
+  
+  .mental-health-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-decoration: underline #ceb378 5px;
+  }
+  
+  .mental-health-description {
+    font-size: 1.2em;
+  }
+
+  .mental-health-section h3 {
+    color: #333;  /**/
+    font-size: 1.75em;
+  }
+
+  .mental-health-section li {
+    color: #555;
+    list-style: none;
+  }
