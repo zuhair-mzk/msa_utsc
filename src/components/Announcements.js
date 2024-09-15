@@ -29,7 +29,7 @@ const Announcements = () => (
           <td>Sister's Guided Hike</td>
         </tr>
         <tr>
-          <td>Mon Sep 23rd & Tue Sep 24th</td>
+          <td>Mon Sep 23rd, Tue Sep 24th</td>
           <td>Club Fair</td>
         </tr>
       </tbody>
