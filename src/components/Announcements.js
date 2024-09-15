@@ -17,20 +17,20 @@ const Announcements = () => (
       </thead>
       <tbody>
         <tr>
-          <td>10:00am, Wed Apr 6th</td>
-          <td>Grand Iftar</td>
+          <td>02:00pm, Mon Sep 16th</td>
+          <td>Tabling, Getting to Know MSA</td>
         </tr>
         <tr>
-          <td>12:00am, Tue Feb 8th</td>
-          <td>UTSC MSA General Meeting</td>
+          <td>02:00pm, Wed Sep 18th</td>
+          <td>Welcome Day</td>
         </tr>
         <tr>
-          <td>01:00am, Tue Jan 18th</td>
-          <td>MSA Board Meetings</td>
+          <td>03:00pm, Thu Sep 19th</td>
+          <td>Sister's Guided Hike</td>
         </tr>
         <tr>
-          <td>11:00pm, Wed Nov 24th</td>
-          <td>New MSA Website is Live!</td>
+          <td>Mon Sep 23rd & Tue Sep 24th</td>
+          <td>Club Fair</td>
         </tr>
       </tbody>
     </table>
