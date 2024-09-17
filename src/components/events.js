@@ -48,7 +48,7 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={messageImage} alt="Volunteer Post" />
+        <img src={messageImage} alt="Message Post" />
         <div className="event-text">
           <h3>Join The Message Team</h3>
           <p>Tuesday, September 17th</p>
