@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/events.css";
-import ospImage from "../images/OSP.png"; // Adjust path as needed
-import selfDefenceImage from "../images/self-defence.png"; // Adjust path as needed
-import skiImage from "../images/Ski.png"; // Adjust path as needed
+import welcomeDayImage from "../images/welcome_day.png"
+import sisterHikeImage from "../images/sisters_hike.png"
+import messageImage from "../images/hafsa_message.jpg"
+
 import { HashLink as Link } from "react-router-hash-link";
+
 
 const EventsSection = () => (
   <section id="events">
@@ -23,34 +25,34 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
       <div className="event-card">
-        <img src={ospImage} alt="OSP" />
+        <img src={welcomeDayImage} alt="Welcome Day" />
         <div className="event-text">
-          <h3>MSA Petting Zoo</h3>
-          <p>Tuesday, February 27th</p>
+          <h3>MSA Welcome Day</h3>
+          <p>Wednesday, September 18th</p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd6aFEpRxeyZ7AU1g1IjIhVdmXkkLFqu51bcxw7smQMp3AXug/viewform?pli=1"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSekzvmzwnbGak-1Wo8CIJ2hw_mqjn2AsDkwPPxrDqY_yAEwSQ/viewform"
             className="register-button"
           >
+            RSVP Here
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={sisterHikeImage} alt="Sister's Guided Hike" />
+        <div className="event-text">
+          <h3>Sister's Guided Hike</h3>
+          <p>Thursday, September 19th</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScDJppz9NAcedGb1IO2DNZv7hh-_syvxxPp5yxyMwbB8Wxk0Q/viewform" className="register-button">
             Register Here
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={selfDefenceImage} alt="Self Defense" />
+        <img src={messageImage} alt="Volunteer Post" />
         <div className="event-text">
-          <h3>Self Defence</h3>
-          <p>Tuesday, February 13th | 1-3pm</p>
-          <a href="" className="register-button">
-            Register Here
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={skiImage} alt="Grand Iftar" />
-        <div className="event-text">
-          <h3>OMSAC Ski Trip</h3>
-          <p>Wednesday, February 21st | 7:00pm</p>
-          <a href="" className="register-button">
+          <h3>Join The Message Team</h3>
+          <p>Tuesday, September 17th</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCiB3yopYdFpgMOy3NmOMutjs58reRXlD_BzMeyLGU4dNDSw/viewform" className="register-button">
             Register Here
           </a>
         </div>
