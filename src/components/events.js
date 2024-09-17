@@ -50,9 +50,9 @@ const EventsSection = () => (
       <div className="event-card">
         <img src={messageImage} alt="Volunteer Post" />
         <div className="event-text">
-          <h3>Volunteer With MSA</h3>
+          <h3>Join The Message Team</h3>
           <p>Tuesday, September 17th</p>
-          <a href="" className="register-button">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCiB3yopYdFpgMOy3NmOMutjs58reRXlD_BzMeyLGU4dNDSw/viewform" className="register-button">
             Register Here
           </a>
         </div>
