@@ -7,6 +7,8 @@ import "../styles/programs.css";
 import sportsHalaqahImg from "../images/brothers&sisters_sports_halaqah.png";
 import charityWeekImg from "../images/charity.png";
 import tajwidImg from "../images/tajwid.png";
+import sisterSeerahImage from "../images/sister_seerah.png"
+import brothersHalaqahImage from "../images/brothers_halaqah.png"
 
 const Programs = () => (
   <section id="programs">
@@ -26,35 +28,35 @@ const Programs = () => (
     <div className="event-card-container">
       <div className="event-card">
         <img
-          src={sportsHalaqahImg}
-          alt="Brothers & Sisters Sports and Halaqah"
+          src={sisterSeerahImage}
+          alt="Sisters, Seerah, and Suhba"
         />
         <div className="event-text">
-          <h3>Brothers sports and halaqah</h3>
+          <h3>Sisters, Seerah, and Suhba</h3>
           <p>
-            Want a physical and spiritual exercise? Join us at the Pan Am Sports
-            centre where we play a variety of sports as brothers, increasing our
-            brotherhood and skills. Afterwards, come to the prayer room where we
-            will have our halaqah regarding various topics in Islam, like tafsir
-            and seerah.
+            Want spiritual exercise in a comfortable space? Come join us in the prayer room where we
+            will cover the Seerah book "When the Moon Split", and learn deepen our knowledge of 
+            the Seerah and Suhba.
           </p>
-          <HashLink to="/osp" className="register-button">
+          <a
+            href=""
+            className="register-button"
+          >
             Register Here
-          </HashLink>
+          </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={charityWeekImg} alt="Charity Week" />
+        <img src={brothersHalaqahImage} alt="Halaqahs for Brothers" />
         <div className="event-text">
-          <h3>Sisters study session and halaqah</h3>
+          <h3>'Circle of Inspiration: Live's of the Sahabah' Brother's Halaqah</h3>
           <p>
-            Sisters! Join us for sisters-only study sessions where our presence
-            will motivate each other. In between, make connections with other
-            sisters, and re-connect with Islam through our spiritually engaging
+            Brothers! Join us to make connections with other
+            brothers, and re-connect with Islam through our spiritually engaging
             halaqahs.
           </p>
           <a
-            href="https://www.utscmsa.com/programs/charity-week"
+            href=""
             className="register-button"
           >
             Register Here
