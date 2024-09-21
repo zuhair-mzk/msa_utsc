@@ -4,11 +4,10 @@ import { HashLink } from "react-router-hash-link";
 import "../styles/programs.css";
 
 // Import images
-import sportsHalaqahImg from "../images/brothers&sisters_sports_halaqah.png";
-import charityWeekImg from "../images/charity.png";
-import tajwidImg from "../images/tajwid.png";
+
 import sisterSeerahImage from "../images/sister_seerah.png"
 import brothersHalaqahImage from "../images/brothers_halaqah.png"
+import circlesFaithImage from "../images/circles_of_faith.png"
 
 const Programs = () => (
   <section id="programs">
@@ -64,18 +63,16 @@ const Programs = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={tajwidImg} alt="Tajwid" />
+        <img src={circlesFaithImage} alt="Circles of Faith" />
         <div className="event-text">
-          <h3>Tajwid</h3>
+          <h3>Circles of Faith</h3>
           <p>
-            Dive into the beauty of Quranic recitation with our Tajwid Program!
-            Whether you're just starting out or looking to refine your skills,
-            we're here to guide you through the art of proper pronunciation and
-            articulation. Let's perfect our recitation and deepen our connection
-            to the Quran together.
+            Are you a sister looking to grow your knowledge and understanding of our faith, 
+            in a fun and friendly environment? Join our monthly sister's halaqah, and learn about
+            several topics of faith this semseter.
           </p>
           <a
-            href="https://www.utscmsa.com/programs/mentorship-program"
+            href=""
             className="register-button"
           >
             Register Here
