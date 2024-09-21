@@ -41,7 +41,7 @@ const Programs = () => (
             href=""
             className="register-button"
           >
-            Drop In Program
+            Register Here
           </a>
         </div>
       </div>
@@ -67,7 +67,7 @@ const Programs = () => (
         <div className="event-text">
           <h3>Circles of Faith</h3>
           <p>
-            Are you a sister looking to grow your knowledge and understanding of our faith, 
+            Sisters! Are you looking to grow your knowledge and understanding of our faith, 
             in a fun and friendly environment? Join our monthly sister's halaqah, and learn about
             several topics of faith this semseter.
           </p>
@@ -75,7 +75,7 @@ const Programs = () => (
             href=""
             className="register-button"
           >
-            Register Here
+            Drop In Program
           </a>
         </div>
       </div>
