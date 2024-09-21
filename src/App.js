@@ -11,6 +11,7 @@ import Resources from "./components/resources";
 import PrayerAreas from "./components/PrayerAreas";
 import AnnouncementsSection from "./components/AnnouncementsSection";
 import EventsSection from "./components/events";
+import FeedSection from "./components/Feed"
 import WelcomeSection from "./components/WelcomeSection";
 import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
@@ -48,6 +49,7 @@ const Home = () => (
     <Resources />
     <AnnouncementsSection />
     <EventsSection />
+    <FeedSection />
   </div>
 );
 

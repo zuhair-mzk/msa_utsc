@@ -1,0 +1,49 @@
+/* FEED SECTION */
+#feed-section {
+    background-color: #fafcfd;
+    padding: 50px;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .feed-title {
+    color: #170827;
+    text-decoration: underline #ceb378 5px;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Use rem for responsive font size */
+  }
+
+.feed-container {
+    display: flex;
+    justify-content: center; /* Center the cards container */
+    flex-wrap: wrap; /* Allow the cards to wrap to the next line if needed */
+    gap: 20px; /* Space between the cards */
+}
+
+.feed-card {
+    flex: 0 0 calc(33.333% - 20px); /* Flex basis calculation to fit three cards accounting for gap */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    background-color: white;
+    margin-bottom: 20px; /* Spacing at the bottom of each card */
+    padding: 20px; /* Space inside the card */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#feed-section img {
+    max-width: 100%; /* This will make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px; /* Optional: rounded corners */
+  }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .feed-card {
+      flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .feed-card {
+      flex: 0 0 calc(100% - 20px); /* One card per row on small screens */
+    }
+  }
