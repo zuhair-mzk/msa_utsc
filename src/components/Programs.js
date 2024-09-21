@@ -41,7 +41,7 @@ const Programs = () => (
             href=""
             className="register-button"
           >
-            Register Here
+            Drop In Program
           </a>
         </div>
       </div>
