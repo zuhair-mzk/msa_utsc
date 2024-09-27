@@ -27,7 +27,7 @@ const FeedSection = () => {
     
     return (
         <section id="feed-section">
-        <h2 className="feed-title">Instagram Feed</h2>
+        <h2 className="feed-title">Our Feed</h2>
 
         <div className="feed-container">
             <div className="feed-card">
