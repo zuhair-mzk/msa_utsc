@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/events.css";
-import welcomeDayImage from "../images/welcome_day.png"
-import sisterHikeImage from "../images/sisters_hike.png"
+import circlesInspiration from "../images/circles_inspiration.jpg"
+import circlesofFaith from "../images/circles_of_faith.png"
 import kayaking from "../images/kayaking.png"
 
 import { HashLink as Link } from "react-router-hash-link";
@@ -25,25 +25,25 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
       <div className="event-card">
-        <img src={welcomeDayImage} alt="Welcome Day" />
+        <img src={circlesInspiration} alt="Circles of Inspiration" />
         <div className="event-text">
-          <h3>MSA Welcome Day</h3>
-          <p>Wednesday, September 18th</p>
+          <h3>Circles of Inspiration</h3>
+          <p>Friday, October 11th, 18th</p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSekzvmzwnbGak-1Wo8CIJ2hw_mqjn2AsDkwPPxrDqY_yAEwSQ/viewform"
+            href=""
             className="register-button"
           >
-            RSVP Here
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={sisterHikeImage} alt="Sister's Guided Hike" />
+        <img src={circlesofFaith} alt="Circles of Faith" />
         <div className="event-text">
-          <h3>Sister's Guided Hike</h3>
-          <p>Thursday, September 19th</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScDJppz9NAcedGb1IO2DNZv7hh-_syvxxPp5yxyMwbB8Wxk0Q/viewform" className="register-button">
-            Register Here
+          <h3>Circles of Faith - Sister's Halaqah</h3>
+          <p>Tuesday, October 22nd</p>
+          <a href="" className="register-button">
+            Drop In
           </a>
         </div>
       </div>
