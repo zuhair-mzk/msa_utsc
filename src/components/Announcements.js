@@ -17,16 +17,16 @@ const Announcements = () => (
       </thead>
       <tbody>
         <tr>
-          <td>01:30pm, Fri Oct 4th</td>
-          <td>Jummah Tabling</td>
+          <td>05:00pm, Fri Oct 18th</td>
+          <td>Circles of Inspiration</td>
         </tr>
         <tr>
-          <td>01:30pm, Fri Oct 18th</td>
-          <td>Jummah Tabling</td>
+          <td>03:00pm, Mon Oct 21st</td>
+          <td>Charity Week Bonfire Tabling</td>
         </tr>
         <tr>
-          <td>Tue OCt 22nd</td>
-          <td>Charity Week Bonfire</td>
+          <td>03:30pm, Tue OCt 22nd</td>
+          <td>Circles of Faith - Sister's Halaqah</td>
         </tr>
         <tr>
           <td>Sat Oct 26th</td>
