@@ -13,6 +13,11 @@ const FeedSection = () => {
           .then((text) => {
             // Split the text into lines by newlines
             const linesArray = text.split(',');
+            for (let i=0;i<3;i++){
+                if(linesArray[i]){
+                    linesArray[i] = linesArray[i].trim()
+                }
+            }
             setLines(linesArray); // Store the lines in state
           })
           .catch((error) => {
