@@ -3,23 +3,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 100px;
+    height: 100%;
     background-color: #e6e6e6;
   }
   
   .mental-health-content {
     text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     /* color: #170827; */
   }
   
   .mental-health-title {
+    margin-top: 50px;
     font-size: 2.5em;
     margin-bottom: 20px;
     text-decoration: underline #ceb378 5px;
   }
   
-  .mental-health-description {
+  .mental-health-contacts {
     font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 0;
+    margin-right: 45px;
+  }
+  .mental-health-contacts span:hover {
+    text-decoration: underline;
   }
 
   .mental-health-section h3 {
@@ -30,4 +43,64 @@
   .mental-health-section li {
     color: #555;
     list-style: none;
+  }
+
+  .resource-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    gap: 10px;
+    place-items: center;
+    margin-bottom: 30px;
+  }
+  .resource-container h3 {
+    color: #253e6d;
+    text-decoration: underline #ceb378 5px;
+  }
+
+  .resource-container li {
+    font-size: 22px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .on-campus-resource {
+    border: 1px solid #ccc;
+    width: 600px;
+    text-align: center;
+    border-radius: 7px;
+    align-items: center;
+    min-height: 200px;
+    max-height: fit-content;
+  }
+
+  .external-resource {
+    border: 1px solid #ccc;
+    width: 600px;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+    min-height: 200px;
+    max-height: fit-content;
+  }
+
+  /* SLIDE DECK */
+  .selfcare-title {
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline #ceb378 5px;
+  }
+  .slide-deck {
+    max-width: 90%;
+    min-width: 800px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .feedback-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
   }

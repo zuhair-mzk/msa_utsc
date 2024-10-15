@@ -2,44 +2,61 @@
 import React from "react";
 import "../styles/mentalhealth.css";
 
-// const MentalHealth = () => (
-//   <section id="coming-soon">
-//     <div className="coming-soon-content">
-//       <h2 className="coming-soon-title">Mental Health</h2>
-//       <p className="coming-soon-description">
-//         This page is coming soon. Stay tuned!
-//       </p>
-//     </div>
-//   </section>
-// );
-                 
-const MentalHealth = () => (
+  
+const MentalResource = () => (
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
       <h2 className="mental-health-title">Mental Health</h2>
 
       <h3>Emergency Contacts</h3>
-        <ul className="mental-health-description">
-          <li>Item</li>
+        <ul className="mental-health-contacts">
+          <li><span>911</span></li>
+          <li>Campus Safety: <span>416-978-2222</span></li>
         </ul>
 
       <h3>Resources</h3>
-        <ul className="mental-health-description">
-          <li>Item</li>
-        </ul>
-
-
-      <h3>Islamic Self Care Tips</h3>
-        <ul className="mental-health-description">
-          <li>Item</li>
-        </ul>
-
-      <button className="feedback-button">
-            Mental Health Feedback
-      </button>
-
+      <div className="resource-container">
+            <div className="on-campus-resource">
+              <h3>On Campus</h3>
+                <ul>
+                  <li>On Campus Resource 1</li>
+                  <li>On Campus Resource 2</li>
+                  <li>On Campus Resource 3</li>
+                </ul>
+            </div>
+            <div className="external-resource">
+              <h3>External</h3>
+              <ul>
+                <li>External Resource 1</li>
+                <li>External Resource 2</li>
+                <li>External Resource 3</li>
+              </ul>
+            </div>
+      </div>
     </div>
   </section>
   );
+
+const MentalHealthTips = () => (
+  <section id="mental-health" className="mental-health-section">
+    <div className="mental-health-content">
+      <h2 className="selfcare-title">Self Care Tips</h2>
+      <div className="slide-deck">
+
+      </div>
+
+      <a href="" className="feedback-button">
+          Mental Health Feedback
+      </a>
+    </div>
+  </section>
+);
+
+const MentalHealth = () => (
+  <div>
+    <MentalResource />
+    <MentalHealthTips />
+  </div>
+);
 
 export default MentalHealth;
