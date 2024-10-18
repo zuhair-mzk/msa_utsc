@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/aboutus.css";
-import teamImage from "../images/team.png"; // Adjust path as needed
+import comms_team from "../images/comms_meet_the_team.png"; // Adjust path as needed
+import ra_team from "../images/ra_meet_the_team.png"
+import cs_team from "../images/cs_meet_the_team.png"
+import internal_team from "../images/internal_meet_the_team.png"
 
 const AboutUs = () => (
   <section id="about-us-section">
@@ -57,7 +60,23 @@ const AboutUs = () => (
 const MeetTheTeam = () => (
   <section id="team">
     <h2 className="about-title">Meet The Team</h2>
-    <p>Coming Soon...</p>
+    <div>
+      <h2 className="team-title">Marketing and Communications</h2>
+      <img src={comms_team} alt="Marketing and Communications Team"></img>
+    </div>
+    <div>
+      <h2 className="team-title">Religious Affairs</h2>
+      <img src={ra_team} alt="Religious Affairs Team"></img>
+    </div>
+    <div>
+      <h2 className="team-title">Community Services</h2>
+      <img src={cs_team} alt="Community Services Team"></img>
+    </div>
+    <div>
+      <h2 className="team-title">Internal</h2>
+      <img src={internal_team} alt="Internal Team"></img>
+    </div>
+    
   </section>
 );
 

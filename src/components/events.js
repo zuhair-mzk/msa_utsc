@@ -1,8 +1,10 @@
 import React from "react";
 import "../styles/events.css";
-import circlesInspiration from "../images/circles_inspiration.jpg"
-import circlesofFaith from "../images/circles_of_faith.png"
-import kayaking from "../images/kayaking.png"
+import cw_bonfire from "../images/cw_bonfire.png"
+import cw_event_lineup from "../images/cw_event_lineup.png"
+import cw_auction from "../images/cw_auction.png"
+import cw_general from "../images/cw_general.png"
+import cw_trivia from  "../images/cw_islamic_trivia.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -25,35 +27,35 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
       <div className="event-card">
-        <img src={circlesInspiration} alt="Circles of Inspiration" />
+        <img src={cw_bonfire} alt="Charity Week Bonfire" />
         <div className="event-text">
-          <h3>Circles of Inspiration</h3>
-          <p>Friday, October 11th, 18th</p>
+          <h3>Charity Week Bonfire</h3>
+          <p>Monday, October 21st</p>
           <a
-            href=""
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeE5wNyI9QVhDp1hIo_KKfneJ_unC-W1w1yz4TCru1A3ytUFg/viewform"
             className="register-button"
           >
-            Drop In
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={circlesofFaith} alt="Circles of Faith" />
-        <div className="event-text">
-          <h3>Circles of Faith - Sister's Halaqah</h3>
-          <p>Tuesday, October 22nd</p>
-          <a href="" className="register-button">
-            Drop In
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={kayaking} alt="Kayaking" />
-        <div className="event-text">
-          <h3>Kayaking</h3>
-          <p>Sunday, September 29th</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ3nmQXPxa8O1GsuOBbrOHq8-so-md5OcZ_3TSmxepbSxKEQ/viewform" className="register-button">
             Register Here
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={cw_trivia} alt="Charity Week Islamic Trivia" />
+        <div className="event-text">
+          <h3>Islamic Trivia Night</h3>
+          <p>Friday, October 25th</p>
+          <a href="" className="register-button">
+            Registration Available Soon
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={cw_auction} alt="Charity Week Grand Auction Dinner" />
+        <div className="event-text">
+          <h3>Grand Auction Dinner</h3>
+          <p>Sunday, October 27th</p>
+          <a href="" className="register-button">
+            Registration Available Soon
           </a>
         </div>
       </div>

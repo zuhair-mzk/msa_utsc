@@ -68,6 +68,14 @@
   font-size: 2rem; /* Use rem for responsive font size */
 }
 
+#team .team-title {
+  color: #253e6d;
+  text-decoration: underline #ceb378 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   #about-us-section .section-title {
