@@ -3,6 +3,7 @@ import "../styles/aboutus.css";
 import comms_team from "../images/comms_meet_the_team.png"; // Adjust path as needed
 import ra_team from "../images/ra_meet_the_team.png"
 import cs_team from "../images/cs_meet_the_team.png"
+import fin_team from "../images/finance_meet_the_team.png"
 import internal_team from "../images/internal_meet_the_team.png"
 
 const AboutUs = () => (
@@ -71,6 +72,10 @@ const MeetTheTeam = () => (
     <div>
       <h2 className="team-title">Community Services</h2>
       <img src={cs_team} alt="Community Services Team"></img>
+    </div>
+    <div>
+      <h2 className="team-title">Finance</h2>
+      <img src={fin_team} alt="Finance Team"></img>
     </div>
     <div>
       <h2 className="team-title">Internal</h2>
