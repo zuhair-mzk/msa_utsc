@@ -3,8 +3,7 @@ import "../styles/events.css";
 import cw_bonfire from "../images/cw_bonfire.png"
 import cw_event_lineup from "../images/cw_event_lineup.png"
 import cw_auction from "../images/cw_auction.png"
-import cw_general from "../images/cw_general.png"
-import cw_trivia from  "../images/cw_islamic_trivia.png"
+import lessonsSurahYusuf from "../images/24-25 COLORS AND FONTS (20).png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -40,22 +39,22 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={cw_trivia} alt="Charity Week Islamic Trivia" />
+        <img src={cw_event_lineup} alt="Charity Week Event Line up" />
         <div className="event-text">
-          <h3>Islamic Trivia Night</h3>
-          <p>Friday, October 25th</p>
+          <h3>Upcoming Events!</h3>
+          <p>Monday, October 21st - Sunday October 27th</p>
           <a href="" className="register-button">
             Registration Available Soon
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={cw_auction} alt="Charity Week Grand Auction Dinner" />
+        <img src={lessonsSurahYusuf} alt="Lessons from Surah Yusuf" />
         <div className="event-text">
-          <h3>Grand Auction Dinner</h3>
-          <p>Sunday, October 27th</p>
+          <h3>Lessons from Surah Yusuf</h3>
+          <p>Friday, October 18th</p>
           <a href="" className="register-button">
-            Registration Available Soon
+            Drop In
           </a>
         </div>
       </div>
