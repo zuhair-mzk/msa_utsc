@@ -5,6 +5,8 @@ import ra_team from "../images/ra_meet_the_team.png"
 import cs_team from "../images/cs_meet_the_team.png"
 import fin_team from "../images/finance_meet_the_team.png"
 import internal_team from "../images/internal_meet_the_team.png"
+import external_team from "../images/external_meet_the_team.png"
+import president from "../images/president_meet_the_team.png"
 
 const AboutUs = () => (
   <section id="about-us-section">
@@ -62,6 +64,10 @@ const MeetTheTeam = () => (
   <section id="team">
     <h2 className="about-title">Meet The Team</h2>
     <div>
+      <h2 className="team-title">President & Senior Advisors</h2>
+      <img src={president} alt="President and Senior Advisors"></img>
+    </div>
+    <div>
       <h2 className="team-title">Marketing and Communications</h2>
       <img src={comms_team} alt="Marketing and Communications Team"></img>
     </div>
@@ -80,6 +86,10 @@ const MeetTheTeam = () => (
     <div>
       <h2 className="team-title">Internal</h2>
       <img src={internal_team} alt="Internal Team"></img>
+    </div>
+    <div>
+      <h2 className="team-title">External</h2>
+      <img src={external_team} alt="External Team"></img>
     </div>
     
   </section>

@@ -44,17 +44,17 @@ const EventsSection = () => (
           <h3>Upcoming Events!</h3>
           <p>Monday, October 21st - Sunday October 27th</p>
           <a href="" className="register-button">
-            Registration Available Soon
+            Register Here
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={lessonsSurahYusuf} alt="Lessons from Surah Yusuf" />
+        <img src={cw_auction} alt="Charity Week Auction Dinner" />
         <div className="event-text">
-          <h3>Lessons from Surah Yusuf</h3>
-          <p>Friday, October 18th</p>
+          <h3>Charity Week Auction Dinner</h3>
+          <p>Sunday, October 27th</p>
           <a href="" className="register-button">
-            Drop In
+            Register Here
           </a>
         </div>
       </div>
