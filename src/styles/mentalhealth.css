@@ -68,21 +68,34 @@
   .on-campus-resource {
     border: 1px solid #ccc;
     width: 600px;
+    background-color: white;
     text-align: center;
     border-radius: 7px;
     align-items: center;
     min-height: 200px;
     max-height: fit-content;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .on-campus-resource li {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  .external-resource li {
+    font-size: 1.2rem;
+    margin-top: 20px;
   }
 
   .external-resource {
     border: 1px solid #ccc;
     width: 600px;
+    background-color: white;
     border-radius: 7px;
     text-align: center;
     align-items: center;
     min-height: 200px;
     max-height: fit-content;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
 
   /* SLIDE DECK */
@@ -95,7 +108,7 @@
   .slideshow-container {
     max-width: 90%;
     height: 400px;
-    width: 600px;
+    width: 700px;
     border-radius: 10px;
     border: 1px solid black;
   }
@@ -166,11 +179,27 @@
   transition: background-color 0.6s ease;
 }
 
-  .feedback-button {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-decoration: none;
-  }
+/*Trusted Organizations*/
+
+.organizations-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+
+.org {
+  border: 3px solid #ceb378;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.feedback-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {

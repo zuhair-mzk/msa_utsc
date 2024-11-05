@@ -10,19 +10,19 @@ const MentalResource = () => (
       <h2 className="mental-health-title">Mental Health</h2>
 
       <h3>Emergency Contacts</h3>
-        <ul className="mental-health-contacts">
-          <li><span>911</span></li>
-          <li>Campus Safety: <span>416-978-2222</span></li>
-        </ul>
+      <ul className="mental-health-contacts">
+        <li>Good2Talk: <span>1 866 925 5454</span></li>
+        <li>NISA HELPLINE: <span>1-888-315-6472</span></li>
+      </ul>
 
       <h3>Resources</h3>
       <div className="resource-container">
             <div className="on-campus-resource">
               <h3>On Campus</h3>
                 <ul>
-                  <li>On Campus Resource 1</li>
-                  <li>On Campus Resource 2</li>
-                  <li>On Campus Resource 3</li>
+                  <li>Health and Wellness - (416) 287-7065</li>
+                  <li>Safety Abroad - 1 (215) 942 8478</li>
+                  <li>Campus Safety (Emegency) - (416) 287-7065</li>
                 </ul>
             </div>
             <div className="external-resource">
@@ -106,7 +106,12 @@ const MentalHealthTips = () => {
 
 
       <h3>Trusted Organizations</h3>
-      <div>
+      <div className="organizations-container">
+        <div className="org"></div>
+        <div className="org"></div>
+        <div className="org"></div>
+        <div className="org"></div>
+        <div className="org"></div>
         
       </div>
       <a href="" className="feedback-button">

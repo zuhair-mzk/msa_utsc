@@ -1,0 +1,19 @@
+#advocacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+  
+  .advocacy-content {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* color: #170827; */
+  }

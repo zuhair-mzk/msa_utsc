@@ -2,15 +2,46 @@
 import React from "react";
 import "../styles/comingSoon.css";
 
-const Advocacy = () => (
-  <section id="coming-soon">
-    <div className="coming-soon-content">
-      <h2 className="coming-soon-title">Advocacy</h2>
-      <p className="coming-soon-description">
-        This page is coming soon. Stay tuned!
-      </p>
+const AdvocacyInfo = () => (
+  <section id="advocacy">
+    <div className="advocacy-content">
+      <h2 className="title1">Advocacy</h2>
+
+      <div className="advocacy-block">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div className="advocacy-block">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div className="advocacy-block">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div className="advocacy-block">
+        <h3></h3>
+        <p></p>
+      </div>
     </div>
   </section>
 );
+
+const AdvocacySlide = () => (
+  <section id="advocacy">
+    <div className="advocacy-content">
+      <h2 className="title2">Our Initiatives</h2>
+    </div>
+  </section>
+
+
+);
+
+const Advocacy = () => {
+  <div>
+    <AdvocacyInfo/>
+    <AdvocacySlide/>
+  </div>
+}
 
 export default Advocacy;
