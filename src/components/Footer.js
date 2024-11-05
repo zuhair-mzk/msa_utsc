@@ -26,10 +26,11 @@ const Footer = () => (
       <div className="footer-center">
         <h3>Charity Week Sponsors</h3>
         <div className="sponsors">
-          <img src={sponsor1} alt="Sponsor 1" />
+          {/* <img src={sponsor1} alt="Sponsor 1" />
           <img src={sponsor2} alt="Sponsor 2" />
           <img src={sponsor3} alt="Sponsor 3" />
-          <img src={sponsor4} alt="Sponsor 4" />
+          <img src={sponsor4} alt="Sponsor 4" /> */}
+          <p>Coming Soon...</p>
         </div>
       </div>
       <div className="footer-right">
