@@ -1,23 +1,23 @@
 // src/components/Advocacy.js
-import React from "react";
-import "../styles/comingSoon.css";
+import React, { useEffect, useState } from "react";
+import "../styles/advocacy.css";
 
 const AdvocacyInfo = () => (
   <section id="advocacy">
     <div className="advocacy-content">
-      <h2 className="title1">Advocacy</h2>
+      <h2 className="title">Advocacy</h2>
 
       <div className="advocacy-block">
-        <h3></h3>
-        <p></p>
+        <h3>What is Advocacy?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
       </div>
       <div className="advocacy-block">
-        <h3></h3>
-        <p></p>
+        <h3>Why is it Important to the MSA?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
       </div>
       <div className="advocacy-block">
-        <h3></h3>
-        <p></p>
+        <h3>How does the MSA Advocate for Muslim Students?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
       </div>
       <div className="advocacy-block">
         <h3></h3>
@@ -27,21 +27,80 @@ const AdvocacyInfo = () => (
   </section>
 );
 
-const AdvocacySlide = () => (
+const AdvocacySlide = () => {
+  const [slideIndex, setSlideIndex] = useState(1);
+
+  useEffect(() => {
+    showSlides(slideIndex);
+    const interval = setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slideIndex])
+
+  const plusSlides = (n) => {
+    showSlides(slideIndex + n);
+  };
+  const currentSlide = (n) => {
+    showSlides(n);
+  };
+
+  const showSlides = (n) => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      setSlideIndex(1);
+    } else if (n < 1) {
+      setSlideIndex(slides.length);
+    } else {
+      setSlideIndex(n);
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  };
+  return(
   <section id="advocacy">
     <div className="advocacy-content">
       <h2 className="title2">Our Initiatives</h2>
+
+      <div className="slideshow-container">
+        <div className="mySlides" id="slide1">slide 1</div>
+        <div className="mySlides" id="slide2">slide 2</div>
+        <div className="mySlides" id="slide3">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+      <div className="dot-container">
+        <span className="dot" onClick={() => currentSlide(1)}></span>
+        <span className="dot" onClick={() => currentSlide(2)}></span>
+        <span className="dot" onClick={() => currentSlide(3)}></span>
+      </div>
+
+      <a href="" className="feedback-button">
+          Advocacy Feedback
+      </a>
     </div>
   </section>
+  )
+};
 
-
-);
-
-const Advocacy = () => {
+const Advocacy = () => (
   <div>
-    <AdvocacyInfo/>
-    <AdvocacySlide/>
+    <AdvocacyInfo />
+    <AdvocacySlide />
   </div>
-}
+);
 
 export default Advocacy;

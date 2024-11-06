@@ -117,13 +117,14 @@
   .mySlides {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
   }
 
   #img1 {
     background-color: red;
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -131,9 +132,8 @@
   }
   #img2 {
     background-color: rgb(206, 144, 144);
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -141,9 +141,8 @@
   }
   #img3 {
     background-color: blue;
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -151,9 +150,8 @@
   }
   #img4 {
     background-color: rgb(129, 137, 216);
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -161,9 +159,8 @@
   }
   #img5 {
     background-color: green;
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -171,9 +168,8 @@
   }
   #img6 {
     background-color: rgb(159, 246, 207);
-    padding: 80px;
-    text-align: center;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
@@ -281,6 +277,10 @@
   margin-top: 30px;
   margin-bottom: 30px;
   text-decoration: none;
+  border-radius: 16px;
+  border: 1px solid rgb(100, 100, 100);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: 700;
 }
 
 /* Responsive adjustments */
