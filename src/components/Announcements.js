@@ -17,7 +17,7 @@ const Announcements = () => (
       </thead>
       <tbody>
       <tr>
-          <td>04:00pm, Wed Nov 6th</td>
+          <td>12:00pm, Wed Nov 6th</td>
           <td>Charity Week Grand Bazaar</td>
         </tr>
         <tr>
