@@ -109,24 +109,75 @@
     max-width: 90%;
     height: 400px;
     width: 700px;
-    border-radius: 10px;
-    border: 1px solid black;
+    min-width: 700px;
+    border-radius: 16px;
+    border: 5px solid #ceb378;
   }
 
   .mySlides {
+    padding: 0;
+    margin: 0;
+  }
+
+  #img1 {
+    background-color: red;
     padding: 80px;
     text-align: center;
     height: 240px;
     border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
   }
-  #slide1 {
-    background-color: red;
+  #img2 {
+    background-color: rgb(206, 144, 144);
+    padding: 80px;
+    text-align: center;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
   }
-  #slide2 {
-    background-color: green;
-  }
-  #slide3 {
+  #img3 {
     background-color: blue;
+    padding: 80px;
+    text-align: center;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  #img4 {
+    background-color: rgb(129, 137, 216);
+    padding: 80px;
+    text-align: center;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  #img5 {
+    background-color: green;
+    padding: 80px;
+    text-align: center;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  #img6 {
+    background-color: rgb(159, 246, 207);
+    padding: 80px;
+    text-align: center;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
   }
 
   .prev,
@@ -178,6 +229,13 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.language-btn {
+  margin-top: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 /*Trusted Organizations*/
 
@@ -188,11 +246,35 @@
 }
 
 
-.org {
+#org {
   border: 3px solid #ceb378;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+
+.organizations-container div p {
+  font-size: 0.7rem;
+}
+.organizations-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#org img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.org1 {
+  background-color: rgb(7, 68, 58);
+}.org3 {
+  background-color: white;
+}
+.org5 {
+  background-color: rgb(57, 143, 136);
 }
 
 .feedback-button {

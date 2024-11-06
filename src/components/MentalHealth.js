@@ -2,6 +2,11 @@
 import React, { useEffect, useState } from "react";
 
 import "../styles/mentalhealth.css";
+import canadianMuslimCounseling from "../images/canadian_muslim_counselling.png"
+import naseehaMentalHealth from "../images/naseeha_mental_health.png"
+import khalilCentre from "../images/khalil_centre.png"
+import nisaHelpline from "../images/nisa_helpline.png"
+import cedarwayTherapy from "../images/cedarway_therapy.png"
 
   
 const MentalResource = () => (
@@ -40,6 +45,7 @@ const MentalResource = () => (
 
 const MentalHealthTips = () => {
   const [slideIndex, setSlideIndex] = useState(1);
+  const [language, setLang] = useState("Arabic");
 
   useEffect(() => {
     showSlides(slideIndex);
@@ -48,6 +54,10 @@ const MentalHealthTips = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, [slideIndex]);
+
+  useEffect(() => {
+    showSlides(slideIndex);
+  }, [language]);
 
   const plusSlides = (n) => {
     showSlides(slideIndex + n);
@@ -73,8 +83,28 @@ const MentalHealthTips = () => {
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
+    let inner_slides = document.getElementsByClassName(`slide${slideIndex-1}`)
     slides[slideIndex - 1].style.display = "block";
+    if (language == "English"){
+      inner_slides[1].style.display = "block";
+      inner_slides[0].style.display = "none";
+      // slides[slideIndex - 1].style.display = "block";
+    } else {
+      inner_slides[0].style.display = "block";
+      inner_slides[1].style.display = "none";
+      // slides[slideIndex - 1].style.display = "block";
+    }
     dots[slideIndex - 1].className += " active";
+    
+  };
+
+  const toggleLanguage = () => {
+    console.log(`Current Language is: ${language}`)
+    if (language == "English"){
+      setLang("Arabic")
+    } else {
+      setLang("English")
+    }
   };
   return(
   <section id="mental-health" className="mental-health-section">
@@ -82,15 +112,19 @@ const MentalHealthTips = () => {
       <h2 className="selfcare-title">Self Care Tips</h2>
       
       <div className="slideshow-container">
-        <div className="mySlides" id="slide1">
-          
+        <div className="mySlides">
+            <div className="slide0" id="img1">Dua 1 in Arabic</div>
+            <div className="slide0" id="img2">Dua 1 in English</div>
         </div>
-        <div className="mySlides" id="slide2">
-          
+        <div className="mySlides">
+            <div className="slide1" id="img3">Dua 2 in Arabic</div>
+            <div className="slide1"id="img4">Dua 2 in English</div>
         </div>
-        <div className="mySlides" id="slide3">
-          
+        <div className="mySlides">
+            <div className="slide2" id="img5">Dua 3 in Arabic</div>
+            <div className="slide2" id="img6">Dua 3 in English</div>
         </div>
+        
         <a className="prev" onClick={() => plusSlides(-1)}>
           ❮
         </a>
@@ -103,15 +137,31 @@ const MentalHealthTips = () => {
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
       </div>
+      <button onClick={toggleLanguage} className="language-btn">{language}</button>
 
 
       <h3>Trusted Organizations</h3>
       <div className="organizations-container">
-        <div className="org"></div>
-        <div className="org"></div>
-        <div className="org"></div>
-        <div className="org"></div>
-        <div className="org"></div>
+        <div>
+          <div id="org" className="org1"><img src={canadianMuslimCounseling} alt="Canadian Muslim Counselling"></img></div>
+          <p>Canadian<br/> Muslim Counselling</p>
+        </div>
+        <div>
+          <div id="org"><img src={naseehaMentalHealth} alt="Naseeha Mental Health"></img></div>
+          <p>Naseeha <br/>Mental Health</p>
+        </div>
+        <div>
+          <div id="org" className="org3"><img src={khalilCentre} alt="Khalil Centre"></img></div>
+          <p>Khalil <br/>Centre</p>
+        </div>
+        <div>
+          <div id="org"><img src={nisaHelpline} alt="Nisa Help Line"></img></div>
+          <p>Nisa <br/>Helpline</p>
+        </div>
+        <div>
+          <div id="org" className="org5"><img src={cedarwayTherapy} alt="Cedarway Therapy"></img></div>
+          <p>Cedarway <br/>Therapy</p>
+        </div>
         
       </div>
       <a href="" className="feedback-button">
