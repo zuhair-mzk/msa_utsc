@@ -170,14 +170,14 @@ const Resources = () => {
               <tr>
                 <td>Jumu'ah 1</td>
                 <td>HW 305</td>
-                <td>1:30 PM</td>
-                <td>1:50 PM</td>
+                <td>12:30 PM</td>
+                <td>1:00 PM</td>
               </tr>
               <tr>
                 <td>Jumu'ah 2</td>
                 <td>HW 305</td>
-                <td>3:00 PM</td>
-                <td>3:10 PM</td>
+                <td>1:40 PM</td>
+                <td>2:10 PM</td>
               </tr>
             </tbody>
           </table>
