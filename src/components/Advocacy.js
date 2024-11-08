@@ -24,6 +24,7 @@ const AdvocacyInfo = () => (
 //turn into slide that has selectors for each past year
 const AdvocacySlide = () => {
   const [slideIndex, setSlideIndex] = useState(1);
+  const [yearIndex, setYearIndex] = useState(2024)
 
   useEffect(() => {
     showSlides(slideIndex);
@@ -59,11 +60,9 @@ const AdvocacySlide = () => {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   };
-  return(
-  <section id="advocacy">
-    <div className="advocacy-content">
-      <h2 className="title2">Our Initiatives</h2>
 
+  const slideData = {
+    2024: (
       <div className="slideshow-container">
         <div className="mySlides" id="slide1">slide 1</div>
         <div className="mySlides" id="slide2">slide 2</div>
@@ -77,6 +76,42 @@ const AdvocacySlide = () => {
           ❯
         </a>
       </div>
+    ),
+    2023: (
+      <div className="slideshow-container">
+        <div className="mySlides" id="slide1">slide 1</div>
+        <div className="mySlides" id="slide2">slide 2</div>
+        <div className="mySlides" id="slide3">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+    )
+  }
+  return(
+  <section id="advocacy">
+    <div className="advocacy-content">
+      <h2 className="title2">Our Initiatives</h2>
+
+      {/* <div className="slideshow-container">
+        <div className="mySlides" id="slide1">slide 1</div>
+        <div className="mySlides" id="slide2">slide 2</div>
+        <div className="mySlides" id="slide3">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div> */}
+      {slideData[yearIndex]}
       <div className="dot-container">
         <span className="dot" onClick={() => currentSlide(1)}></span>
         <span className="dot" onClick={() => currentSlide(2)}></span>
