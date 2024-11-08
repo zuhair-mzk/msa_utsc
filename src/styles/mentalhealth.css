@@ -8,14 +8,17 @@
     width: 100%;
     background-color: #e6e6e6;
   }
+  .emergency-contacts {
+    margin-bottom: 10px;
+  }
   
   .mental-health-content {
     text-align: center;
-    border: 1px solid #ccc;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     /* color: #170827; */
   }
   
@@ -31,7 +34,10 @@
     cursor: pointer;
     margin-top: 0;
     margin-right: 45px;
+    color: #333;
   }
+
+
   .mental-health-contacts span:hover {
     text-decoration: underline;
   }
@@ -42,14 +48,13 @@
   }
 
   .mental-health-section li {
-    color: #555;
     list-style: none;
   }
 
   .resource-container {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 10px;
     place-items: center;
     margin-bottom: 30px;
@@ -60,14 +65,13 @@
   }
 
   .resource-container li {
-    font-size: 22px;
     margin-bottom: 15px;
     cursor: pointer;
   }
 
   .on-campus-resource {
     border: 1px solid #ccc;
-    width: 600px;
+    width: 90%;
     background-color: white;
     text-align: center;
     border-radius: 7px;
@@ -88,7 +92,7 @@
 
   .external-resource {
     border: 1px solid #ccc;
-    width: 600px;
+    width: 90%;
     background-color: white;
     border-radius: 7px;
     text-align: center;
@@ -236,21 +240,34 @@
 /*Trusted Organizations*/
 
 .organizations-container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
+  display: grid;
+  width: 600px;
+  min-width: 40%;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  place-items: center;
+  gap: 2rem;
+  margin-bottom: 10px;
+  padding: 0px 25px;
 }
 
 
 #org {
   border: 3px solid #ceb378;
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
+.organizations-container div h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
 .organizations-container div p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  width: 180px;
+  text-align: center;
 }
 .organizations-container div {
   display: flex;
@@ -261,26 +278,16 @@
 
 #org img {
   border-radius: 50%;
-  width: 70px;
+  width: 90px;
 }
 
 .org1 {
   background-color: rgb(7, 68, 58);
-}.org3 {
+}.org6 {
   background-color: white;
 }
 .org5 {
   background-color: rgb(57, 143, 136);
-}
-
-.feedback-button {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-decoration: none;
-  border-radius: 16px;
-  border: 1px solid rgb(100, 100, 100);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-weight: 700;
 }
 
 /* Responsive adjustments */

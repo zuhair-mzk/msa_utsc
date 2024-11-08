@@ -87,10 +87,6 @@ const AdvocacySlide = () => {
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
       </div>
-
-      <a href="" className="feedback-button">
-          Advocacy Feedback
-      </a>
     </div>
   </section>
   )

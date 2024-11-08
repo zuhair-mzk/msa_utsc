@@ -7,6 +7,7 @@ import naseehaMentalHealth from "../images/naseeha_mental_health.png"
 import khalilCentre from "../images/khalil_centre.png"
 import nisaHelpline from "../images/nisa_helpline.png"
 import cedarwayTherapy from "../images/cedarway_therapy.png"
+import muslimChaplaincy from "../images/muslim_chaplaincy.png"
 
   
 const MentalResource = () => (
@@ -14,10 +15,11 @@ const MentalResource = () => (
     <div className="mental-health-content">
       <h2 className="mental-health-title">Mental Health</h2>
 
-      <h3>Emergency Contacts</h3>
+      <h3 className="emergency-contacts">Emergency Contacts</h3>
       <ul className="mental-health-contacts">
         <li>Good2Talk: <span>1 866 925 5454</span></li>
-        <li>NISA HELPLINE: <span>1-888-315-6472</span></li>
+        <li>NISA HELPLINE: <span>1 888-315-6472</span></li>
+        <li>NASEEHA HELPLINE: <span>1 866-627-3342</span></li>
       </ul>
 
       <h3>Resources</h3>
@@ -33,9 +35,9 @@ const MentalResource = () => (
             <div className="external-resource">
               <h3>External</h3>
               <ul>
-                <li>External Resource 1</li>
-                <li>External Resource 2</li>
-                <li>External Resource 3</li>
+                  <li>Health and Wellness - (416) 287-7065</li>
+                  <li>Safety Abroad - 1 (215) 942 8478</li>
+                  <li>Campus Safety (Emegency) - (416) 287-7065</li>
               </ul>
             </div>
       </div>
@@ -109,7 +111,7 @@ const MentalHealthTips = () => {
   return(
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
-      <h2 className="selfcare-title">Self Care Tips</h2>
+      <h2 className="selfcare-title">Mental Health Duas</h2>
       
       <div className="slideshow-container">
         <div className="mySlides">
@@ -140,33 +142,47 @@ const MentalHealthTips = () => {
       <button onClick={toggleLanguage} className="language-btn">{language}</button>
 
 
-      <h3>Trusted Organizations</h3>
+      <h3>Community Organizations</h3>
       <div className="organizations-container">
         <div>
           <div id="org" className="org1"><img src={canadianMuslimCounseling} alt="Canadian Muslim Counselling"></img></div>
-          <p>Canadian<br/> Muslim Counselling</p>
+          <h4>Canadian<br/> Muslim Counselling</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+        </div>
+        <div>
+          <div id="org" className="org2"><img src={muslimChaplaincy} alt="The Muslim Chaplaincy of Toronto"></img></div>
+          <h4>The Muslim <br/>Chaplaincy</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div>
         <div>
           <div id="org"><img src={naseehaMentalHealth} alt="Naseeha Mental Health"></img></div>
-          <p>Naseeha <br/>Mental Health</p>
-        </div>
-        <div>
-          <div id="org" className="org3"><img src={khalilCentre} alt="Khalil Centre"></img></div>
-          <p>Khalil <br/>Centre</p>
+          <h4>Naseeha <br/>Mental Health</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div>
         <div>
           <div id="org"><img src={nisaHelpline} alt="Nisa Help Line"></img></div>
-          <p>Nisa <br/>Helpline</p>
+          <h4>Nisa Helpline</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div>
         <div>
           <div id="org" className="org5"><img src={cedarwayTherapy} alt="Cedarway Therapy"></img></div>
-          <p>Cedarway <br/>Therapy</p>
+          <h4>Cedarway Therapy</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div>
-        
+        <div>
+          <div id="org" className="org6"><img src={khalilCentre} alt="Khalil Centre"></img></div>
+          <h4>Khalil Centre</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
+             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+        </div> 
       </div>
-      <a href="" className="feedback-button">
-          Mental Health Feedback
-      </a>
+
+      
     </div>
   </section>
 )};
