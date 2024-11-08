@@ -10,23 +10,18 @@ const AdvocacyInfo = () => (
       <div className="advocacy-block">
         <h3>What is Advocacy?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
-      </div>
-      <div className="advocacy-block">
+      
         <h3>Why is it Important to the MSA?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
-      </div>
-      <div className="advocacy-block">
+    
         <h3>How does the MSA Advocate for Muslim Students?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tincidunt sapien. Vestibulum nulla nibh, dictum at metus in, scelerisque volutpat purus. Duis non orci nisl. Nullam vitae enim nulla. Sed feugiat neque eu accumsan pulvinar. Aenean ullamcorper lectus ut dui placerat sodales. Pellentesque eget est nec purus maximus faucibus.</p>
-      </div>
-      <div className="advocacy-block">
-        <h3></h3>
-        <p></p>
       </div>
     </div>
   </section>
 );
 
+//turn into slide that has selectors for each past year
 const AdvocacySlide = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
