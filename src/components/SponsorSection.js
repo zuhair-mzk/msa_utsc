@@ -1,40 +1,94 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/sponsor_section.css";
 
 const SponsorSection = () => {
     const [sponsorYear, setSponsorYear] = useState(2024);
+    const [sponsorYearButton, setSponsorYearButton] = useState(2024)
 
-    useEffect(() => {
-        switchSponsorTab();
-        const interval = setInterval(() => {
-          plusIndex();
-        }, 5000);
-        return () => clearInterval(interval);
-      }, [sponsorYear]);
+    const sponsorData = {
+        2024: (
+            <div className="sponsor-year" id="year-2024">
+                <div className="sponsor sponsor-icon-2024">
 
-    const plusIndex = () => {
-        if (sponsorYear > 2021){
-            setSponsorYear(c => c + 1)
-            switchSponsorTab()
-        } else {
-            setSponsorYear(2024)
-            switchSponsorTab()
-        }
-    }
-    const switchSponsorTab = () => {
-        const sponsors = document.getElementsByClassName('sponsor-year')
-        for (let i=0; i < sponsors.length; i++){
-            if (sponsors[i].id == `year-${sponsorYear}`){ //we are on the current tab
-                sponsors[i].style.display = "block"
-            } else {
-                sponsors[i].style.display = "none"
-            }
-        }
-    }
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+                <div className="sponsor sponsor-icon-2024">
+
+                </div>
+            </div>
+        ),
+        2023: (
+            <div className="sponsor-year" id="year-2023">
+                <div className="sponsor sponsor-icon-2023">
+
+                </div>
+                <div className="sponsor sponsor-icon-2023">
+
+                </div>
+                <div className="sponsor sponsor-icon-2023">
+
+                </div>
+                <div className="sponsor sponsor-icon-2023">
+
+                </div>
+
+            </div>
+        ),
+        2022: (
+            <div className="sponsor-year" id="year-2022">
+                <div className="sponsor sponsor-icon-2022">
+
+                </div>
+                <div className="sponsor sponsor-icon-2022">
+
+                </div>
+                <div className="sponsor sponsor-icon-2022">
+
+                </div>
+                <div className="sponsor sponsor-icon-2022">
+
+                </div>
+            </div>
+        ),
+        2021: (
+            <div className="sponsor-year" id="year-2021">
+                <div className="sponsor sponsor-icon-2021">
+
+                </div>
+                <div className="sponsor sponsor-icon-2021">
+
+                </div>
+                <div className="sponsor sponsor-icon-2021">
+
+                </div>
+                <div className="sponsor sponsor-icon-2021">
+
+                </div>
+
+            </div>
+        )    
+    };
 
     const setYear = (year) => {
         setSponsorYear(year)
-        switchSponsorTab()
+        setSponsorYearButton(year)
     }
 
     return(
@@ -43,93 +97,18 @@ const SponsorSection = () => {
 
             <div className="container">
                 <div className="sponsor-btns">
-                    <button onClick={() => setYear(2024)} className="sponsor-year-btn">2024</button>
-                    <button onClick={() => setYear(2023)} className="sponsor-year-btn">2023</button>
-                    <button onClick={() => setYear(2022)} className="sponsor-year-btn">2022</button>
-                    <button onClick={() => setYear(2021)} className="sponsor-year-btn">2021</button>
+                    <button onClick={() => setYear(2024)} className={`sponsor-year-btn ${sponsorYearButton == 2024 ? 'selected-btn': ''}`} id="btn-2024">2024</button>
+                    <button onClick={() => setYear(2023)} className={`sponsor-year-btn ${sponsorYearButton == 2023 ? 'selected-btn': ''}`} id="btn-2023">2023</button>
+                    <button onClick={() => setYear(2022)} className={`sponsor-year-btn ${sponsorYearButton == 2022 ? 'selected-btn': ''}`} id="btn-2022">2022</button>
+                    <button onClick={() => setYear(2021)} className={`sponsor-year-btn ${sponsorYearButton == 2021 ? 'selected-btn': ''}`} id="btn-2021">2021</button>
                 </div>
                 <div className="sponsor-container">
-                    <div className="sponsor-year" id="year-2024">
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                    </div>
-                    <div className="sponsor-year" id="year-2023">
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2024">
-
-                        </div>
-
-                    </div>
-                    <div className="sponsor-year" id="year-2022">
-                        <div className="sponsor sponsor-icon-2022">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2022">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2022">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2022">
-
-                        </div>
-                    </div>
-                    <div className="sponsor-year" id="year-2021">
-                        <div className="sponsor sponsor-icon-2021">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2021">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2021">
-
-                        </div>
-                        <div className="sponsor sponsor-icon-2021">
-
-                        </div>
-
-                    </div>
-
+                    {sponsorData[sponsorYear]}
                 </div>
             </div>
         </section>
 
         );
-
 };
-
-
-
-
 
 export default SponsorSection;

@@ -22,11 +22,10 @@
     height: 50px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid #ccc;
 }
 
 .sponsor-year-btn {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #170827;
     font-weight: bold;
     border: none;
@@ -34,14 +33,25 @@
     cursor: pointer;
 }
 
+.selected-btn {
+    text-decoration: underline #ceb378 5px;
+}
 .sponsor-container {
-    width: 50%;
+    width: 80%;
     min-width: 400px;
     height: 180px;
-    border: 1px solid #ccc;
     overflow-x: auto;
     scrollbar-width: none;
     display: flex;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+    border-radius: 30px;
+    justify-content: space-evenly;
 }
 
 .title {
@@ -50,19 +60,6 @@
     margin-bottom: 20px;
     font-size: 2rem; /* Use rem for responsive font size */
   }
-
-#year-2024 {
-
-}
-#year-2023 {
-    display: none;
-}
-#year-2022 {
-    display: none;
-}
-#year-2021 {
-    display: none;
-}
 
 .sponsor-icon-2024 {
     background-color: red;
