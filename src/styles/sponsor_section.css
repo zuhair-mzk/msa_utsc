@@ -1,0 +1,43 @@
+#sponsor-section {
+  background-color: #fafcfd;
+  padding: 50px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.sponsor-container {
+    width: 90%;
+    height: 180px;
+    border: 1px solid #ccc;
+}
+
+.title {
+    color: #170827;
+    text-decoration: underline #ceb378 5px;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Use rem for responsive font size */
+  }
+
+#year-2024 {
+
+}
+#year-2023 {
+    display: none;
+}
+#year-2022 {
+    display: none;
+}
+#year-2021 {
+    display: none;
+}
+
+.sponsor-year {
+    display: flex;
+}
+
+.sponsor {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
