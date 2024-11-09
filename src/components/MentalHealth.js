@@ -142,7 +142,8 @@ const MentalHealthTips = () => {
       <button onClick={toggleLanguage} className="language-btn">{language}</button>
 
 
-      <h3>Community Organizations</h3>
+      <h3 className="community_orgs_header">Community Organizations</h3>
+      <h4>The MSA is not affiliated with any of these organizations</h4>
       <div className="organizations-container">
         <div>
           <div id="org" className="org1"><img src={canadianMuslimCounseling} alt="Canadian Muslim Counselling"></img></div>

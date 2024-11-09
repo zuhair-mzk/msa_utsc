@@ -64,9 +64,9 @@ const AdvocacySlide = () => {
   const slideData = {
     2024: (
       <div className="slideshow-container">
-        <div className="mySlides" id="slide1">slide 1</div>
-        <div className="mySlides" id="slide2">slide 2</div>
-        <div className="mySlides" id="slide3">slide 3</div>
+        <div className="mySlides" id="slide1-2024">slide 1</div>
+        <div className="mySlides" id="slide2-2024">slide 2</div>
+        <div className="mySlides" id="slide3-2024">slide 3</div>
       
 
         <a className="prev" onClick={() => plusSlides(-1)}>
@@ -79,9 +79,9 @@ const AdvocacySlide = () => {
     ),
     2023: (
       <div className="slideshow-container">
-        <div className="mySlides" id="slide1">slide 1</div>
-        <div className="mySlides" id="slide2">slide 2</div>
-        <div className="mySlides" id="slide3">slide 3</div>
+        <div className="mySlides" id="slide1-2023">slide 1</div>
+        <div className="mySlides" id="slide2-2023">slide 2</div>
+        <div className="mySlides" id="slide3-2023">slide 3</div>
       
 
         <a className="prev" onClick={() => plusSlides(-1)}>
@@ -93,29 +93,25 @@ const AdvocacySlide = () => {
       </div>
     )
   }
+
+  const setYear = (year) => {
+    setYearIndex(year)
+  }
   return(
   <section id="advocacy">
     <div className="advocacy-content">
       <h2 className="title2">Our Initiatives</h2>
-
-      {/* <div className="slideshow-container">
-        <div className="mySlides" id="slide1">slide 1</div>
-        <div className="mySlides" id="slide2">slide 2</div>
-        <div className="mySlides" id="slide3">slide 3</div>
-      
-
-        <a className="prev" onClick={() => plusSlides(-1)}>
-          ❮
-        </a>
-        <a className="next" onClick={() => plusSlides(1)}>
-          ❯
-        </a>
-      </div> */}
-      {slideData[yearIndex]}
-      <div className="dot-container">
-        <span className="dot" onClick={() => currentSlide(1)}></span>
-        <span className="dot" onClick={() => currentSlide(2)}></span>
-        <span className="dot" onClick={() => currentSlide(3)}></span>
+      <div className="container">
+        <div className="advocacy-btn-container">
+          <button className={`advocacy-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2024</button>
+          <button className={`advocacy-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2023</button>
+        </div>
+        {slideData[yearIndex]}
+        <div className="dot-container">
+          <span className="dot" onClick={() => currentSlide(1)}></span>
+          <span className="dot" onClick={() => currentSlide(2)}></span>
+          <span className="dot" onClick={() => currentSlide(3)}></span>
+        </div>
       </div>
     </div>
   </section>
