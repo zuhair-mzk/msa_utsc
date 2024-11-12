@@ -8,7 +8,7 @@ import "../styles/programs.css";
 import sisterSeerahImage from "../images/sister_seerah.png"
 import brothersHalaqahImage from "../images/brothers_halaqah.png"
 import circlesFaithImage from "../images/circles_of_faith.png"
-
+import surahYusuf from "../images/surah_yusuf.png"
 import soulFood from "../images/soul_food.png"
 
 const Programs = () => (
@@ -65,13 +65,12 @@ const Programs = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={soulFood} alt="Soul Food" />
+        <img src={surahYusuf} alt="Lessons from Surah Yusuf" />
         <div className="event-text">
-          <h3>Soul Food</h3>
+          <h3>Lessons from Surah Yusuf</h3>
           <p>
-          Join us for Soul Food, a weekly gathering where students come together to nourish their hearts and minds.
-           Imam shares uplifting reminders, connecting Islamic teachings to everyday life.
-           Don't miss this chance to deepen your understanding and bond with a supportive community!
+          Brothers! Join us on Friday for an evening of discussion and learning from the teachings of Surah Yusuf,
+           with Imam Humza Asad. Every Friday at 5:00 PM
           </p>
           <a
             href=""

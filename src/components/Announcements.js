@@ -16,10 +16,6 @@ const Announcements = () => (
         </tr>
       </thead>
       <tbody>
-      <tr>
-          <td>12:00pm, Wed Nov 6th</td>
-          <td>Charity Week Grand Bazaar</td>
-        </tr>
         <tr>
           <td>06:00pm, Wednesdays</td>
           <td>Soulfoud</td>
@@ -31,6 +27,10 @@ const Announcements = () => (
         <tr>
           <td>03:30pm, Tue Nov 12th</td>
           <td>Circles of Faith</td>
+        </tr>
+        <tr>
+          <td>12:00pm, Sat Nov 23rd</td>
+          <td>Charity Week International Dinner</td>
         </tr>
       </tbody>
     </table>
