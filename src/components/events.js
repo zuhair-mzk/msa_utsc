@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/events.css";
 import cw_bonfire from "../images/cw_bonfire.png"
-import cw_event_lineup from "../images/cw_event_lineup.png"
-import cw_auction from "../images/cw_auction.png"
+import general_meeting from "../images/general_meeting.png"
+import dawah_training from "../images/msa_dawah.png"
 import lessonsSurahYusuf from "../images/24-25 COLORS AND FONTS (20).png"
 
 import { HashLink as Link } from "react-router-hash-link";
@@ -26,12 +26,12 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
       <div className="event-card">
-        <img src={cw_bonfire} alt="Charity Week Bonfire" />
+        <img src={dawah_training} alt="MSA Dawah Training" />
         <div className="event-text">
-          <h3>Charity Week Bonfire</h3>
-          <p>Monday, October 21st</p>
+          <h3>Dawah Training</h3>
+          <p>Saturday, November 16th</p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeE5wNyI9QVhDp1hIo_KKfneJ_unC-W1w1yz4TCru1A3ytUFg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdpYf_385h2ikz1dBsfqIxoUwQOhWez6Vxl55e2FRRKHED-HA/viewform"
             className="register-button"
           >
             Register Here
@@ -39,12 +39,12 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={cw_event_lineup} alt="Charity Week Event Line up" />
+        <img src={general_meeting} alt="MSA General Meeting" />
         <div className="event-text">
-          <h3>Upcoming Events!</h3>
-          <p>Monday, October 21st - Sunday October 27th</p>
+          <h3>MSA General Meeting</h3>
+          <p>Tuesday, November 19th</p>
           <a href="" className="register-button">
-            Register Here
+            Deadline: 11:59 PM
           </a>
         </div>
       </div>
