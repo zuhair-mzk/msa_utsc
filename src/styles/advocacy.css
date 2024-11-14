@@ -74,6 +74,7 @@
     border-radius: 8px;
     text-align: center;
     align-content: center;
+    box-sizing: border-box;
   }
   /* TEST SLIDES */
   #slide1-2024 {
