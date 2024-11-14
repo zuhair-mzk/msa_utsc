@@ -1,5 +1,5 @@
 // src/components/OSP.js
-import React from "react";
+import {React, useState, useEffect} from "react";
 import "../styles/osp.css";
 
 // Import image
@@ -7,7 +7,7 @@ import ospPathImg from "../images/osp_path.JPG";
 
 const OSP = () => (
   <section id="osp" className="osp-section">
-    <div className="container">
+    <div className="osp-section">
       <h2 className="section-title">OSP History</h2>
       <h3>What is OSP?</h3>
       <p>
@@ -72,4 +72,107 @@ const OSP = () => (
   </section>
 );
 
-export default OSP;
+const OspSlide = () => {
+  const [slideIndex, setSlideIndex] = useState(1);
+  const [yearIndex, setYearIndex] = useState(2024)
+
+  useEffect(() => {
+    showSlides(slideIndex);
+    const interval = setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slideIndex])
+
+  const plusSlides = (n) => {
+    showSlides(slideIndex + n);
+  };
+  const currentSlide = (n) => {
+    showSlides(n);
+  };
+
+  const showSlides = (n) => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      setSlideIndex(1);
+    } else if (n < 1) {
+      setSlideIndex(slides.length);
+    } else {
+      setSlideIndex(n);
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  };
+
+  const slideData = {
+    2024: (
+      <div className="slideshow-container">
+        <div className="mySlides" id="slide1-2024">slide 1</div>
+        <div className="mySlides" id="slide2-2024">slide 2</div>
+        <div className="mySlides" id="slide3-2024">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+    ),
+    2023: (
+      <div className="slideshow-container">
+        <div className="mySlides" id="slide1-2023">slide 1</div>
+        <div className="mySlides" id="slide2-2023">slide 2</div>
+        <div className="mySlides" id="slide3-2023">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+    )
+  }
+
+  const setYear = (year) => {
+    setYearIndex(year)
+  }
+  return(
+  <section id="osp" className="osp-section">
+    <div className="osp-content">
+      <h2 className="title2">Past OSP Initiatives</h2>
+      <div className="container">
+        <div className="osp-btn-container">
+          <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2024</button>
+          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2023</button>
+        </div>
+        {slideData[yearIndex]}
+        <div className="dot-container">
+          <span className="dot" onClick={() => currentSlide(1)}></span>
+          <span className="dot" onClick={() => currentSlide(2)}></span>
+          <span className="dot" onClick={() => currentSlide(3)}></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  )
+};
+
+const OSPSection = () => (
+  <div>
+    <OSP />
+    <OspSlide />
+  </div>
+);
+
+export default OSPSection;

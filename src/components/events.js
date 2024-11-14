@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/events.css";
-import cw_bonfire from "../images/cw_bonfire.png"
+import cw_auction from "../images/cw_auction.png"
 import general_meeting from "../images/general_meeting.png"
 import dawah_training from "../images/msa_dawah.png"
 import lessonsSurahYusuf from "../images/24-25 COLORS AND FONTS (20).png"
