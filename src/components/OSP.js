@@ -92,7 +92,7 @@ const OspSlide = () => {
   };
 
   const showSlides = (n) => {
-    const slides = document.getElementsByClassName("mySlides");
+    const slides = document.getElementsByClassName("mySlidesOsp");
     const dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
       setSlideIndex(1);
@@ -113,7 +113,7 @@ const OspSlide = () => {
 
   const slideData = {
     2024: (
-      <div className="slideshow-container">
+      <div className="slideshow-container-osp">
         <div className="mySlides" id="slide1-2024">slide 1</div>
         <div className="mySlides" id="slide2-2024">slide 2</div>
         <div className="mySlides" id="slide3-2024">slide 3</div>
@@ -128,10 +128,40 @@ const OspSlide = () => {
       </div>
     ),
     2023: (
-      <div className="slideshow-container">
+      <div className="slideshow-container-osp">
         <div className="mySlides" id="slide1-2023">slide 1</div>
         <div className="mySlides" id="slide2-2023">slide 2</div>
         <div className="mySlides" id="slide3-2023">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+    ),
+    2022: (
+      <div className="slideshow-container-osp">
+        <div className="mySlides" id="slide1-2022">slide 1</div>
+        <div className="mySlides" id="slide2-2022">slide 2</div>
+        <div className="mySlides" id="slide3-2022">slide 3</div>
+      
+
+        <a className="prev" onClick={() => plusSlides(-1)}>
+          ❮
+        </a>
+        <a className="next" onClick={() => plusSlides(1)}>
+          ❯
+        </a>
+      </div>
+    ),
+    2021: (
+      <div className="slideshow-container-osp">
+        <div className="mySlides" id="slide1-2021">slide 1</div>
+        <div className="mySlides" id="slide2-2021">slide 2</div>
+        <div className="mySlides" id="slide3-2021">slide 3</div>
       
 
         <a className="prev" onClick={() => plusSlides(-1)}>
@@ -150,11 +180,13 @@ const OspSlide = () => {
   return(
   <section id="osp" >
     <div className="osp-content">
-      <h2 className="section-title">Past OSP Initiatives</h2>
+      <h2 className="title-2">Past OSP Initiatives</h2>
       <div className="container">
-        <div className="osp-btn-container">
-          <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2024</button>
-          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2023</button>
+        <div className="osp-btn-container">    
+          <button className={`osp-year-btn ${yearIndex == 2021 ? 'selected-btn': '' }`} onClick={() => setYear(2021)}>2018 - 2020</button>
+          <button className={`osp-year-btn ${yearIndex == 2022 ? 'selected-btn': '' }`} onClick={() => setYear(2022)}>2021 - 2022</button>
+          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button>
+          <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2023 - 2024</button>
         </div>
         {slideData[yearIndex]}
         <div className="dot-container">
