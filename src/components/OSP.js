@@ -1,13 +1,13 @@
 // src/components/OSP.js
-import {React, useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/osp.css";
 
 // Import image
 import ospPathImg from "../images/osp_path.JPG";
 
 const OSP = () => (
-  <section id="osp" className="osp-section">
-    <div className="osp-section">
+  <section className="osp-section">
+    <div className="osp-container">
       <h2 className="section-title">OSP History</h2>
       <h3>What is OSP?</h3>
       <p>
@@ -148,9 +148,9 @@ const OspSlide = () => {
     setYearIndex(year)
   }
   return(
-  <section id="osp" className="osp-section">
+  <section id="osp" >
     <div className="osp-content">
-      <h2 className="title2">Past OSP Initiatives</h2>
+      <h2 className="section-title">Past OSP Initiatives</h2>
       <div className="container">
         <div className="osp-btn-container">
           <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2024</button>
