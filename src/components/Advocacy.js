@@ -63,7 +63,7 @@ const AdvocacySlide = () => {
 
   const slideData = {
     2024: (
-      <div className="slideshow-container">
+      <div className="slideshow-container-adv">
         <div className="mySlides" id="slide1-2024">slide 1</div>
         <div className="mySlides" id="slide2-2024">slide 2</div>
         <div className="mySlides" id="slide3-2024">slide 3</div>
@@ -78,7 +78,7 @@ const AdvocacySlide = () => {
       </div>
     ),
     2023: (
-      <div className="slideshow-container">
+      <div className="slideshow-container-adv">
         <div className="mySlides" id="slide1-2023">slide 1</div>
         <div className="mySlides" id="slide2-2023">slide 2</div>
         <div className="mySlides" id="slide3-2023">slide 3</div>

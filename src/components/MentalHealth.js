@@ -113,7 +113,7 @@ const MentalHealthTips = () => {
     <div className="mental-health-content">
       <h2 className="selfcare-title">Mental Health Duas</h2>
       
-      <div className="slideshow-container">
+      <div className="slideshow-container-mh">
         <div className="mySlides">
             <div className="slide0" id="img1">Dua 1 in Arabic</div>
             <div className="slide0" id="img2">Dua 1 in English</div>
