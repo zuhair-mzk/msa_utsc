@@ -176,8 +176,8 @@ const Resources = () => {
               <tr>
                 <td>Jumu'ah 2</td>
                 <td>HW 305</td>
-                <td>1:40 PM</td>
-                <td>2:10 PM</td>
+                <td>1:30 PM</td>
+                <td>2:00 PM</td>
               </tr>
             </tbody>
           </table>
