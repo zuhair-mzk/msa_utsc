@@ -29,8 +29,8 @@ const Announcements = () => (
           <td>MSA General Meeting Proposals</td>
         </tr>
         <tr>
-          <td>12:00pm, Sat Nov 23rd</td>
-          <td>Charity Week International Dinner</td>
+          <td>10:00am, Sat Nov 23rd</td>
+          <td>iSPARC</td>
         </tr>
       </tbody>
     </table>
