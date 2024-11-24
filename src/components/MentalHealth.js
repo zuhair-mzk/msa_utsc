@@ -8,12 +8,15 @@ import khalilCentre from "../images/khalil_centre.png"
 import nisaHelpline from "../images/nisa_helpline.png"
 import cedarwayTherapy from "../images/cedarway_therapy.png"
 import muslimChaplaincy from "../images/muslim_chaplaincy.png"
+import ruhCare from "../images/ruh_care_logo.png"
 
   
 const MentalResource = () => (
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
       <h2 className="mental-health-title">Mental Health</h2>
+
+      <p className="banner-msg"> If you or anyone you know needs help, a reminder that supports are available. Did you know many therapy sessions are covered by your UofT student Greenshield Insurance? See below for details. If you have opted out of your student insurance, you may book a counselling session for free  through Muslim Chaplaincy @ UofT (McUofT) anytime, more details below. </p>
 
       <h3 className="emergency-contacts">Emergency Contacts</h3>
       <ul className="mental-health-contacts">
@@ -176,13 +179,26 @@ const MentalHealthTips = () => {
              Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div>
         <div>
-          <div id="org" className="org6"><img src={khalilCentre} alt="Khalil Centre"></img></div>
-          <h4>Khalil Centre</h4>
+          <div id="org" className="org6"><img src={ruhCare} alt="Ruh Care"></img></div>
+          <h4>Ruh Care</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
              Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
         </div> 
       </div>
 
+      <div className="Insurance-div">
+        <h3 className="selfcare-title">Greenshield Coverage</h3>
+
+        <p>Greenshield coverage for 2024-2025 will cover up to <span>$125 per visit</span>, for the first <span>20 visits</span> to any of the below services</p>
+        <div className="services">
+          <p>Psychologist</p>
+          <p>Counsellor</p>
+          <p>Master of Social Work</p>
+          <p>Social Worker</p>
+          <p>Psychotherapist</p>
+        </div>
+        <p>View the <a target="_blank" href="https://static1.squarespace.com/static/63fd00cacf68bb4c95562321/t/66d8ba71fac2ac1c3fbb399e/1725479537836/SCSU_SCU90000_90002_20240901.pdf" className="greenshield-link">2024-2025 Greenshield Plan</a> and <a target="_blank" href="https://static1.squarespace.com/static/63fd00cacf68bb4c95562321/t/66d46ecde0d39b1203532a25/1725198029296/L99-SCSU-Brochure-2024+QR.pdf" className="greenshield-link">Brochure</a> for full details</p>
+      </div>
       
     </div>
   </section>

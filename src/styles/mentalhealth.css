@@ -122,6 +122,12 @@
     border: 5px solid #ceb378;
   }
 
+  .banner-msg {
+    text-align: center;
+    width: 80%;
+    line-height: 1.5;
+  }
+
   h4 {
     font-weight: 100;
     font-size: 0.8rem;
@@ -300,6 +306,38 @@
 }
 .org5 {
   background-color: rgb(57, 143, 136);
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Insurance-div {
+  width: 90%;
+  max-width: 800px;
+  padding: 0 20px
+}
+
+.Insurance-div span {
+  color: #170827;
+  font-weight: bold;
+}
+
+.greenshield-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.greenshield-link:hover {
+  color: purple;
+}
+
+.services p {
+  color: #170827;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 /* Responsive adjustments */
