@@ -6,6 +6,8 @@
     margin-top: 100px;
     height: 100%;
     width: 100%;
+    /* width: auto;
+    margin: auto; */
     background-color: #e6e6e6;
   }
   .emergency-contacts {
@@ -73,6 +75,11 @@
     cursor: pointer;
   }
 
+  .resource-container ul {
+    margin-right: 15px;
+  }
+
+
   .on-campus-resource {
     border: 1px solid #ccc;
     width: 90%;
@@ -114,10 +121,11 @@
     text-decoration: underline #ceb378 5px;
   }
   .slideshow-container-mh {
-    max-width: 90%;
-    height: 400px;
-    width: 700px;
-    min-width: 700px;
+    max-width: 700px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    min-width: 400px;
     border-radius: 16px;
     border: 5px solid #ceb378;
   }
@@ -137,6 +145,7 @@
 
   .mySlides {
     padding: 0;
+    /* display: flex; Ensure content aligns properly */
     margin: 0;
     width: 100%;
     height: 100%;
@@ -216,12 +225,14 @@
 .next {
   position: absolute;
   right: 0;
+  z-index: 10;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
   position: absolute;
   left: 0;
+  z-index: 10;
   border-radius: 3px 0 0 3px;
 }
 
@@ -342,9 +353,22 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-
+  /* #mental-health {
+    padding: 30px;
+  } */
+  .slideshow-container-mh {
+    aspect-ratio: 4 / 3; /* Change aspect ratio for smaller screens */
+    width: 100%;
+    max-width: 90%;
+  }
   .mySlides {
-    padding: 40px;
+    padding: 0;
+  }
+  .external-resource li {
+    font-size: 0.9rem;
+  }
+  .on-campus-resource li {
+    font-size: 0.9rem;
   }
 
   .prev,
