@@ -92,7 +92,7 @@ const OspSlide = () => {
   };
 
   const showSlides = (n) => {
-    const slides = document.getElementsByClassName("mySlidesOsp");
+    const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
       setSlideIndex(1);
@@ -183,10 +183,10 @@ const OspSlide = () => {
       <h2 className="title-2">Past OSP Initiatives</h2>
       <div className="container">
         <div className="osp-btn-container">    
-          <button className={`osp-year-btn ${yearIndex == 2021 ? 'selected-btn': '' }`} onClick={() => setYear(2021)}>2018 - 2020</button>
-          <button className={`osp-year-btn ${yearIndex == 2022 ? 'selected-btn': '' }`} onClick={() => setYear(2022)}>2021 - 2022</button>
-          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button>
+          {/* <button className={`osp-year-btn ${yearIndex == 2021 ? 'selected-btn': '' }`} onClick={() => setYear(2021)}>2018 - 2020</button>
+          <button className={`osp-year-btn ${yearIndex == 2022 ? 'selected-btn': '' }`} onClick={() => setYear(2022)}>2021 - 2022</button> */}
           <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2023 - 2024</button>
+          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button>
         </div>
         {slideData[yearIndex]}
         <div className="dot-container">
