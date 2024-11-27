@@ -152,8 +152,7 @@
     box-sizing: border-box;
   }
 
-  #img1 {
-    background-color: red;
+  .mySlides img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -161,7 +160,7 @@
     text-align: center;
     align-items: center;
   }
-  #img2 {
+  /* #img2 {
     background-color: rgb(206, 144, 144);
     width: 100%;
     height: 100%;
@@ -205,7 +204,7 @@
     font-size: 2rem;
     text-align: center;
     align-items: center;
-  }
+  } */
 
   .prev,
   .next {
@@ -270,20 +269,21 @@
 
 .organizations-container {
   display: grid;
-  width: 600px;
+  max-width: 80%;
+  width: 800px;
   min-width: 40%;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
   gap: 2rem;
   margin-bottom: 10px;
-  padding: 0px 25px;
+  padding: 0px 20px;
 }
 
 
 #org {
   border: 3px solid #ceb378;
-  width: 90px;
-  height: 90px;
+  aspect-ratio: 1 /1;
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -295,19 +295,24 @@
 }
 .organizations-container div p {
   font-size: 0.8rem;
-  width: 180px;
   text-align: center;
+}
+
+.organizations-container a {
+  text-decoration: none;
+  color: purple;
 }
 .organizations-container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 250px;
 }
 
 #org img {
   border-radius: 50%;
-  width: 90px;
+  width: 100%;
 }
 
 .org1 {
@@ -360,6 +365,15 @@
     aspect-ratio: 4 / 3; /* Change aspect ratio for smaller screens */
     width: 100%;
     max-width: 90%;
+  }
+  .organizations-container {
+    max-width: 90%;
+  }
+  .organizations-container div {
+    width: 180px;
+  }
+  #org {
+    width: 90px;
   }
   .mySlides {
     padding: 0;

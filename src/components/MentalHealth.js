@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import "../styles/mentalhealth.css";
 import canadianMuslimCounseling from "../images/canadian_muslim_counselling.png"
 import naseehaMentalHealth from "../images/naseeha_mental_health.png"
-import khalilCentre from "../images/khalil_centre.png"
 import nisaHelpline from "../images/nisa_helpline.png"
 import cedarwayTherapy from "../images/cedarway_therapy.png"
 import muslimChaplaincy from "../images/muslim_chaplaincy.png"
 import ruhCare from "../images/ruh_care_logo.png"
+import dua1 from "../images/mh-dua1.png"
 
   
 const MentalResource = () => (
@@ -118,15 +118,15 @@ const MentalHealthTips = () => {
       
       <div className="slideshow-container-mh">
         <div className="mySlides">
-            <div className="slide0" id="img1">Dua 1 in Arabic</div>
+            <img src={dua1} className="slide0"></img>
             <div className="slide0" id="img2">Dua 1 in English</div>
         </div>
         <div className="mySlides">
-            <div className="slide1" id="img3">Dua 2 in Arabic</div>
+          <img src={dua1} className="slide1"></img>
             <div className="slide1"id="img4">Dua 2 in English</div>
         </div>
         <div className="mySlides">
-            <div className="slide2" id="img5">Dua 3 in Arabic</div>
+          <img src={dua1} className="slide2"></img>
             <div className="slide2" id="img6">Dua 3 in English</div>
         </div>
         
@@ -142,7 +142,7 @@ const MentalHealthTips = () => {
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
       </div>
-      <button onClick={toggleLanguage} className="language-btn">{language}</button>
+      {/* <button onClick={toggleLanguage} className="language-btn">{language}</button> */}
 
 
       <h3 className="community_orgs_header">Community Organizations</h3>
@@ -151,38 +151,43 @@ const MentalHealthTips = () => {
         <div>
           <div id="org" className="org1"><img src={canadianMuslimCounseling} alt="Canadian Muslim Counselling"></img></div>
           <h4>Canadian<br/> Muslim Counselling</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p> CMC provides e-mental health services to communities across Canada. They offer therapy,
+            counseling, and more, all delivered from Islamic perspectives. 
+              Visit their <a href="https://muslimcounselling.ca/">website</a> or call (437)-886-6309.
+
+</p>
         </div>
         <div>
           <div id="org" className="org2"><img src={muslimChaplaincy} alt="The Muslim Chaplaincy of Toronto"></img></div>
           <h4>The Muslim <br/>Chaplaincy</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p>This organization provides counseling, classes, and programming for Muslim students. They offer free counseling
+             services and have multiple chaplains <a href="https://mcuoft.com/">available across all 3 campuses</a>.
+         </p>
         </div>
         <div>
           <div id="org"><img src={naseehaMentalHealth} alt="Naseeha Mental Health"></img></div>
           <h4>Naseeha <br/>Mental Health</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p>Naseeha offers free, confidential mental health support for Muslims via a helpline and live chat.
+             Their trained counselors provide support on a variety of issues. Call 1-866-627-3342 or visit <a href="https://www.naseeha.org/">naseeha.org</a>.
+          </p>
         </div>
         <div>
           <div id="org"><img src={nisaHelpline} alt="Nisa Help Line"></img></div>
           <h4>Nisa Helpline</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p>Nisa Helpline offers free, confidential support for Muslim women by trained counselors, available 7 days a week.
+             Call 1-888-315-6472 to get help or visit <a href="https://nisahelpline.com/">nisahelpline.com</a> for more information.</p>
         </div>
         <div>
           <div id="org" className="org5"><img src={cedarwayTherapy} alt="Cedarway Therapy"></img></div>
           <h4>Cedarway Therapy</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p>Cedarway Therapy provides mental health care for individuals, couples, and families, incorporating Islamic values into their services.
+             They offer virtual and in-person counseling. Visit <a href="https://cedarwaytherapy.com/">cedarwaytherapy.com</a> to book a session.</p>
         </div>
         <div>
           <div id="org" className="org6"><img src={ruhCare} alt="Ruh Care"></img></div>
           <h4>Ruh Care</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sagittis lectus quis porta.
-             Donec aliquet tempus ullamcorper. Proin et convallis ligula, non ullamcorper dolor. Maecenas vel pellentesque lectus.</p>
+          <p>Ruh Care provides holistic mental health services incorporating Islamic values, offering therapy, coaching, and wellness resources.
+             Sessions are available online or in-person. Learn more at <a href="https://www.ruhcare.com/">ruhcare.com</a></p>
         </div> 
       </div>
 
