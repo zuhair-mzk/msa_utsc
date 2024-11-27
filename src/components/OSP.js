@@ -3,10 +3,16 @@ import React, { useState, useEffect } from "react";
 import "../styles/osp.css";
 
 // Import image
-import osp_petting from "../images/osp_slide_petting.png"
-import osp_quran from "../images/osp_slide_quran.png"
-import osp_gala from "../images/osp_slide_gala.jpg"
-import osp_barber from "../images/osp_slide_barber.png"
+//2024
+import osp_petting_2024 from "../images/osp_slide_petting.png"
+import osp_quran_2024 from "../images/osp_slide_quran.png"
+import osp_gala_2024 from "../images/osp_slide_gala.jpg"
+import osp_barber_2024 from "../images/osp_slide_barber.png"
+//2023
+import osp_gala_2023 from "../images/osp_gala_2023.png"
+import osp_sponsor_2023 from "../images/osp_gala_sponsor_2023.png"
+import osp_profile_2023 from "../images/osp_gala_profile_2023.png"
+import osp_food_2023 from "../images/osp_gala_food_2023.png"
 
 const OspSlide = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -50,10 +56,11 @@ const OspSlide = () => {
   const slideData = {
     2024: (
       <div className="slideshow-container-osp">
-        <img className="mySlides" src={osp_gala} id="slide1-2024"></img>
-        <img className="mySlides" src={osp_petting} id="slide2-2024"></img>
-        <img className="mySlides" src={osp_quran} id="slide3-2024"></img>
-        <img className="mySlides" src={osp_barber} id="slide4-2024"></img>
+        <img className="mySlides" src={osp_gala_2024}></img>
+        {/* <div className="mySlides" id="oop"></div> */}
+        <img className="mySlides" src={osp_petting_2024}></img>
+        <img className="mySlides" src={osp_quran_2024}></img>
+        <img className="mySlides" src={osp_barber_2024}></img>
       
         <a className="prev" onClick={() => plusSlides(-1)}>
           ❮
@@ -65,10 +72,10 @@ const OspSlide = () => {
     ),
     2023: (
       <div className="slideshow-container-osp">
-        <img className="mySlides" src={osp_gala} id="slide1-2023"></img>
-        <img className="mySlides" src={osp_petting} id="slide2-2023"></img>
-        <img className="mySlides" src={osp_quran} id="slide3-2023"></img>
-        <img className="mySlides" src={osp_barber} id="slide4-2023"></img>
+        <img className="mySlides" src={osp_gala_2023}></img>
+        <img className="mySlides" src={osp_sponsor_2023}></img>
+        <img className="mySlides" src={osp_profile_2023}></img>
+        <img className="mySlides" src={osp_food_2023}></img>
       
         <a className="prev" onClick={() => plusSlides(-1)}>
           ❮
@@ -80,10 +87,10 @@ const OspSlide = () => {
     ),
     2022: (
       <div className="slideshow-container-osp">
-        <img className="mySlides" src={osp_gala} id="slide1-2022"></img>
-        <img className="mySlides" src={osp_petting} id="slide2-2022"></img>
-        <img className="mySlides" src={osp_quran} id="slide3-2022"></img>
-        <img className="mySlides" src={osp_barber} id="slide4-2022"></img>
+        <img className="mySlides" src={osp_gala_2024}></img>
+        <img className="mySlides" src={osp_petting_2024}></img>
+        <img className="mySlides" src={osp_quran_2024}></img>
+        <img className="mySlides" src={osp_barber_2024}></img>
       
 
         <a className="prev" onClick={() => plusSlides(-1)}>
