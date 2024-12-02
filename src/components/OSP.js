@@ -57,7 +57,6 @@ const OspSlide = () => {
     2024: (
       <div className="slideshow-container-osp">
         <img className="mySlides" src={osp_gala_2024}></img>
-        {/* <div className="mySlides" id="oop"></div> */}
         <img className="mySlides" src={osp_petting_2024}></img>
         <img className="mySlides" src={osp_quran_2024}></img>
         <img className="mySlides" src={osp_barber_2024}></img>
