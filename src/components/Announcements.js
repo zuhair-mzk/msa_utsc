@@ -17,10 +17,6 @@ const Announcements = () => (
       </thead>
       <tbody>
         <tr>
-          <td>03:30pm, Thu Nov 14th</td>
-          <td>Circles of Faith</td>
-        </tr>
-        <tr>
           <td>11:00am, Sat Nov 16th</td>
           <td>Da'wah Training, with Muslim Hub Club</td>
         </tr>
@@ -31,6 +27,10 @@ const Announcements = () => (
         <tr>
           <td>10:00am, Sat Nov 23rd</td>
           <td>iSPARC</td>
+        </tr>
+        <tr>
+          <td>11:00am, Mon Dec 2nd</td>
+          <td>MSA General Meeting</td>
         </tr>
       </tbody>
     </table>
