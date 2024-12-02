@@ -25,24 +25,25 @@ const MentalResource = () => (
         <li>NASEEHA HELPLINE: <span>1 866-627-3342</span></li>
       </ul>
 
-      <h3>Resources</h3>
+      <h3>On Campus Resources</h3>
       <div className="resource-container">
             <div className="on-campus-resource">
-              <h3>On Campus</h3>
+              {/* <h3>On Campus</h3> */}
                 <ul>
-                  <li>Health and Wellness - (416) 287-7065</li>
-                  <li>Safety Abroad - 1 (215) 942 8478</li>
-                  <li>Campus Safety (Emegency) - (416) 287-7065</li>
+                  <li>Health and Wellness: visit <a target="_blank" href="https://studentlife.utoronto.ca/department/health-wellness/">here</a> or call (416)-287-7065</li>
+                  <li>Safety Abroad: visit <a target="_blank" href="https://learningabroad.utoronto.ca/safety-abroad/">here</a> or call 1-(215)-942-8478</li>
+                  <li>Campus Safety: visit <a target="_blank" href="https://www.campussafety.utoronto.ca/">here</a> or call (Emegency) (416)-287-7065</li>
+                  <li>Uoft Telus Health Student Support: visit <a target="_blank" href="https://mentalhealth.utoronto.ca/telus-health-student-support/">here</a> or call 1-(844)-451-9700</li>
                 </ul>
             </div>
-            <div className="external-resource">
+            {/* <div className="external-resource">
               <h3>External</h3>
               <ul>
                   <li>Health and Wellness - (416) 287-7065</li>
                   <li>Safety Abroad - 1 (215) 942 8478</li>
                   <li>Campus Safety (Emegency) - (416) 287-7065</li>
               </ul>
-            </div>
+            </div> */}
       </div>
     </div>
   </section>
@@ -153,7 +154,7 @@ const MentalHealthTips = () => {
           <h4>Canadian<br/> Muslim Counselling</h4>
           <p> CMC provides e-mental health services to communities across Canada. They offer therapy,
             counseling, and more, all delivered from Islamic perspectives. 
-              Visit their <a href="https://muslimcounselling.ca/">website</a> or call (437)-886-6309.
+              Visit their <a target="_blank" href="https://muslimcounselling.ca/">website</a> or call (437)-886-6309.
 
 </p>
         </div>
@@ -161,33 +162,33 @@ const MentalHealthTips = () => {
           <div id="org" className="org2"><img src={muslimChaplaincy} alt="The Muslim Chaplaincy of Toronto"></img></div>
           <h4>The Muslim <br/>Chaplaincy</h4>
           <p>This organization provides counseling, classes, and programming for Muslim students. They offer free counseling
-             services and have multiple chaplains <a href="https://mcuoft.com/">available across all 3 campuses</a>.
+             services and have multiple chaplains <a target="_blank" href="https://mcuoft.com/">available across all 3 campuses</a>.
          </p>
         </div>
         <div>
           <div id="org"><img src={naseehaMentalHealth} alt="Naseeha Mental Health"></img></div>
           <h4>Naseeha <br/>Mental Health</h4>
           <p>Naseeha offers free, confidential mental health support for Muslims via a helpline and live chat.
-             Their trained counselors provide support on a variety of issues. Call 1-866-627-3342 or visit <a href="https://www.naseeha.org/">naseeha.org</a>.
+             Their trained counselors provide support on a variety of issues. Call 1-866-627-3342 or visit <a target="_blank" href="https://www.naseeha.org/">naseeha.org</a>.
           </p>
         </div>
         <div>
           <div id="org"><img src={nisaHelpline} alt="Nisa Help Line"></img></div>
           <h4>Nisa Helpline</h4>
           <p>Nisa Helpline offers free, confidential support for Muslim women by trained counselors, available 7 days a week.
-             Call 1-888-315-6472 to get help or visit <a href="https://nisahelpline.com/">nisahelpline.com</a> for more information.</p>
+             Call 1-888-315-6472 to get help or visit <a target="_blank" href="https://nisahelpline.com/">nisahelpline.com</a> for more information.</p>
         </div>
         <div>
           <div id="org" className="org5"><img src={cedarwayTherapy} alt="Cedarway Therapy"></img></div>
           <h4>Cedarway Therapy</h4>
           <p>Cedarway Therapy provides mental health care for individuals, couples, and families, incorporating Islamic values into their services.
-             They offer virtual and in-person counseling. Visit <a href="https://cedarwaytherapy.com/">cedarwaytherapy.com</a> to book a session.</p>
+             They offer virtual and in-person counseling. Visit <a target="_blank" href="https://cedarwaytherapy.com/">cedarwaytherapy.com</a> to book a session.</p>
         </div>
         <div>
           <div id="org" className="org6"><img src={ruhCare} alt="Ruh Care"></img></div>
           <h4>Ruh Care</h4>
           <p>Ruh Care provides holistic mental health services incorporating Islamic values, offering therapy, coaching, and wellness resources.
-             Sessions are available online or in-person. Learn more at <a href="https://www.ruhcare.com/">ruhcare.com</a></p>
+             Sessions are available online or in-person. Learn more at <a target="_blank" href="https://www.ruhcare.com/">ruhcare.com</a></p>
         </div> 
       </div>
 
