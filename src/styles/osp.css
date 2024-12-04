@@ -87,13 +87,18 @@
 /*SLIDESHOW*/
 .slideshow-container-osp {
   width: 900px;
+  display: grid;
+  place-items: center;
   max-width: 90%;
   aspect-ratio: 16 / 9;
   min-width: 400px;
   border-radius: 16px;
   border: 5px solid #ceb378;
   padding: 0;
-  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* align-items: center;
+  position: relative; */
   box-sizing: border-box;
 }
 
@@ -103,7 +108,7 @@
   border-radius: 10px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 
