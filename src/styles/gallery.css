@@ -71,8 +71,26 @@
 .preview {
     aspect-ratio: 16 / 9;
     width: 450px;
-    background-color: blue;
     border-radius: 8px;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.gallery-year-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #776f7e;
+  font-weight: bold;
+  cursor: pointer;
+}
+.selected-btn {
+  text-decoration: underline #ceb378 5px;
+  color: #170827;
 }
 
 @media (max-width: 1200px) {
