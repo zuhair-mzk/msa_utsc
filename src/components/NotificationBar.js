@@ -24,7 +24,7 @@ const NotificationBar = () => {
         <a href="#announcements" className="notification-link">
           charity week event
         </a>{" "}
-        as we raise $32,181! 🎉🎉
+        as we raise $30,801.70! 🎉🎉
         <button
           id="close-notification"
           className="close-notification"
