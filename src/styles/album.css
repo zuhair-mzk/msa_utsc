@@ -76,7 +76,8 @@ h2 {
     width: 800px;
     height: 70px;
     border: 1px solid #ccc;
-    overflow-x: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
