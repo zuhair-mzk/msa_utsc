@@ -1,12 +1,14 @@
 #album {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 100px;
     height: 100%;
     width: 100%;
     background-color: #e6e6e6;
 }
+
 
 .album-content {
     display: flex;
@@ -16,17 +18,24 @@
     width: 100%;
 }
 
-h2 {
-    color: #170827;
+.title {
+  color: #170827;
   text-decoration: underline #ceb378 5px;
   margin-bottom: 20px;
   font-size: 2rem; /* Use rem for responsive font size */
+}
+
+.title2 {
+    color: #170827;
+  margin-bottom: 20px;
+  font-size: 1.6rem; /* Use rem for responsive font size */
 }
 
 .view-container {
     min-width: 400px;
     width: fit-content;
     max-width: 90%;
+    width: 900px;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
@@ -36,15 +45,9 @@ h2 {
 
 .main-image {
     aspect-ratio: 16 / 9;
-    width: 800px;
-}
-
-.other-previews-container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 70px;
+    max-width: 800px;
     width: 100%;
-    border: 1px solid #ccc;
+    margin-top: 30px;
 }
 
 .test-image {
@@ -90,4 +93,10 @@ h2 {
 .scroll-image-box {
     height: 70px;
     width: 70px;
+}
+
+@media (max-width: 1200px) {
+    .view-container {
+        width: 90%;
+    }
 }

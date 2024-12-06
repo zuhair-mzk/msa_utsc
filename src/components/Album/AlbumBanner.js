@@ -1,4 +1,4 @@
-import ""
+import "../../styles/albumBanner"
 
 const AlbumBanner = () => (
     <section id="albumBanner">

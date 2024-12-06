@@ -17,7 +17,7 @@ import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
 import Advocacy from "./components/Advocacy";
 import Gallery from "./components/Gallery"
-import Album2024 from "./components/Album/osp_2024_album"
+import Album2024 from "./components/Album/Album_2024"
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
 

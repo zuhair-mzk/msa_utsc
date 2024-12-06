@@ -18,7 +18,6 @@ import {
   faQuestion,
   faPhotoFilm
 } from "@fortawesome/free-solid-svg-icons";
-import { PhotoAlbum } from "@mui/icons-material";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
