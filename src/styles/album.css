@@ -1,0 +1,45 @@
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.album-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.view-container {
+    min-width: 400px;
+    width: fit-content;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    aspect-ratio: 16 /9 ;
+    width: 800px;
+}
+
+.other-previews-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scroll-list {
+    max-width: 90%;
+    width: 800px;
+    height: 100px;
+    border: 1px solid #ccc;
+}
