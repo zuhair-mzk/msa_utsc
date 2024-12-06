@@ -17,6 +17,7 @@ import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
 import Advocacy from "./components/Advocacy";
 import Gallery from "./components/Gallery"
+import Album2024 from "./components/Album/osp_2024_album"
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/mental-health" element={<MentalHealth />} />
           <Route path="/advocacy" element={<Advocacy />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/album-2024" element={<Album2024 />}/>
         </Routes>
         <Footer />
       </div>

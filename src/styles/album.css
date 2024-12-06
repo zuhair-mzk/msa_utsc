@@ -1,4 +1,4 @@
-.album {
+#album {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,13 @@
     width: 100%;
 }
 
+h2 {
+    color: #170827;
+  text-decoration: underline #ceb378 5px;
+  margin-bottom: 20px;
+  font-size: 2rem; /* Use rem for responsive font size */
+}
+
 .view-container {
     min-width: 400px;
     width: fit-content;
@@ -28,18 +35,58 @@
 }
 
 .main-image {
-    aspect-ratio: 16 /9 ;
+    aspect-ratio: 16 / 9;
     width: 800px;
 }
 
 .other-previews-container {
     display: flex;
     justify-content: space-evenly;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.test-image {
+    width: 100%;
+    height: 100%;
+}
+
+#image0 {
+    background-color: red;
+}
+#image1 {
+    background-color: rgb(96, 176, 35);
+}   
+#image2 {
+    background-color: rgb(33, 22, 191);
+}
+#image3 {
+    background-color: rgb(83, 8, 137);
+}
+#image4 {
+    background-color: rgb(215, 174, 8);
+}
+#image5 {
+    background-color: rgb(184, 144, 252);
 }
 
 .scroll-list {
     max-width: 90%;
     width: 800px;
-    height: 100px;
+    height: 70px;
     border: 1px solid #ccc;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.scroll-list li {
+    list-style: none;
+}
+
+.scroll-image-box {
+    height: 70px;
+    width: 70px;
 }
