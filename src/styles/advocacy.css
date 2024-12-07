@@ -189,6 +189,9 @@
   .mySlides {
     padding: 0;
   }
+  .advocacy-year-btn {
+    font-size: 1.2rem;
+  }
 
   .prev,
   .next {

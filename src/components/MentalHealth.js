@@ -8,6 +8,7 @@ import nisaHelpline from "../images/nisa_helpline.png"
 import cedarwayTherapy from "../images/cedarway_therapy.png"
 import muslimChaplaincy from "../images/muslim_chaplaincy.png"
 import ruhCare from "../images/ruh_care_logo.png"
+import khalil_centre from "../images/khalil_centre.png"
 import dua1 from "../images/mh-dua1.png"
 
   
@@ -148,6 +149,13 @@ const MentalHealthTips = () => {
 
       <h3 className="community_orgs_header">Community Organizations</h3>
       <h4>The MSA is not affiliated with any of these organizations</h4>
+      <div className="chap-container">
+          <div id="big-org" ><img src={muslimChaplaincy} alt="The Muslim Chaplaincy of Toronto"></img></div>
+          <h4>The Muslim Chaplaincy</h4>
+          <p>This organization provides counseling, classes, and programming for Muslim students. They offer free counseling
+             services and have multiple chaplains <a target="_blank" href="https://mcuoft.com/">available across all 3 campuses</a>.
+         </p>
+      </div>
       <div className="organizations-container">
         <div>
           <div id="org" className="org1"><img src={canadianMuslimCounseling} alt="Canadian Muslim Counselling"></img></div>
@@ -159,10 +167,10 @@ const MentalHealthTips = () => {
 </p>
         </div>
         <div>
-          <div id="org" className="org2"><img src={muslimChaplaincy} alt="The Muslim Chaplaincy of Toronto"></img></div>
-          <h4>The Muslim <br/>Chaplaincy</h4>
-          <p>This organization provides counseling, classes, and programming for Muslim students. They offer free counseling
-             services and have multiple chaplains <a target="_blank" href="https://mcuoft.com/">available across all 3 campuses</a>.
+          <div id="org" className="org2"><img src={khalil_centre} alt="Khalil Centre"></img></div>
+          <h4>Khalil <br/>Centre</h4>
+          <p>The Khalil Center in Toronto offers counseling and therapy rooted in Islamic principles,
+             addressing mental health with cultural sensitivity. Visit their <a target="_blank" href="https://khalilcenter.ca/">website</a> or call (630)-474-4414.
          </p>
         </div>
         <div>
