@@ -120,8 +120,13 @@ const MentalHealthTips = () => {
       
       <div className="slideshow-container-mh">
         <div className="mySlides">
-            <img src={dua1} className="slide0"></img>
-            <div className="slide0" id="img2">Dua 1 in English</div>
+            {/* <img src={dua1} className="slide0"></img> */}
+            <div className="slide0">
+              <p className="dua-arabic">اللِّهُمَّ إنِّي عَبْدُكَ ، ابْنُ عَبْدِكَ ، ابْنُ أَمَتِكَ ، نَاصِيَتِي بِيَدِكَ ، مَاضِ فِيَّ حُكْمُكَ ، عَدْلٌ فِيَّ قَضَاؤُكَ ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ ، سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ أنْزَلْتَهُ فِي كِتَاَبِكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي ، وَ نُورَ صَدْرِي ، وَ جَلاءَ حُزْنِي ، وَ ذَهَابَ هَمِّي
+              </p>
+              <p className="dua-translation">‘O Allah, I am Your slave, son of Your slave, son of Your maidservant, my forelock is in Your hand, Your command over me is ever executed and Your decree over me is just. I ask You by every name belonging to You which You have named Yourself with, or which you revealed in Your Book, or which You taught to any of Your creation, or which You have preserved in the knowledge of the Unseen with You, that You make the Qur’an the life of my heart and the light of my breast, and a departure for my sorrow and a release for my anxiety.</p>
+            </div>
+            <div className="slide0"></div>
         </div>
         <div className="mySlides">
           <img src={dua1} className="slide1"></img>

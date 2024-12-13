@@ -151,19 +151,46 @@
   .mySlides {
     padding: 0;
     /* display: flex; Ensure content aligns properly */
+    display: grid;
+    place-items: center;
     margin: 0;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    background-color: white;
   }
 
-  .mySlides img {
+  /* .mySlides img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     font-size: 2rem;
     text-align: center;
     align-items: center;
+  } */
+  .mySlides div {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: auto;
+  }
+
+  .dua-arabic {
+    width: 80%;
+    margin-top: 80px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .dua-translation {
+    width: 80%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(101, 100, 100)
   }
   /* #img2 {
     background-color: rgb(206, 144, 144);
@@ -431,7 +458,13 @@
   .on-campus-resource li {
     font-size: 0.9rem;
   }
-
+  .dua-arabic {
+    margin-top: 50px;
+    font-size: 1.1rem;
+  }
+  .dua-translation {
+    font-size: 0.8rem;
+  }
   .prev,
   .next {
     font-size: 1rem;
