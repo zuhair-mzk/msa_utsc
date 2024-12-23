@@ -1,6 +1,9 @@
 import "../../styles/album.css"
 import React, { useEffect, useState } from "react"
-import osp from "../../images/album/album_2024_osp.png"
+import osp_image1 from "../../images/album/album_pic_2024_osp1.png"
+import osp_image2 from "../../images/album/album_pic_2024_osp2.png"
+import osp_image3 from "../../images/album/album_2024_pic_osp3.png"
+import osp_image4 from "../../images/album/album_2024_pic_osp4.png"
 
 const OSP2024 = () => {
 
@@ -14,7 +17,9 @@ const OSP2024 = () => {
             <div className="test-image" id="image0"></div>
         )},
         {"image":(
-            <div className="test-image" id="image1"></div>
+            <div className="test-image" id="image1">
+
+            </div>
         )},
         {"image":(
             <div className="test-image" id="image2"></div>
@@ -47,6 +52,21 @@ const OSP2024 = () => {
             <div className="test-image" id="image5"></div>
         )}
     ]
+
+    const osp_images = [
+        {"image": (
+            <img src={osp_image1}></img>
+        )},
+        {"image": (
+            <img src={osp_image2}></img>
+        )},
+        {"image": (
+            <img src={osp_image3}></img>
+        )},
+        {"image": (
+            <img src={osp_image4}></img>
+        )}
+    ]
     return(
         <section id="album">
             <h2 className="title">Photo Album</h2>
@@ -54,14 +74,14 @@ const OSP2024 = () => {
                 <h2 className="title2">OSP Gala</h2>
                 <div className="view-container">
                     <div className="main-image">
-                        {images[mainImageIndex1]["image"]}
+                        {osp_images[mainImageIndex1]["image"]}
                     </div>
 
                 </div>
                     <ul className="scroll-list">
-                        {images.map((image) => (
+                        {osp_images.map((image) => (
                             <li>
-                                <div className="scroll-image-box" onClick={() => setMainImageIndex1(images.indexOf(image))}>
+                                <div className="scroll-image-box" onClick={() => setMainImageIndex1(osp_images.indexOf(image))}>
                                  {image["image"]}
                                 </div>
                             </li>
