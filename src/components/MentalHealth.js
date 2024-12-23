@@ -122,19 +122,27 @@ const MentalHealthTips = () => {
         <div className="mySlides">
             {/* <img src={dua1} className="slide0"></img> */}
             <div className="slide0">
-              <p className="dua-arabic">اللِّهُمَّ إنِّي عَبْدُكَ ، ابْنُ عَبْدِكَ ، ابْنُ أَمَتِكَ ، نَاصِيَتِي بِيَدِكَ ، مَاضِ فِيَّ حُكْمُكَ ، عَدْلٌ فِيَّ قَضَاؤُكَ ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ ، سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ أنْزَلْتَهُ فِي كِتَاَبِكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي ، وَ نُورَ صَدْرِي ، وَ جَلاءَ حُزْنِي ، وَ ذَهَابَ هَمِّي
-              </p>
-              <p className="dua-translation">‘O Allah, I am Your slave, son of Your slave, son of Your maidservant, my forelock is in Your hand, Your command over me is ever executed and Your decree over me is just. I ask You by every name belonging to You which You have named Yourself with, or which you revealed in Your Book, or which You taught to any of Your creation, or which You have preserved in the knowledge of the Unseen with You, that You make the Qur’an the life of my heart and the light of my breast, and a departure for my sorrow and a release for my anxiety.</p>
+              <p className="dua-arabic">اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْـدِكَ، ابْنُ أَمَتِـكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ، سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَداً مِنْ خَلْقِـكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الغَيْبِ عِنْـدَكَ، أَنْ تَجْعَلَ القُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وجَلَاءَ حُزْنِي وذَهَابَ هَمِّي</p>
+              <p className="dua-transliteration">Allaahumma 'innee 'abduka, ibnu 'abdika, ibnu 'amatika, naasiyatee biyadika, maadhin fiyya hukmuka, 'adlun fiyya qadhaa'uka, 'as'aluka bikulli ismin huwa laka, sammayta bihi nafsaka, 'aw 'anzaltahu fee kitaabika, 'aw 'allamtahu 'ahadan min khalqika, 'awista'tharta bihi fee 'ilmil-ghaybi 'indaka, 'an taj'alal-Qur'aana rabee'a qalbee, wa noora sadree, wa jalaa'a huznee, wa thahaaba hammee</p>
+              <p className="dua-translation">O Allah, I am Your slave and the son of Your male slave and the son of your female slave. My forehead is in Your Hand (i.e. You have control over me). Your Judgment upon me is assured and Your Decree concerning me is just. I ask You by every Name that You have named Yourself with, revealed in Your Book, taught any one of Your creation or kept unto Yourself in the knowledge of the unseen that is with You, to make the Qur'an the spring of my heart, and the light of my chest, the banisher of my sadness and the reliever of my distress</p>
             </div>
             <div className="slide0"></div>
         </div>
         <div className="mySlides">
-          <img src={dua1} className="slide1"></img>
-            <div className="slide1"id="img4">Dua 2 in English</div>
+          <div className="slide1">
+            <p className="dua-arabic">اللَّهُمَّ إِنِّي أَعْوذُ بِكَ مِنَ الهَمِّ وَ الْحَزَنِ، وَالعَجْزِ وَالْكَسَلِ، والبُخْلِ والْجُبْنِ، وضَلَعِ الدَّيْنِ وغَلَبَةِ الرِّجَالِ</p>
+            <p className="dua-transliteration">Allaahumma 'innee 'a'oothu bika minal-hammi walhazani, wal'ajzi walkasali, walbukhli waljubni, wa dhala'id-dayni wa ghalabatir-rijaal</p>
+            <p className="dua-translation">O Allah, I seek refuge in you from grief and sadness, from weakness and from laziness, from miserliness and from cowardice, from being overcome by debt and overpowered by men</p>
+          </div>
+          <div className="slide1"></div>
         </div>
         <div className="mySlides">
-          <img src={dua1} className="slide2"></img>
-            <div className="slide2" id="img6">Dua 3 in English</div>
+          <div className="slide2">
+            <p className="dua-arabic">اللَّهُمَّ رَحْمَتَكَ أَرْجُوفَلَا تَكِلْنِي إِلىَ نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لَا إِلَهَ إِلَّا أَنْتَ</p>
+            <p className="dua-transliteration">Allaahumma rahmataka 'arjoo falaa takilnee 'ilaa nafsee tarfata 'aynin, wa 'aslih lee sha'nee kullahu, laa'ilaaha 'illaa 'Anta</p>
+            <p className="dua-translation">O Allah, I hope for Your mercy. Do not leave me to myself even for the blinking of an eye. Correct all of my affairs for me. There is none worthy of worship but You</p>
+          </div>
+          <div className="slide2"></div>
         </div>
         
         <a className="prev" onClick={() => plusSlides(-1)}>
