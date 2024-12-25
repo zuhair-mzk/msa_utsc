@@ -1,6 +1,7 @@
 // src/components/OSP.js
 import React, { useState, useEffect } from "react";
 import "../styles/osp.css";
+import Osp_Banner from "./osp_banner"
 
 // Import image
 //2024
@@ -188,6 +189,7 @@ const OSPSection = () => (
   <div>
     {/* <OSP /> */}
     <OspSlide />
+    <Osp_Banner />
   </div>
 );
 

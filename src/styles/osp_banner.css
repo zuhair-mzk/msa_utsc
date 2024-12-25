@@ -1,0 +1,71 @@
+#osp_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.title {
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5em;
+  color: #170827;
+  margin-bottom: 50px;
+  text-decoration: underline #ceb378 5px;
+}
+.osp-banner-content {
+    display: grid;
+    width: 90%;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    gap: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.challenge-container {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+.challenge-container p{
+    font-size: 1.1rem;
+    color: #170827;
+}
+
+.challenge-img {
+    aspect-ratio: 1 / 1;
+    width: 250px;
+    background-color: blue;
+    border-radius: 8px;  
+    cursor: pointer;
+      
+}
+
+.current-challenge {
+    box-shadow: 0 0 10px 8px #ceb378;
+}
+
+.challenge-complete {
+    background-color: #ceb378;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
