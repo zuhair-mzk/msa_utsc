@@ -8,6 +8,7 @@ import {
     faPause
   } from "@fortawesome/free-solid-svg-icons";
 
+//OSP Images
 import osp_image1 from "../../images/album/2024/osp/pic1.png"
 import osp_image2 from "../../images/album/2024/osp/pic2.png"
 import osp_image3 from "../../images/album/2024/osp/pic3.png"
@@ -21,6 +22,13 @@ import osp_image10 from "../../images/album/2024/osp/pic10.png"
 import osp_image11 from "../../images/album/2024/osp/pic11.png"
 import osp_image12 from "../../images/album/2024/osp/pic12.png"
 import osp_image13 from "../../images/album/2024/osp/pic13.png"
+
+//CW Images
+import cw1 from "../../images/album/2024/charity_week/charitygala1.png"
+import cw2 from "../../images/album/2024/charity_week/charitygala2.png"
+import cw3 from "../../images/album/2024/charity_week/charitygala3.png"
+import cw4 from "../../images/album/2024/charity_week/charitygala4.png"
+import cw5 from "../../images/album/2024/charity_week/charitygala5.png"
 
 const OSP2024 = () => {
 
@@ -117,6 +125,24 @@ const OSP2024 = () => {
         )}
     ]
 
+    const cw_images = [
+        {"image": (
+            <img src={cw1}></img>
+        )},
+        {"image": (
+            <img src={cw2}></img>
+        )},
+        {"image": (
+            <img src={cw3}></img>
+        )},
+        {"image": (
+            <img src={cw4}></img>
+        )},
+        {"image": (
+            <img src={cw5}></img>
+        )}
+    ]
+
     //playing the gallery
     useEffect(() => {
         if(slidePlayer1){
@@ -125,7 +151,7 @@ const OSP2024 = () => {
         }},[slidePlayer1])
     useEffect(()=>{
         if(slidePlayer2){
-            const interval2 = setInterval(() => changeSlide(images, 2), 5000);
+            const interval2 = setInterval(() => changeSlide(cw_images, 2), 5000);
             return () => clearInterval(interval2)
         }},[slidePlayer2])
     useEffect(()=>{
@@ -198,19 +224,19 @@ const OSP2024 = () => {
                 <h2 className="title2">Charity Week</h2>
                 <div className="view-container">
                     <div className="main-image">
-                        {images[mainImageIndex2]["image"]}
+                        {cw_images[mainImageIndex2]["image"]}
                     </div>
 
                 </div>
                 <div className="playback-button">
-                    <button onClick={()=>reverseSlide(images,2)}><FontAwesomeIcon icon={faArrowLeft} /></button>
+                    <button onClick={()=>reverseSlide(cw_images,2)}><FontAwesomeIcon icon={faArrowLeft} /></button>
                     <button onClick={()=> slidePlayer2 ? setSlidePlayer2(false) : setSlidePlayer2(true)}>{ slidePlayer2 ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}</button>
-                    <button onClick={()=>changeSlide(images,2)}><FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button onClick={()=>changeSlide(cw_images,2)}><FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
                     <ul className="scroll-list">
-                        {images.map((image) => (
+                        {cw_images.map((image) => (
                             <li>
-                                <div className="scroll-image-box" onClick={() => setMainImageIndex2(images.indexOf(image))}>
+                                <div className="scroll-image-box" onClick={() => setMainImageIndex2(cw_images.indexOf(image))}>
                                  {image["image"]}
                                 </div>
                             </li>
