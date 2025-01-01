@@ -35,7 +35,7 @@
     min-width: 400px;
     max-width: 90%;
     width: 900px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@
 
 .scroll-list {
     max-width: 90%;
-    width: 800px;
+    width: 700px;
     height: 60px;
     border: 1px solid #ccc;
     overflow-x: auto;
@@ -118,6 +118,7 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 0.5rem;
 }
 .scroll-list li {

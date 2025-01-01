@@ -5,10 +5,10 @@ import testimage2 from "../images/internal_meet_the_team.png"
 import { HashLink as Link } from "react-router-hash-link";
 
 // 
-import cw from "../images/album/album_2024_cwB.png"
-import osp from "../images/album/album_2024_ospB.png"
-import wd from "../images/album/album_2024_wdB.png"
-import gi from "../images/album/album_2024_giB.png"
+import cw from "../images/album/2024/charity_week/cw_banner.png"
+import osp from "../images/album/2024/osp/osp_banner.png"
+import wd from "../images/album/2024/welcome_day/wd_banner.png"
+import gi from "../images/album/2024/grand_iftaar/gi_banner.png"
 
 
 const Gallery = () => {

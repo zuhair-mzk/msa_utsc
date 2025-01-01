@@ -8,10 +8,19 @@ import {
     faPause
   } from "@fortawesome/free-solid-svg-icons";
 
-import osp_image1 from "../../images/album/album_pic_2024_osp1.png"
-import osp_image2 from "../../images/album/album_pic_2024_osp2.png"
-import osp_image3 from "../../images/album/album_2024_pic_osp3.png"
-import osp_image4 from "../../images/album/album_2024_pic_osp4.png"
+import osp_image1 from "../../images/album/2024/osp/pic1.png"
+import osp_image2 from "../../images/album/2024/osp/pic2.png"
+import osp_image3 from "../../images/album/2024/osp/pic3.png"
+import osp_image4 from "../../images/album/2024/osp/pic4.png"
+import osp_image5 from "../../images/album/2024/osp/pic5.png"
+import osp_image6 from "../../images/album/2024/osp/pic6.png"
+import osp_image7 from "../../images/album/2024/osp/pic7.png"
+import osp_image8 from "../../images/album/2024/osp/pic8.png"
+import osp_image9 from "../../images/album/2024/osp/pic9.png"
+import osp_image10 from "../../images/album/2024/osp/pic10.png"
+import osp_image11 from "../../images/album/2024/osp/pic11.png"
+import osp_image12 from "../../images/album/2024/osp/pic12.png"
+import osp_image13 from "../../images/album/2024/osp/pic13.png"
 
 const OSP2024 = () => {
 
@@ -80,28 +89,31 @@ const OSP2024 = () => {
             <img src={osp_image4}></img>
         )},
         {"image": (
-            <img src={osp_image1}></img>
+            <img src={osp_image5}></img>
         )},
         {"image": (
-            <img src={osp_image2}></img>
+            <img src={osp_image6}></img>
         )},
         {"image": (
-            <img src={osp_image3}></img>
+            <img src={osp_image7}></img>
         )},
         {"image": (
-            <img src={osp_image4}></img>
+            <img src={osp_image8}></img>
         )},
         {"image": (
-            <img src={osp_image1}></img>
+            <img src={osp_image9}></img>
         )},
         {"image": (
-            <img src={osp_image2}></img>
+            <img src={osp_image10}></img>
         )},
         {"image": (
-            <img src={osp_image3}></img>
+            <img src={osp_image11}></img>
         )},
         {"image": (
-            <img src={osp_image4}></img>
+            <img src={osp_image12}></img>
+        )},
+        {"image": (
+            <img src={osp_image13}></img>
         )}
     ]
 
