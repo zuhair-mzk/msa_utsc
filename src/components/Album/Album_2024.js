@@ -29,6 +29,16 @@ import cw2 from "../../images/album/2024/charity_week/charitygala2.png"
 import cw3 from "../../images/album/2024/charity_week/charitygala3.png"
 import cw4 from "../../images/album/2024/charity_week/charitygala4.png"
 import cw5 from "../../images/album/2024/charity_week/charitygala5.png"
+import cw6 from "../../images/album/2024/charity_week/cw6.png"
+import cw7 from "../../images/album/2024/charity_week/cw7.png"
+import cw8 from "../../images/album/2024/charity_week/cw8.png"
+import cw9 from "../../images/album/2024/charity_week/cw9.png"
+import cw10 from "../../images/album/2024/charity_week/cw10.png"
+import cw11 from "../../images/album/2024/charity_week/cw11.png"
+import cw12 from "../../images/album/2024/charity_week/cw12.png"
+import cw13 from "../../images/album/2024/charity_week/cw13.png"
+import cw14 from "../../images/album/2024/charity_week/cw14.png"
+import cw15 from "../../images/album/2024/charity_week/cw15.png"
 
 const OSP2024 = () => {
 
@@ -85,61 +95,91 @@ const OSP2024 = () => {
 
     const osp_images = [
         {"image": (
-            <img src={osp_image1}></img>
+            <img alt="OSP Photo" src={osp_image1}></img>
         )},
         {"image": (
-            <img src={osp_image2}></img>
+            <img alt="OSP Photo" src={osp_image2}></img>
         )},
         {"image": (
-            <img src={osp_image3}></img>
+            <img alt="OSP Photo" src={osp_image3}></img>
         )},
         {"image": (
-            <img src={osp_image4}></img>
+            <img alt="OSP Photo" src={osp_image4}></img>
         )},
         {"image": (
-            <img src={osp_image5}></img>
+            <img alt="OSP Photo" src={osp_image5}></img>
         )},
         {"image": (
-            <img src={osp_image6}></img>
+            <img alt="OSP Photo" src={osp_image6}></img>
         )},
         {"image": (
-            <img src={osp_image7}></img>
+            <img alt="OSP Photo" src={osp_image7}></img>
         )},
         {"image": (
-            <img src={osp_image8}></img>
+            <img alt="OSP Photo" src={osp_image8}></img>
         )},
         {"image": (
-            <img src={osp_image9}></img>
+            <img alt="OSP Photo" src={osp_image9}></img>
         )},
         {"image": (
-            <img src={osp_image10}></img>
+            <img alt="OSP Photo" src={osp_image10}></img>
         )},
         {"image": (
-            <img src={osp_image11}></img>
+            <img alt="OSP Photo" src={osp_image11}></img>
         )},
         {"image": (
-            <img src={osp_image12}></img>
+            <img alt="OSP Photo" src={osp_image12}></img>
         )},
         {"image": (
-            <img src={osp_image13}></img>
+            <img alt="OSP Photo" src={osp_image13}></img>
         )}
     ]
 
     const cw_images = [
         {"image": (
-            <img src={cw1}></img>
+            <img alt="Charity Week Photo" src={cw1}></img>
         )},
         {"image": (
-            <img src={cw2}></img>
+            <img alt="Charity Week Photo" src={cw2}></img>
         )},
         {"image": (
-            <img src={cw3}></img>
+            <img alt="Charity Week Photo" src={cw3}></img>
         )},
         {"image": (
-            <img src={cw4}></img>
+            <img alt="Charity Week Photo" src={cw4}></img>
         )},
         {"image": (
-            <img src={cw5}></img>
+            <img alt="Charity Week Photo" src={cw5}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw6}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw7}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw8}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw9}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw10}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw11}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw12}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw13}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw14}></img>
+        )},
+        {"image": (
+            <img alt="Charity Week Photo" src={cw15}></img>
         )}
     ]
 
