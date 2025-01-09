@@ -48,7 +48,7 @@ const MentalResource = () => (
       </div>
     </div>
   </section>
-  );
+);
 
 const MentalHealthTips = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -232,13 +232,5 @@ const MentalHealthTips = () => {
       
     </div>
   </section>
-)};
-
-const MentalHealth = () => (
-  <div>
-    <MentalResource />
-    <MentalHealthTips />
-  </div>
-);
-
-export default MentalHealth;
+}
+*/

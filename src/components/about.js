@@ -64,8 +64,8 @@ const MeetTheTeam = () => (
   <section id="team">
     <h2 className="about-title">Meet The Team</h2>
     <div>
-      <h2 className="team-title">President & Senior Advisors</h2>
-      <img src={president} alt="President and Senior Advisors"></img>
+      <h2 className="team-title">President, Senior Advisors, and First Year Reps</h2>
+      <img src={president} alt="President, Senior Advisors, and First Year Reps"></img>
     </div>
     <div>
       <h2 className="team-title">Marketing and Communications</h2>
