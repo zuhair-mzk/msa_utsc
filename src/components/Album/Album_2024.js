@@ -46,6 +46,20 @@ import gi2 from "../../images/album/2024/grand_iftaar/GrandIftar_2.png"
 import gi3 from "../../images/album/2024/grand_iftaar/GrandIftar_3.png"
 import gi4 from "../../images/album/2024/grand_iftaar/GrandIftar_4.png"
 import gi5 from "../../images/album/2024/grand_iftaar/GrandIftar_5.png"
+import gi6 from "../../images/album/2024/grand_iftaar/GrandIftar_6.png"
+import gi7 from "../../images/album/2024/grand_iftaar/GrandIftar_7.png"
+import gi8 from "../../images/album/2024/grand_iftaar/GrandIftar_8.png"
+import gi9 from "../../images/album/2024/grand_iftaar/GrandIftar_9.png"
+import gi10 from "../../images/album/2024/grand_iftaar/GrandIftar_10.png"
+import gi11 from "../../images/album/2024/grand_iftaar/GrandIftar_11.png"
+import gi12 from "../../images/album/2024/grand_iftaar/GrandIftar_12.png"
+import gi13 from "../../images/album/2024/grand_iftaar/GrandIftar_13.png"
+import gi14 from "../../images/album/2024/grand_iftaar/GrandIftar_14.png"
+import gi15 from "../../images/album/2024/grand_iftaar/GrandIftar_15.png"
+import gi16 from "../../images/album/2024/grand_iftaar/GrandIftar_16.png"
+import gi17 from "../../images/album/2024/grand_iftaar/GrandIftar_17.png"
+import gi18 from "../../images/album/2024/grand_iftaar/GrandIftar_18.png"
+import gi19 from "../../images/album/2024/grand_iftaar/GrandIftar_19.png"
 
 const OSP2024 = () => {
 
@@ -74,30 +88,6 @@ const OSP2024 = () => {
         {"image":(
             <div className="test-image" id="image3"></div>
         )},
-        {"image":(
-            <div className="test-image" id="image4"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image5"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image0"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image1"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image2"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image3"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image4"></div>
-        )},
-        {"image":(
-            <div className="test-image" id="image5"></div>
-        )}
     ]
 
     const grand_iftaar_images = [
@@ -116,6 +106,48 @@ const OSP2024 = () => {
         {"image": (
             <img alt="Grand Iftaar Photo" src={gi5}></img>
         )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi6}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi7}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi8}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi9}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi10}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi11}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi12}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi13}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi14}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi15}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi16}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi17}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi18}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi19}></img>
+        )}
     ]
 
     const osp_images = [
