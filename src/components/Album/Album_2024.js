@@ -47,7 +47,6 @@ import gi3 from "../../images/album/2024/grand_iftaar/GrandIftar_3.png"
 import gi4 from "../../images/album/2024/grand_iftaar/GrandIftar_4.png"
 import gi5 from "../../images/album/2024/grand_iftaar/GrandIftar_5.png"
 import gi6 from "../../images/album/2024/grand_iftaar/GrandIftar_6.png"
-import gi7 from "../../images/album/2024/grand_iftaar/GrandIftar_7.png"
 import gi8 from "../../images/album/2024/grand_iftaar/GrandIftar_8.png"
 import gi9 from "../../images/album/2024/grand_iftaar/GrandIftar_9.png"
 import gi10 from "../../images/album/2024/grand_iftaar/GrandIftar_10.png"
@@ -108,9 +107,6 @@ const OSP2024 = () => {
         )},
         {"image": (
             <img alt="Grand Iftaar Photo" src={gi6}></img>
-        )},
-        {"image": (
-            <img alt="Grand Iftaar Photo" src={gi7}></img>
         )},
         {"image": (
             <img alt="Grand Iftaar Photo" src={gi8}></img>
@@ -381,7 +377,7 @@ const OSP2024 = () => {
                     <button onClick={()=>changeSlide(grand_iftaar_images,4)}><FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
                     <ul className="scroll-list">
-                        {images.map((image) => (
+                        {grand_iftaar_images.map((image) => (
                             <li>
                                 <div className="scroll-image-box" onClick={() => setMainImageIndex4(grand_iftaar_images.indexOf(image))}>
                                  {image["image"]}
