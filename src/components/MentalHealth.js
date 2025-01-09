@@ -32,9 +32,9 @@ const MentalResource = () => (
               {/* <h3>On Campus</h3> */}
                 <ul>
                   <li>Health and Wellness: visit <a target="_blank" href="https://studentlife.utoronto.ca/department/health-wellness/">here</a> or call (416)-287-7065</li>
-                  <li>Safety Abroad: visit <a target="_blank" href="https://learningabroad.utoronto.ca/safety-abroad/">here</a> or call 1-(215)-942-8478</li>
                   <li>Campus Safety: visit <a target="_blank" href="https://www.campussafety.utoronto.ca/">here</a> or call (Emegency) (416)-287-7065</li>
                   <li>Uoft Telus Health Student Support: visit <a target="_blank" href="https://mentalhealth.utoronto.ca/telus-health-student-support/">here</a> or call 1-(844)-451-9700</li>
+                  <li>Safety Abroad: visit <a target="_blank" href="https://learningabroad.utoronto.ca/safety-abroad/">here</a> or call 1-(215)-942-8478</li>
                 </ul>
             </div>
             {/* <div className="external-resource">
@@ -92,27 +92,27 @@ const MentalHealthTips = () => {
     }
     let inner_slides = document.getElementsByClassName(`slide${slideIndex-1}`)
     slides[slideIndex - 1].style.display = "block";
-    if (language == "English"){
-      inner_slides[1].style.display = "block";
-      inner_slides[0].style.display = "none";
+    inner_slides[0].style.display = "block"
+    // if (language == "English"){
+    //   inner_slides[1].style.display = "block";
+    //   inner_slides[0].style.display = "none";
+    //   // slides[slideIndex - 1].style.display = "block";
+    // } else {
+    //   inner_slides[0].style.display = "block";
+    //   inner_slides[1].style.display = "none";
       // slides[slideIndex - 1].style.display = "block";
-    } else {
-      inner_slides[0].style.display = "block";
-      inner_slides[1].style.display = "none";
-      // slides[slideIndex - 1].style.display = "block";
-    }
-    dots[slideIndex - 1].className += " active";
     
-  };
+    dots[slideIndex - 1].className += " active";
+  }
+  // const toggleLanguage = () => {
+  //   console.log(`Current Language is: ${language}`)
+  //   if (language == "English"){
+  //     setLang("Arabic")
+  //   } else {
+  //     setLang("English")
+  //   }
+  // };
 
-  const toggleLanguage = () => {
-    console.log(`Current Language is: ${language}`)
-    if (language == "English"){
-      setLang("Arabic")
-    } else {
-      setLang("English")
-    }
-  };
   return(
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
@@ -127,7 +127,7 @@ const MentalHealthTips = () => {
               <p className="dua-translation">O Allah, I am Your slave and the son of Your male slave and the son of your female slave. My forehead is in Your Hand (i.e. You have control over me). Your Judgment upon me is assured and Your Decree concerning me is just. I ask You by every Name that You have named Yourself with, revealed in Your Book, taught any one of Your creation or kept unto Yourself in the knowledge of the unseen that is with You, to make the Qur'an the spring of my heart, and the light of my chest, the banisher of my sadness and the reliever of my distress</p>
               <p className="dua-translation">Ahmad 1/391</p>
             </div>
-            <div className="slide0"></div>
+            {/* <div className="slide0"></div> */}
         </div>
         <div className="mySlides">
           <div className="slide1">
@@ -136,7 +136,7 @@ const MentalHealthTips = () => {
             <p className="dua-translation">O Allah, I seek refuge in you from grief and sadness, from weakness and from laziness, from miserliness and from cowardice, from being overcome by debt and overpowered by men</p>
             <p className="dua-translation">Al-Bukhari 7/158</p>
           </div>
-          <div className="slide1"></div>
+          {/* <div className="slide1"></div> */}
         </div>
         <div className="mySlides">
           <div className="slide2">
@@ -145,7 +145,7 @@ const MentalHealthTips = () => {
             <p className="dua-translation">O Allah, I hope for Your mercy. Do not leave me to myself even for the blinking of an eye. Correct all of my affairs for me. There is none worthy of worship but You</p>
             <p className="dua-translation">Abu Dawud 4/324, Ahmad 5/42</p>
           </div>
-          <div className="slide2"></div>
+          {/* <div className="slide2"></div> */}
         </div>
         
         <a className="prev" onClick={() => plusSlides(-1)}>
@@ -180,7 +180,7 @@ const MentalHealthTips = () => {
             counseling, and more, all delivered from Islamic perspectives. 
               Visit their <a target="_blank" href="https://muslimcounselling.ca/">website</a> or call (437)-886-6309.
 
-</p>
+          </p>
         </div>
         <div>
           <div id="org" className="org2"><img src={khalil_centre} alt="Khalil Centre"></img></div>
@@ -234,6 +234,7 @@ const MentalHealthTips = () => {
   </section>
   )}
 
+
   const MentalHealth = () => (
     <div>
       <MentalResource />
@@ -243,4 +244,4 @@ const MentalHealthTips = () => {
     
   
 
-  export default MentalHealth
+export default MentalHealth;
