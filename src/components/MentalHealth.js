@@ -232,5 +232,4 @@ const MentalHealthTips = () => {
       
     </div>
   </section>
-}
-*/
+  )}
