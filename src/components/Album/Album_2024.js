@@ -40,6 +40,13 @@ import cw13 from "../../images/album/2024/charity_week/cw13.png"
 import cw14 from "../../images/album/2024/charity_week/cw14.png"
 import cw15 from "../../images/album/2024/charity_week/cw15.png"
 
+//GI Images
+import gi1 from "../../images/album/2024/grand_iftaar/GrandIftar_1.png"
+import gi2 from "../../images/album/2024/grand_iftaar/GrandIftar_2.png"
+import gi3 from "../../images/album/2024/grand_iftaar/GrandIftar_3.png"
+import gi4 from "../../images/album/2024/grand_iftaar/GrandIftar_4.png"
+import gi5 from "../../images/album/2024/grand_iftaar/GrandIftar_5.png"
+
 const OSP2024 = () => {
 
     const [mainImageIndex1, setMainImageIndex1] = useState(0)
@@ -91,6 +98,24 @@ const OSP2024 = () => {
         {"image":(
             <div className="test-image" id="image5"></div>
         )}
+    ]
+
+    const grand_iftaar_images = [
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi1}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi2}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi3}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi4}></img>
+        )},
+        {"image": (
+            <img alt="Grand Iftaar Photo" src={gi5}></img>
+        )},
     ]
 
     const osp_images = [
@@ -201,7 +226,7 @@ const OSP2024 = () => {
         }},[slidePlayer3])
     useEffect(()=>{
         if(slidePlayer4){
-            const interval4 = setInterval(() => changeSlide(images, 4), 5000);
+            const interval4 = setInterval(() => changeSlide(grand_iftaar_images, 4), 5000);
             return () => clearInterval(interval4)
         }},[slidePlayer4])
 
@@ -314,19 +339,19 @@ const OSP2024 = () => {
                 <h2 className="title2">Grand Iftaar</h2>
                 <div className="view-container">
                     <div className="main-image">
-                        {images[mainImageIndex4]["image"]}
+                        {grand_iftaar_images[mainImageIndex4]["image"]}
                     </div>
 
                 </div>
                 <div className="playback-button">
-                    <button onClick={()=>reverseSlide(images,4)}><FontAwesomeIcon icon={faArrowLeft} /></button>
+                    <button onClick={()=>reverseSlide(grand_iftaar_images,4)}><FontAwesomeIcon icon={faArrowLeft} /></button>
                     <button onClick={()=> slidePlayer4 ? setSlidePlayer4(false) : setSlidePlayer4(true)}>{ slidePlayer4 ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}</button>
-                    <button onClick={()=>changeSlide(images,4)}><FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button onClick={()=>changeSlide(grand_iftaar_images,4)}><FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
                     <ul className="scroll-list">
                         {images.map((image) => (
                             <li>
-                                <div className="scroll-image-box" onClick={() => setMainImageIndex4(images.indexOf(image))}>
+                                <div className="scroll-image-box" onClick={() => setMainImageIndex4(grand_iftaar_images.indexOf(image))}>
                                  {image["image"]}
                                 </div>
                             </li>
