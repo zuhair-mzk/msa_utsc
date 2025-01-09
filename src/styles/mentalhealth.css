@@ -32,16 +32,17 @@
     text-decoration: underline #ceb378 5px;
   }
   
-  .mental-health-contacts {
+  .mental-health-contacts a{
     font-size: 1.2em;
     cursor: pointer;
     margin-top: 0;
     margin-right: 45px;
     color: #333;
+    text-decoration: none;
   }
 
 
-  .mental-health-contacts span:hover {
+  .mental-health-contacts a:hover {
     text-decoration: underline;
   }
 
@@ -100,6 +101,12 @@
   }
   .on-campus-resource li a {
     text-decoration: none;
+    color: #333;
+  }
+  .on-campus-resource li a:hover {
+    cursor: pointer;
+    color: #170827;
+    text-decoration: underline;
   }
   .external-resource li {
     font-size: 1.2rem;

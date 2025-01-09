@@ -21,9 +21,9 @@ const MentalResource = () => (
 
       <h3 className="emergency-contacts">Emergency Contacts</h3>
       <ul className="mental-health-contacts">
-        <li>Good2Talk: <span>1 866 925 5454</span></li>
-        <li>NISA HELPLINE: <span>1 888-315-6472</span></li>
-        <li>NASEEHA HELPLINE: <span>1 866-627-3342</span></li>
+        <li>Good2Talk: <a href="tel:+18669255454">1 866-925-5454</a></li>
+        <li>NISA HELPLINE: <a href="tel:+18883156472">1 888-315-6472</a></li>
+        <li>NASEEHA HELPLINE: <a href="tel:+18666273342">1 866-627-3342</a></li>
       </ul>
 
       <h3>On Campus Resources</h3>
@@ -31,10 +31,10 @@ const MentalResource = () => (
             <div className="on-campus-resource">
               {/* <h3>On Campus</h3> */}
                 <ul>
-                  <li>Health and Wellness: visit <a target="_blank" href="https://studentlife.utoronto.ca/department/health-wellness/">here</a> or call (416)-287-7065</li>
-                  <li>Campus Safety: visit <a target="_blank" href="https://www.campussafety.utoronto.ca/">here</a> or call (Emegency) (416)-287-7065</li>
-                  <li>Uoft Telus Health Student Support: visit <a target="_blank" href="https://mentalhealth.utoronto.ca/telus-health-student-support/">here</a> or call 1-(844)-451-9700</li>
-                  <li>Safety Abroad: visit <a target="_blank" href="https://learningabroad.utoronto.ca/safety-abroad/">here</a> or call 1-(215)-942-8478</li>
+                  <li>Health and Wellness: visit <a target="_blank" href="https://studentlife.utoronto.ca/department/health-wellness/">here</a> or call <a href="tel:+14162877065">1-(416)-287-7065</a></li>
+                  <li>Campus Safety: visit <a target="_blank" href="https://www.campussafety.utoronto.ca/">here</a> or call (Emegency) <a href="tel:+14169782222">1-(416)-978-2222</a></li>
+                  <li>Uoft Telus Health Student Support: visit <a target="_blank" href="https://mentalhealth.utoronto.ca/telus-health-student-support/">here</a> or call <a href="tel:+18444519700">1-(844)-451-9700</a></li>
+                  <li>Safety Abroad: visit <a target="_blank" href="https://learningabroad.utoronto.ca/safety-abroad/">here</a> or call <a href="tel:+12159428478">1-(215)-942-8478</a></li>
                 </ul>
             </div>
             {/* <div className="external-resource">
