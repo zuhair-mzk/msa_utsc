@@ -233,3 +233,14 @@ const MentalHealthTips = () => {
     </div>
   </section>
   )}
+
+  const MentalHealth = () => (
+    <div>
+      <MentalResource />
+      <MentalHealthTips />
+    </div>
+  )
+    
+  
+
+  export default MentalHealth
