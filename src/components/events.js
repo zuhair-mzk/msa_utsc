@@ -1,9 +1,8 @@
 import React from "react";
 import "../styles/events.css";
-import cw_auction from "../images/cw_auction.png"
-import general_meeting from "../images/general_meeting.png"
-import dawah_training from "../images/msa_dawah.png"
-import lessonsSurahYusuf from "../images/24-25 COLORS AND FONTS (20).png"
+import osp_why_lemons from "../images/osp_why_lemos.png"
+import osp_globe from "../images/osp_globe.png"
+import osp_banner from "../images/osp_banner.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -26,35 +25,34 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
       <div className="event-card">
-        <img src={dawah_training} alt="MSA Dawah Training" />
+        <img src={osp_banner} alt="OSP Banner" />
         <div className="event-text">
-          <h3>Dawah Training</h3>
-          <p>Saturday, November 16th</p>
+          <h3>Orphan Sponsorship Program</h3>
+          <p>Stay Tuned</p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdpYf_385h2ikz1dBsfqIxoUwQOhWez6Vxl55e2FRRKHED-HA/viewform"
-            className="register-button"
+            href="" className="register-button"
           >
-            Register Here
+            OSP
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={general_meeting} alt="MSA General Meeting" />
+        <img src={osp_globe} alt="Countries which OSP is currently supporting orphans" />
         <div className="event-text">
-          <h3>MSA General Meeting</h3>
-          <p>Tuesday, November 19th</p>
+          <h3>Orphan Sponsorship Program</h3>
+          <p>Stay Tuned</p>
           <a href="" className="register-button">
-            Deadline: 11:59 PM
+            OSP
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={cw_auction} alt="Charity Week Auction Dinner" />
+        <img src={osp_why_lemons} alt="What lemons symbolize" />
         <div className="event-text">
-          <h3>Charity Week Auction Dinner</h3>
-          <p>Sunday, October 27th</p>
+          <h3>Orphan Sponsorship Program</h3>
+          <p>Stay Tuned</p>
           <a href="" className="register-button">
-            Register Here
+            OSP
           </a>
         </div>
       </div>
