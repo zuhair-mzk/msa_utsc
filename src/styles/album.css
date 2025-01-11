@@ -112,7 +112,7 @@
     max-width: 90%;
     width: 700px;
     height: 60px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     overflow-x: auto;
     scrollbar-width: none;
     margin-bottom: 50px;

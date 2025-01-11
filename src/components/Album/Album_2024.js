@@ -60,7 +60,7 @@ import gi17 from "../../images/album/2024/grand_iftaar/GrandIftar_17.png"
 import gi18 from "../../images/album/2024/grand_iftaar/GrandIftar_18.png"
 import gi19 from "../../images/album/2024/grand_iftaar/GrandIftar_19.png"
 
-const OSP2024 = () => {
+const ALBUM2024 = () => {
 
     const [mainImageIndex1, setMainImageIndex1] = useState(0)
     const [mainImageIndex2, setMainImageIndex2] = useState(0)
@@ -393,4 +393,4 @@ const OSP2024 = () => {
     );
 }
 
-export default OSP2024
+export default ALBUM2024

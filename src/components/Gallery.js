@@ -10,6 +10,10 @@ import osp from "../images/album/2024/osp/osp_banner.png"
 import wd from "../images/album/2024/welcome_day/wd_banner.png"
 import gi from "../images/album/2024/grand_iftaar/gi_banner.png"
 
+import cw2023 from "../images/album/2023/charity_week/cw_preview.png"
+import bonfire2023 from "../images/album/2023/bonfire/bonfire_preview.png"
+import osp2023 from "../images/album/2023/osp_gala/osp_preview.png"
+
 
 const Gallery = () => {
 
@@ -46,15 +50,21 @@ const Gallery = () => {
         ),
         2023: (
             <div className="gallery-preview-container">
-                <div className="preview" id="event1-2023">
-                    <img src={testimage2} alt=""></img>
-                </div>
-                <div className="preview" id="event2-2023">
-                    <img src={testimage2} alt=""></img>
-                </div>
-                <div className="preview" id="event3-2023">
-                    <img src={testimage2} alt=""></img>
-                </div>
+                <Link smooth to="/album-2023#osp">
+                    <div className="preview" id="">
+                        <img src={osp2023} alt="OSP Gala"></img>
+                    </div>
+                </Link>
+                <Link smooth to="/album-2023#cw">
+                    <div className="preview" id="">
+                        <img src={cw2023} alt="Charity Week"></img>
+                    </div>
+                </Link>
+                <Link smooth to="/album-2023#bf">
+                    <div className="preview" id="">
+                        <img src={bonfire2023} alt="Bonfire"></img>
+                    </div>
+                </Link>
             </div>
         )
     }
