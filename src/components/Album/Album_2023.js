@@ -39,13 +39,13 @@ import cw12 from "../../images/album/2023/charity_week/pic12.png"
 //Bonfire Images
 import bf1 from "../../images/album/2023/bonfire/bonfire_pic1.png"
 import bf2 from "../../images/album/2023/bonfire/pic2.png"
-import bf3 from "../../images/album/2023/bonfire/pic3.png"
-import bf4 from "../../images/album/2023/bonfire/pic4.png"
+import bf3 from "../../images/album/2023/bonfire/bf_3.jpg"
 import bf5 from "../../images/album/2023/bonfire/pic5.png"
-import bf6 from "../../images/album/2023/bonfire/pic6.png"
+import bf6 from "../../images/album/2023/bonfire/fireplace.jpg"
 import bf7 from "../../images/album/2023/bonfire/pic7.png"
 import bf8 from "../../images/album/2023/bonfire/pic8.png"
 import bf9 from "../../images/album/2023/bonfire/pic9.png"
+import bf4 from "../../images/album/2023/bonfire/IMG_20221021_170336141.jpg"
 
 
 const ALBUM2023 = () => {
