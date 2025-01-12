@@ -5,11 +5,9 @@ import "../styles/programs.css";
 
 // Import images
 
-import sisterSeerahImage from "../images/sister_seerah.png"
+import sisterSeerahImage from "../images/Sister, Seerah & Suhba.png"
 import brothersHalaqahImage from "../images/brothers_halaqah.png"
-import circlesFaithImage from "../images/circles_of_faith.png"
 import surahYusuf from "../images/surah_yusuf.png"
-import soulFood from "../images/soul_food.png"
 
 const Programs = () => (
   <section id="programs">
@@ -39,10 +37,7 @@ const Programs = () => (
             will cover the Seerah book "When the Moon Split", and learn deepen our knowledge of 
             the Seerah and Suhba.
           </p>
-          <a
-            href=""
-            className="register-button"
-          >
+          <a target="_blank" href="" className="register-button">
             Drop In Program
           </a>
         </div>
@@ -56,10 +51,7 @@ const Programs = () => (
             brothers, and re-connect with Islam through our spiritually engaging
             halaqahs.
           </p>
-          <a
-            href=""
-            className="register-button"
-          >
+          <a target="_blank" href="" className="register-button">
             Drop In Program
           </a>
         </div>
@@ -72,10 +64,7 @@ const Programs = () => (
           Brothers! Join us on Friday for an evening of discussion and learning from the teachings of Surah Yusuf,
            with Imam Humza Asad. Every Friday at 5:00 PM
           </p>
-          <a
-            href=""
-            className="register-button"
-          >
+          <a target="_blank" href="" className="register-button">
             Drop In Program
           </a>
         </div>
