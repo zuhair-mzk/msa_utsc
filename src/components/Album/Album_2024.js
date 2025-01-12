@@ -60,6 +60,21 @@ import gi17 from "../../images/album/2024/grand_iftaar/GrandIftar_17.png"
 import gi18 from "../../images/album/2024/grand_iftaar/GrandIftar_18.png"
 import gi19 from "../../images/album/2024/grand_iftaar/GrandIftar_19.png"
 
+//WD Images
+import wd1 from "../../images/album/2024/welcome_day/wdpic1.png"
+import wd2 from "../../images/album/2024/welcome_day/wdpic2.png"
+import wd3 from "../../images/album/2024/welcome_day/wdpic3.png"
+import wd4 from "../../images/album/2024/welcome_day/wdpic4.png"
+import wd5 from "../../images/album/2024/welcome_day/wdpic5.png"
+import wd6 from "../../images/album/2024/welcome_day/wdpic6.png"
+import wd7 from "../../images/album/2024/welcome_day/wdpic7.png"
+import wd8 from "../../images/album/2024/welcome_day/wdpic8.png"
+import wd9 from "../../images/album/2024/welcome_day/wdpic9.png"
+import wd10 from "../../images/album/2024/welcome_day/wdpic10.png"
+import wd11 from "../../images/album/2024/welcome_day/wdpic11.png"
+import wd12 from "../../images/album/2024/welcome_day/wdpic12.png"
+import wd13 from "../../images/album/2024/welcome_day/wdpic13.png"
+
 const ALBUM2024 = () => {
 
     const [mainImageIndex1, setMainImageIndex1] = useState(0)
@@ -72,20 +87,45 @@ const ALBUM2024 = () => {
     const [slidePlayer3, setSlidePlayer3] = useState(true)
     const [slidePlayer4, setSlidePlayer4] = useState(true)
 
-    const images = [
-        {"image":(
-            <div className="test-image" id="image0"></div>
+    const wd_images = [
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd1}></img>
         )},
-        {"image":(
-            <div className="test-image" id="image1">
-
-            </div>
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd2}></img>
         )},
-        {"image":(
-            <div className="test-image" id="image2"></div>
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd3}></img>
         )},
-        {"image":(
-            <div className="test-image" id="image3"></div>
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd4}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd5}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd6}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd7}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd8}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd9}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd10}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd11}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd12}></img>
+        )},
+        {"image": (
+            <img alt="Welcome Day Photo" src={wd13}></img>
         )},
     ]
 
@@ -249,7 +289,7 @@ const ALBUM2024 = () => {
         }},[slidePlayer2])
     useEffect(()=>{
         if(slidePlayer3){
-            const interval3 = setInterval(() => changeSlide(images, 3), 5000);
+            const interval3 = setInterval(() => changeSlide(wd_images, 3), 5000);
             return () => clearInterval(interval3)
         }},[slidePlayer3])
     useEffect(()=>{
@@ -342,19 +382,19 @@ const ALBUM2024 = () => {
                 <h2 className="title2">Welcome Day</h2>
                 <div className="view-container">
                     <div className="main-image">
-                        {images[mainImageIndex3]["image"]}
+                        {wd_images[mainImageIndex3]["image"]}
                     </div>
 
                 </div>
                 <div className="playback-button">
-                    <button onClick={()=>reverseSlide(images,3)}><FontAwesomeIcon icon={faArrowLeft} /></button>
+                    <button onClick={()=>reverseSlide(wd_images,3)}><FontAwesomeIcon icon={faArrowLeft} /></button>
                     <button onClick={()=> slidePlayer3 ? setSlidePlayer3(false) : setSlidePlayer3(true)}>{ slidePlayer3 ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}</button>
-                    <button onClick={()=>changeSlide(images,3)}><FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button onClick={()=>changeSlide(wd_images,3)}><FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
                     <ul className="scroll-list">
-                        {images.map((image) => (
+                        {wd_images.map((image) => (
                             <li>
-                                <div className="scroll-image-box" onClick={() => setMainImageIndex3(images.indexOf(image))}>
+                                <div className="scroll-image-box" onClick={() => setMainImageIndex3(wd_images.indexOf(image))}>
                                  {image["image"]}
                                 </div>
                             </li>

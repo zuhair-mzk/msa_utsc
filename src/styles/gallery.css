@@ -22,7 +22,7 @@
 .gallery-title {
     color: #170827;
     text-decoration: underline #ceb378 5px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 2rem; /* Use rem for responsive font size */
   }
 
@@ -33,10 +33,9 @@
     flex-direction: column;
     align-items: center;
     width: 1200px;
-    /* border: 1px solid #ccc; */
     padding: 15px;
     box-sizing: border-box;
-    height: 500px;
+    height: auto;
     min-height: fit-content;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -66,7 +65,8 @@
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
     gap: 20px;
-    /* border: 1px solid #ccc; */
+    height: auto;
+    /* border: 1px solid; */
     border-radius: 16px;
     padding: 15px 10px;
     box-sizing: border-box;
@@ -132,21 +132,12 @@
         grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         gap: 20px;
         padding: 15px 25px;
-        margin-bottom: 100px;
         box-sizing: border-box;
-        min-height: 700px;
-
     }
     .preview {
         width: 250px;
     }
     .gallery-preview-btn-container button {
         font-size: 1.2rem;
-    }
-    .gallery-year-container {
-        margin-top: 120px;
-    }
-    .gallery-title {
-        margin-bottom: 100px;
     }
 }
