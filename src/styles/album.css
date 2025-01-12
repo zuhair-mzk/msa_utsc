@@ -117,9 +117,9 @@
     scrollbar-width: none;
     margin-bottom: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 5px;
 }
 .scroll-list li {
     list-style: none;
