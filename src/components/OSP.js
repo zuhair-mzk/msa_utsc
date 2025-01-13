@@ -19,58 +19,58 @@ const OspSlide = () => {
   const [slideIndex, setSlideIndex] = useState(1);
   const [yearIndex, setYearIndex] = useState(2024)
 
-  useEffect(() => {
-    showSlides(slideIndex);
-    const interval = setInterval(() => {
-      plusSlides(1);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [slideIndex])
+  // useEffect(() => {
+  //   showSlides(slideIndex);
+  //   const interval = setInterval(() => {
+  //     plusSlides(1);
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, [slideIndex])
 
-  const plusSlides = (n) => {
-    showSlides(slideIndex + n);
-  };
-  const currentSlide = (n) => {
-    showSlides(n);
-  };
+  // const plusSlides = (n) => {
+  //   showSlides(slideIndex + n);
+  // };
+  // const currentSlide = (n) => {
+  //   showSlides(n);
+  // };
 
-  const showSlides = (n) => {
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      setSlideIndex(1);
-    } else if (n < 1) {
-      setSlideIndex(slides.length);
-    } else {
-      setSlideIndex(n);
-    }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  };
+  // const showSlides = (n) => {
+  //   const slides = document.getElementsByClassName("mySlides");
+  //   const dots = document.getElementsByClassName("dot");
+  //   if (n > slides.length) {
+  //     setSlideIndex(1);
+  //   } else if (n < 1) {
+  //     setSlideIndex(slides.length);
+  //   } else {
+  //     setSlideIndex(n);
+  //   }
+  //   for (let i = 0; i < slides.length; i++) {
+  //     slides[i].style.display = "none";
+  //   }
+  //   for (let i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  //   }
+  //   slides[slideIndex - 1].style.display = "block";
+  //   dots[slideIndex - 1].className += " active";
+  // };
 
-  const slideData = {
-    2024: (
-      <div className="slideshow-container-osp">
-        <img className="mySlides" src={osp_gala_2024}></img>
-        <img className="mySlides" src={osp_petting_2024}></img>
-        <img className="mySlides" src={osp_quran_2024}></img>
-        <img className="mySlides" src={osp_barber_2024}></img>
+  // const slideData = {
+  //   2024: (
+  //     <div className="slideshow-container-osp">
+  //       <img className="mySlides" src={osp_gala_2024}></img>
+  //       <img className="mySlides" src={osp_petting_2024}></img>
+  //       <img className="mySlides" src={osp_quran_2024}></img>
+  //       <img className="mySlides" src={osp_barber_2024}></img>
       
-        <a className="prev" onClick={() => plusSlides(-1)}>
-          ❮
-        </a>
-        <a className="next" onClick={() => plusSlides(1)}>
-          ❯
-        </a>
-      </div>
-    )
-  }
+  //       <a className="prev" onClick={() => plusSlides(-1)}>
+  //         ❮
+  //       </a>
+  //       <a className="next" onClick={() => plusSlides(1)}>
+  //         ❯
+  //       </a>
+  //     </div>
+  //   )
+  // }
 
   const setYear = (year) => {
     setYearIndex(year)
@@ -137,9 +137,9 @@ const OspSlide = () => {
     <div className="osp-content">
       <h2 className="title-2">Past OSP Initiatives</h2>
       <div className="container">
-        <div className="osp-btn-container">    
+        {/*<div className="osp-btn-container">    
           <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2023 - 2024</button>
-          {/* <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button> */}
+          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button>
         </div>
         {slideData[yearIndex]}
         <div className="dot-container">
@@ -147,7 +147,35 @@ const OspSlide = () => {
           <span className="dot" onClick={() => currentSlide(1)}></span>
           <span className="dot" onClick={() => currentSlide(2)}></span>
           <span className="dot" onClick={() => currentSlide(3)}></span>
+        </div>*/}
+
+        <div className="grid-section">
+          <div className="grid-img">
+
+          </div>
+          <div className="grid-text">
+            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p> 
+          </div>
         </div>
+
+        <div className="grid-section">
+          <div className="grid-img">
+
+          </div>
+          <div className="grid-text">
+            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
+          </div>
+        </div>
+
+        <div className="grid-section">
+          <div className="grid-img">
+
+          </div>
+          <div className="grid-text">
+            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

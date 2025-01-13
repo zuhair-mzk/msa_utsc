@@ -85,7 +85,7 @@
 }
 
 /*SLIDESHOW*/
-.slideshow-container-osp {
+/* .slideshow-container-osp {
   width: 900px;
   display: grid;
   place-items: center;
@@ -97,9 +97,9 @@
   padding: 0;
   justify-content: center;
   overflow: hidden;
-  /* align-items: center;
-  position: relative; */
-  box-sizing: border-box;
+  align-items: center;
+  position: relative; remove
+  box-sizing: border-box; remove
 }
 
 .mySlides {
@@ -108,8 +108,8 @@
   border-radius: 10px;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-}
+  box-sizing: border-box; remove
+} */
 
 
 /* TEST SLIDES */
@@ -121,8 +121,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 0;
+  width: 90%;
+  border: solid 1px #ccc;
+  gap: 1rem;
 }
-.osp-btn-container {
+/* .osp-btn-container {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 30px;
@@ -150,7 +153,7 @@ margin-top: -30px;
 padding: 16px;
 color: #888;
 font-weight: bold;
-font-size: 1.25rem; /* Use rem for responsive font size */
+font-size: 1.25rem;
 border-radius: 0 3px 3px 0;
 user-select: none;
 }
@@ -188,6 +191,37 @@ background-color: #bbb;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
+} */
+
+/* TESTING */
+.grid-section {
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  border: 1px solid;
+  /* gap: 2rem; */
+}
+
+.grid-img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+}
+
+.grid-text {
+  text-align: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #ccc;
+}
+
+.grid-text p {
+  font-size: 1.3rem;
+  width: 90%;
 }
 
 /* Responsiveness */
