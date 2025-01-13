@@ -24,14 +24,7 @@ const Footer = () => (
         <p>Email: utscmsa1@gmail.com</p>
       </div>
       <div className="footer-center">
-        <h3>Charity Week Sponsors</h3>
-        <div className="sponsors">
-          {/* <img src={sponsor1} alt="Sponsor 1" />
-          <img src={sponsor2} alt="Sponsor 2" />
-          <img src={sponsor3} alt="Sponsor 3" />
-          <img src={sponsor4} alt="Sponsor 4" /> */}
-          <p>Coming Soon...</p>
-        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1USwiBZIF6FcWvb_Hgh1qaRMZ3jh0rI3pFvZs6CT6pt3QVQ/viewform?embedded=true" width="600" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
       <div className="footer-right">
         <h3>Newsletter</h3>
