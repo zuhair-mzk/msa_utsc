@@ -9,6 +9,10 @@ import osp_petting_2024 from "../images/osp_slide_petting.png"
 import osp_quran_2024 from "../images/osp_slide_quran.png"
 import osp_gala_2024 from "../images/osp_slide_gala.jpg"
 import osp_barber_2024 from "../images/osp_slide_barber.png"
+
+import ospImage1 from "../images/album/2024/osp/pic3.png"
+import ospImage2 from "../images/album/2024/osp/pic4.png"
+import ospImage3 from "../images/album/2024/osp/pic8.png"
 //2023
 // import osp_gala_2023 from "../images/osp_gala_2023.png"
 // import osp_sponsor_2023 from "../images/osp_gala_sponsor_2023.png"
@@ -151,7 +155,7 @@ const OspSlide = () => {
 
         <div className="grid-section">
           <div className="grid-img">
-
+            <img alt="OSP Image" src={ospImage1}></img>
           </div>
           <div className="grid-text">
             <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p> 
@@ -159,17 +163,17 @@ const OspSlide = () => {
         </div>
 
         <div className="grid-section">
-          <div className="grid-img">
-
-          </div>
           <div className="grid-text">
             <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
+          </div>
+          <div className="grid-img">
+          <img alt="OSP Image" src={ospImage2}></img>
           </div>
         </div>
 
         <div className="grid-section">
           <div className="grid-img">
-
+            <img alt="OSP Image" src={ospImage3}></img>
           </div>
           <div className="grid-text">
             <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
