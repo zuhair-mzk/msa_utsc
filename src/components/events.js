@@ -1,11 +1,8 @@
 import React from "react";
 import "../styles/events.css";
-import osp_why_lemons from "../images/osp_why_lemos.png"
-import osp_globe from "../images/osp_globe.png"
-import osp_banner from "../images/osp_banner.png"
 
 import ospHT from "../images/OSP - High Tea.png"
-import ospCS from "../images/OSP - Coming Soon.png"
+import ospbarber from "../images/osp_barber_aman.png"
 import ospQC from "../images/OSP - QC.png"
 
 import { HashLink as Link } from "react-router-hash-link";
@@ -49,12 +46,12 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={ospCS} alt="OSP GalaComing Soon" />
+        <img src={ospbarber} alt="OSP Barbershop" />
         <div className="event-text">
-          <h3>Orphan Sponsorship Program Gala</h3>
-          <p>Sunday, January 26th</p>
+          <h3>OSP Barbershop</h3>
+          <p>Thursday, January 16th</p>
           <a target="_blank" href="" className="register-button">
-            Registration Available Soon
+            Payment In-Person
           </a>
         </div>
       </div>
