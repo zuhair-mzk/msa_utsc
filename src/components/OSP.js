@@ -5,80 +5,13 @@ import Osp_Banner from "./osp_banner"
 
 // Import image
 //2024
-import osp_petting_2024 from "../images/osp_slide_petting.png"
-import osp_quran_2024 from "../images/osp_slide_quran.png"
-import osp_gala_2024 from "../images/osp_slide_gala.jpg"
-import osp_barber_2024 from "../images/osp_slide_barber.png"
-
-import ospImage1 from "../images/album/2024/osp/pic3.png"
-import ospImage2 from "../images/album/2024/osp/pic4.png"
+import ospImage1 from "../images/album/2024/osp/osp_barber_2024.png"
+import ospImage2 from "../images/album/2024/osp/osp_quran_comp.png"
 import ospImage3 from "../images/album/2024/osp/pic3.png"
-//2023
-// import osp_gala_2023 from "../images/osp_gala_2023.png"
-// import osp_sponsor_2023 from "../images/osp_gala_sponsor_2023.png"
-// import osp_profile_2023 from "../images/osp_gala_profile_2023.png"
-// import osp_food_2023 from "../images/osp_gala_food_2023.png"
+
 
 const OspSlide = () => {
-  const [slideIndex, setSlideIndex] = useState(1);
-  const [yearIndex, setYearIndex] = useState(2024)
 
-  // useEffect(() => {
-  //   showSlides(slideIndex);
-  //   const interval = setInterval(() => {
-  //     plusSlides(1);
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, [slideIndex])
-
-  // const plusSlides = (n) => {
-  //   showSlides(slideIndex + n);
-  // };
-  // const currentSlide = (n) => {
-  //   showSlides(n);
-  // };
-
-  // const showSlides = (n) => {
-  //   const slides = document.getElementsByClassName("mySlides");
-  //   const dots = document.getElementsByClassName("dot");
-  //   if (n > slides.length) {
-  //     setSlideIndex(1);
-  //   } else if (n < 1) {
-  //     setSlideIndex(slides.length);
-  //   } else {
-  //     setSlideIndex(n);
-  //   }
-  //   for (let i = 0; i < slides.length; i++) {
-  //     slides[i].style.display = "none";
-  //   }
-  //   for (let i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  //   }
-  //   slides[slideIndex - 1].style.display = "block";
-  //   dots[slideIndex - 1].className += " active";
-  // };
-
-  // const slideData = {
-  //   2024: (
-  //     <div className="slideshow-container-osp">
-  //       <img className="mySlides" src={osp_gala_2024}></img>
-  //       <img className="mySlides" src={osp_petting_2024}></img>
-  //       <img className="mySlides" src={osp_quran_2024}></img>
-  //       <img className="mySlides" src={osp_barber_2024}></img>
-      
-  //       <a className="prev" onClick={() => plusSlides(-1)}>
-  //         ❮
-  //       </a>
-  //       <a className="next" onClick={() => plusSlides(1)}>
-  //         ❯
-  //       </a>
-  //     </div>
-  //   )
-  // }
-
-  const setYear = (year) => {
-    setYearIndex(year)
-  }
   return(
   <section id="osp" >
     <div className="osp-container">
@@ -141,30 +74,21 @@ const OspSlide = () => {
     <div className="osp-content">
       <h2 className="title-2">Past OSP Initiatives</h2>
       <div className="container">
-        {/*<div className="osp-btn-container">    
-          <button className={`osp-year-btn ${yearIndex == 2024 ? 'selected-btn': '' }`} onClick={() => setYear(2024)}>2023 - 2024</button>
-          <button className={`osp-year-btn ${yearIndex == 2023 ? 'selected-btn': '' }`} onClick={() => setYear(2023)}>2022 - 2023</button>
-        </div>
-        {slideData[yearIndex]}
-        <div className="dot-container">
-          <span className="dot" onClick={() => currentSlide(1)}></span>
-          <span className="dot" onClick={() => currentSlide(1)}></span>
-          <span className="dot" onClick={() => currentSlide(2)}></span>
-          <span className="dot" onClick={() => currentSlide(3)}></span>
-        </div>*/}
 
         <div className="grid-section">
           <div className="grid-img">
             <img alt="OSP Image" src={ospImage1}></img>
           </div>
           <div className="grid-text">
-            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p> 
+            <h2>OSP Barbershop</h2>
+            <p>An event where brothers' on campus could drop by and pay for fresh haircuts from local barbers of Toronto</p> 
           </div>
         </div>
 
         <div className="grid-section">
           <div className="grid-text">
-            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
+            <h2>OSP Quran Competition</h2>
+            <p>A recitation competition, where students could recite from memory or read the Quran within Quran circles and before judges</p>
           </div>
           <div className="grid-img">
           <img alt="OSP Image" src={ospImage2}></img>
@@ -176,7 +100,8 @@ const OspSlide = () => {
             <img alt="OSP Image" src={ospImage3}></img>
           </div>
           <div className="grid-text">
-            <p>Lorem ipsum dolor sit amet. Eos galisum omnis ad natus commodi in galisum necessitatibus eum sunt laboriosam ad ullam magnam At mollitia molestias. Ut repellat nulla in recusandae inventore ea natus quos sit ipsa recusandae quo odit natus qui accusantium architecto.</p>
+            <h2>OSP Gala</h2>
+            <p>A day long gala event featuring guest speakers, and a live auction raising money for orphan sponsorhsip</p>
           </div>
         </div>
 

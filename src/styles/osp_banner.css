@@ -41,18 +41,18 @@
     gap: 5px;
     padding: 5px;
 }
-.challenge-container p{
-    font-size: 1.1rem;
-    color: #170827;
-}
 
 .challenge-img {
     aspect-ratio: 1 / 1;
     width: 250px;
-    background-color: blue;
     border-radius: 8px;  
-    cursor: pointer;
       
+}
+
+.challenge-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
 }
 
 .current-challenge {
