@@ -12,7 +12,7 @@ import osp_barber_2024 from "../images/osp_slide_barber.png"
 
 import ospImage1 from "../images/album/2024/osp/pic3.png"
 import ospImage2 from "../images/album/2024/osp/pic4.png"
-import ospImage3 from "../images/album/2024/osp/pic8.png"
+import ospImage3 from "../images/album/2024/osp/pic3.png"
 //2023
 // import osp_gala_2023 from "../images/osp_gala_2023.png"
 // import osp_sponsor_2023 from "../images/osp_gala_sponsor_2023.png"
