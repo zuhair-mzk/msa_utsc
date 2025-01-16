@@ -72,7 +72,7 @@ const OspSlide = () => {
       </p>
     </div>
     <div className="osp-content">
-      <h2 className="title-2">Past OSP Initiatives</h2>
+      <h2 className="title-2">Last Year's OSP Initiatives</h2>
       <div className="container">
 
         <div className="grid-section">
@@ -101,7 +101,7 @@ const OspSlide = () => {
           </div>
           <div className="grid-text">
             <h2>OSP Gala</h2>
-            <p>A day long gala event featuring guest speakers, dinner, and a live auction raising money for orphan sponsorhsip</p>
+            <p>A day long gala event featuring guest speakers, a grand dinner, and a live auction raising money for orphan sponsorhsip</p>
           </div>
         </div>
 

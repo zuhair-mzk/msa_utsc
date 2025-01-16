@@ -19,6 +19,7 @@ import Advocacy from "./components/Advocacy";
 import Gallery from "./components/Gallery"
 import Album2024 from "./components/Album/Album_2024"
 import Album2023 from "./components/Album/Album_2023"
+import OspProgress from "./components/osp_banner"
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
 
@@ -54,6 +55,7 @@ const Home = () => (
     <WelcomeSection />
     <Resources />
     <AnnouncementsSection />
+    <OspProgress />
     <EventsSection />
     <FeedSection />
   </div>
