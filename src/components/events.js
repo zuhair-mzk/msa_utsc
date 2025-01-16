@@ -3,7 +3,7 @@ import "../styles/events.css";
 
 import ospHT from "../images/OSP - High Tea.png"
 import ospbarber from "../images/osp_barber_aman.png"
-import ospGL from "../images/OSP - Coming Soon.png"
+import ospGL from "../images/osp_gala_2025.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -36,22 +36,22 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={ospGL} alt="OSP Gala Coming Soon" />
-        <div className="event-text">
-          <h3>OSP Gala</h3>
-          <p>Sunday, January 26th</p>
-          <a target="_blank" href="" className="register-button">
-            Registration Available Soon
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
         <img src={ospbarber} alt="OSP Barbershop" />
         <div className="event-text">
           <h3>OSP Barbershop</h3>
           <p>Thursday, January 16th</p>
           <a target="_blank" href="" className="register-button">
             Payment In-Person
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={ospGL} alt="OSP Gala 2025" />
+        <div className="event-text">
+          <h3>OSP Gala</h3>
+          <p>Sunday, January 26th</p>
+          <a target="_blank" href="https://www.zeffy.com/en-CA/ticketing/utsc-msa-osp-gala--2025" className="register-button">
+            Register Here
           </a>
         </div>
       </div>
