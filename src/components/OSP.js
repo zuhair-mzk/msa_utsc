@@ -1,5 +1,4 @@
 // src/components/OSP.js
-import React, { useState, useEffect } from "react";
 import "../styles/osp.css";
 import Osp_Banner from "./osp_banner"
 
