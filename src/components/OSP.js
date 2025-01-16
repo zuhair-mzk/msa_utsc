@@ -88,7 +88,7 @@ const OspSlide = () => {
         <div className="grid-section">
           <div className="grid-text">
             <h2>OSP Quran Competition</h2>
-            <p>A recitation competition, where students could recite from memory or read the Quran within Quran circles and before judges</p>
+            <p>A recitation competition, where students could either recite from memory or read from the Mushaf within Quran circles and before judges</p>
           </div>
           <div className="grid-img">
           <img alt="OSP Image" src={ospImage2}></img>
@@ -101,7 +101,7 @@ const OspSlide = () => {
           </div>
           <div className="grid-text">
             <h2>OSP Gala</h2>
-            <p>A day long gala event featuring guest speakers, and a live auction raising money for orphan sponsorhsip</p>
+            <p>A day long gala event featuring guest speakers, dinner, and a live auction raising money for orphan sponsorhsip</p>
           </div>
         </div>
 

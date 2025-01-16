@@ -30,6 +30,13 @@ const Osp_Banner = () => {
                         <img alt="OSP milestone image" src={milestoneQmark}></img>
                     </div>
                 </div>
+
+                <div className="challenge-container">
+                    <h2>WEEK 4</h2>
+                    <div className="challenge-img">
+                        <img alt="OSP milestone image" src={milestoneQmark}></img>
+                    </div>
+                </div>
             </div>
             
 
