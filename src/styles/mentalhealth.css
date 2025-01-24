@@ -279,7 +279,7 @@
 
 .organizations-container {
   display: grid;
-  max-width: 80%;
+  max-width: 70%;
   width: 800px;
   min-width: 40%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -305,7 +305,7 @@
 #org {
   border: 3px solid #ceb378;
   aspect-ratio: 1 /1;
-  width: 100px;
+  width: 150px;
   border-radius: 50%;
 }
 #big-org {
@@ -319,7 +319,7 @@
 #big-org {
   border: 3px solid #ceb378;
   aspect-ratio: 1 /1;
-  width: 180px;
+  width: 220px;
   border-radius: 50%;
 }
 
@@ -329,20 +329,20 @@
 }
 
 .chap-container h4 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 10px;
 }
 
 .organizations-container div h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 10px;
 }
 .organizations-container div p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -406,6 +406,30 @@
   color: #170827;
   font-size: 1.1rem;
   font-weight: bold;
+}
+@media (max-width:2200px) {
+  .organizations-container {
+    max-width: 80%;
+  }
+  #org {
+    width: 100px;
+  }
+  #big-org {
+    width: 180px;
+  }
+  .organizations-container div h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .organizations-container div p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .chap-container h4 {
+    font-size: 1.5rem;
+  }
 }
 
 
