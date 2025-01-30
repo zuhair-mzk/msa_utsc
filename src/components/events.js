@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/events.css";
 
-import ospHT from "../images/OSP - High Tea.png"
+import advocacy_week1 from "../images/Advocacy Week Post (1).jpg"
 import ospbarber from "../images/osp_barber_aman.png"
 import ospGL from "../images/osp_gala_2025.png"
 
@@ -25,13 +25,13 @@ const EventsSection = () => (
       </Link>
     </div>
     <div className="event-card-container">
-      <div className="event-card">
-        <img src={ospHT} alt="OSP High Tea" />
+    <div className="event-card">
+        <img src={advocacy_week1} alt="Green Square Campaign" />
         <div className="event-text">
-          <h3>OSP High Tea for Charity</h3>
-          <p>Tuesday, January 14th</p>
-          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJIK7JEjxvbshDvZJTI-swQujKkZMehuiuyP5D30ULzxSjiQ/viewform" className="register-button">
-            Register Here
+          <h3>Advocacy Week: Green Square Campaign</h3>
+          <p>Tuesday, January 28th</p>
+          <a target="_blank" href="" className="register-button">
+            Tabling
           </a>
         </div>
       </div>

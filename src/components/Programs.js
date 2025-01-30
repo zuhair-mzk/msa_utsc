@@ -7,6 +7,7 @@ import "../styles/programs.css";
 
 import sisterSeerahImage from "../images/Sister, Seerah & Suhba.png"
 import brothersHalaqahImage from "../images/brothers_halaqah.png"
+import sisterDhikrCircles from "../images/Sisters Friday Dhikr (2).jpg"
 import surahYusuf from "../images/surah_yusuf.png"
 
 const Programs = () => (
@@ -43,13 +44,11 @@ const Programs = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={brothersHalaqahImage} alt="Halaqahs for Brothers" />
+        <img src={sisterDhikrCircles} alt="Sisters Friday Dhikr Circles" />
         <div className="event-text">
-          <h3>'Circle of Inspiration: Live's of the Sahabah' Brother's Halaqah</h3>
+          <h3>Sisters Friday Dhikr Circles</h3>
           <p>
-            Brothers! Join us to make connections with other
-            brothers, and re-connect with Islam through our spiritually engaging
-            halaqahs.
+            Sisters! Join us to engage in collective rememberance of Allah, every Friday at 1:00 PM. Don't forget your Tasbeeh!
           </p>
           <a target="_blank" href="" className="register-button">
             Drop In Program
