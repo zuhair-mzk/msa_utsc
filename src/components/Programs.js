@@ -6,9 +6,9 @@ import "../styles/programs.css";
 // Import images
 
 import sisterSeerahImage from "../images/Sister, Seerah & Suhba.png"
-import brothersHalaqahImage from "../images/brothers_halaqah.png"
 import sisterDhikrCircles from "../images/Sisters Friday Dhikr (2).jpg"
 import surahYusuf from "../images/surah_yusuf.png"
+import reflectAndConnect from "../images/reflection&connections.png"
 
 const Programs = () => (
   <section id="programs">
@@ -28,15 +28,13 @@ const Programs = () => (
     <div className="event-card-container">
       <div className="event-card">
         <img
-          src={sisterSeerahImage}
-          alt="Sisters, Seerah, and Suhba"
+          src={reflectAndConnect}
+          alt="Reflections and Connections"
         />
         <div className="event-text">
-          <h3>Sisters, Seerah, and Suhba</h3>
+          <h3>Reflections and Connections: Sisters' Weekly Halaqah</h3>
           <p>
-            Want spiritual exercise in a comfortable space? Come join us in the prayer room where we
-            will cover the Seerah book "When the Moon Split", and learn deepen our knowledge of 
-            the Seerah and Suhba.
+            Sisters are welcome to join in for weekly talks on women, marriage, haya, and more in Islam. Led by sister Aalimah Khans. Wednesdays 4-5 PM.
           </p>
           <a target="_blank" href="" className="register-button">
             Drop In Program
@@ -46,7 +44,7 @@ const Programs = () => (
       <div className="event-card">
         <img src={sisterDhikrCircles} alt="Sisters Friday Dhikr Circles" />
         <div className="event-text">
-          <h3>Sisters Friday Dhikr Circles</h3>
+          <h3>Sisters' Friday Dhikr Circles</h3>
           <p>
             Sisters! Join us to engage in collective rememberance of Allah, every Friday at 1:00 PM. Don't forget your Tasbeeh!
           </p>

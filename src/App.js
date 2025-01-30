@@ -19,6 +19,7 @@ import Advocacy from "./components/Advocacy";
 import Gallery from "./components/Gallery"
 import Album2024 from "./components/Album/Album_2024"
 import Album2023 from "./components/Album/Album_2023"
+import Album2025 from "./components/Album/Album_2025"
 import OspProgress from "./components/osp_banner"
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/album-2024" element={<Album2024 />}/>
           <Route path="/album-2023" element={<Album2023 />}/>
+          <Route path="/album-2025" element={<Album2025 />}/>
         </Routes>
         <Footer />
       </div>

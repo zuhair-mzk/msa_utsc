@@ -1,7 +1,5 @@
 import "../styles/gallery.css"
 import React, { useEffect, useState } from "react";
-import testimage from "../images/ra_meet_the_team.png"
-import testimage2 from "../images/internal_meet_the_team.png"
 import { HashLink as Link } from "react-router-hash-link";
 
 // 
@@ -14,12 +12,35 @@ import cw2023 from "../images/album/2023/charity_week/cw_preview.png"
 import bonfire2023 from "../images/album/2023/bonfire/bonfire_preview.png"
 import osp2023 from "../images/album/2023/osp_gala/osp_preview.png"
 
+import osp2025 from "../images/album/2025/kayak/kayak_preview.png"
+import cw2025 from "../images/album/2025/charity_week/cw_preview.png"
+import kyk2025 from "../images/album/2025/osp/osp_preview.png"
+
 
 const Gallery = () => {
 
-    const [yearIndex, setYearIndex] = useState(2024);
+    const [yearIndex, setYearIndex] = useState(2025);
 
     const slideData = {
+        2025: (
+            <div className="gallery-preview-container">
+                <Link smooth to="/album-2025#osp">
+                    <div className="preview" id="">
+                        <img src={osp2025} alt="OSP Gala"></img>
+                    </div>
+                </Link>
+                <Link smooth to="/album-2025#cw">
+                    <div className="preview" id="">
+                        <img src={cw2025} alt="Charity Week"></img>
+                    </div>
+                </Link>
+                <Link smooth to="/album-2025#kyk">
+                    <div className="preview" id="">
+                        <img src={kyk2025} alt="Kayaking"></img>
+                    </div>
+                </Link>
+            </div>
+        ),
         2024: (
           <div className="gallery-preview-container">
 
@@ -75,8 +96,9 @@ const Gallery = () => {
 
                 <div className="gallery-year-container">
                     <div className="gallery-preview-btn-container">
+                        <button className={`gallery-year-btn ${yearIndex == 2025 ? 'selected-btn': ''}`} onClick={() => setYearIndex(2025)}>2025</button>
                         <button className={`gallery-year-btn ${yearIndex == 2024 ? 'selected-btn': ''}`} onClick={() => setYearIndex(2024)}>2024</button>
-                        <button className={`gallery-year-btn ${yearIndex == 2023 ? 'selected-btn': ''}`} onClick={() => setYearIndex(2023)}>2023</button>
+                        <button className={`gallery-year-btn ${yearIndex == 2023 ? 'selected-btn': ''}`} onClick={() => setYearIndex(2023)}>2023</button>     
                     </div>
                     {slideData[yearIndex]}
                 </div>
