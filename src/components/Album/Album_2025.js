@@ -280,7 +280,7 @@ const ALBUM2025 = () => {
 
             </div>
 
-            <div className="album-content" id="bf">
+            <div className="album-content" id="kyk">
                 <h2 className="title2">Kayaking Trip</h2>
                 <div className="view-container">
                     <div className="main-image">
