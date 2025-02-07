@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/events.css";
 
-import advocacy_week1 from "../images/Advocacy Week Post (1).jpg"
-import ospbarber from "../images/osp_barber_aman.png"
-import ospGL from "../images/osp_gala_2025.png"
+import messageCreatives from "../images/event-creative submissions.png"
+import IAW1 from "../images/Islam Awareness Week 2025 (1).png"
+import islamicPsych from "../images/Islamic Psych.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -26,32 +26,32 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
     <div className="event-card">
-        <img src={advocacy_week1} alt="Green Square Campaign" />
+        <img src={IAW1} alt="Islamic Awareness Week" />
         <div className="event-text">
-          <h3>Advocacy Week: Green Square Campaign</h3>
-          <p>Tuesday, January 28th</p>
+          <h3>A History of Muslim Excellence in The Americas</h3>
+          <p>Monday, February 10th</p>
           <a target="_blank" href="" className="register-button">
-            Tabling
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={ospbarber} alt="OSP Barbershop" />
+        <img src={islamicPsych} alt="Islamic Psychology: History, Contributions, and Relevance" />
         <div className="event-text">
-          <h3>OSP Barbershop</h3>
-          <p>Thursday, January 16th</p>
+          <h3>Islamic Psychology: History, Contributions, and Modern Relevance</h3>
+          <p>Tuesday, February 11th</p>
           <a target="_blank" href="" className="register-button">
-            Payment In-Person
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={ospGL} alt="OSP Gala 2025" />
+        <img src={messageCreatives} alt="OSP Gala 2025" />
         <div className="event-text">
-          <h3>OSP Gala</h3>
-          <p>Sunday, January 26th</p>
-          <a target="_blank" href="https://www.zeffy.com/en-CA/ticketing/utsc-msa-osp-gala--2025" className="register-button">
-            Register Here
+          <h3>The Message Magazine: Creative Submissions</h3>
+          <p>Deadline: Thursday, February 13th</p>
+          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSckJOMOcVbRnQSapWZoQOOquPGteqOIoWFQ1tbc9Fm4SoZVUA/viewform" className="register-button">
+            Submit Here
           </a>
         </div>
       </div>
