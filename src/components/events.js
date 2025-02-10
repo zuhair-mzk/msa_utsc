@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/events.css";
-import osp_why_lemons from "../images/osp_why_lemos.png"
-import osp_globe from "../images/osp_globe.png"
-import osp_banner from "../images/osp_banner.png"
+
+import messageCreatives from "../images/event-creative submissions.png"
+import IAW1 from "../images/Islam Awareness Week 2025 (1).png"
+import islamicPsych from "../images/Islamic Psych.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -24,35 +25,33 @@ const EventsSection = () => (
       </Link>
     </div>
     <div className="event-card-container">
-      <div className="event-card">
-        <img src={osp_banner} alt="OSP Banner" />
+    <div className="event-card">
+        <img src={IAW1} alt="Islamic Awareness Week" />
         <div className="event-text">
-          <h3>Orphan Sponsorship Program</h3>
-          <p>Stay Tuned</p>
-          <a
-            href="" className="register-button"
-          >
-            OSP
+          <h3>A History of Muslim Excellence in The Americas</h3>
+          <p>Monday, February 10th</p>
+          <a target="_blank" href="" className="register-button">
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={osp_globe} alt="Countries which OSP is currently supporting orphans" />
+        <img src={islamicPsych} alt="Islamic Psychology: History, Contributions, and Relevance" />
         <div className="event-text">
-          <h3>Orphan Sponsorship Program</h3>
-          <p>Stay Tuned</p>
-          <a href="" className="register-button">
-            OSP
+          <h3>Islamic Psychology: History, Contributions, and Modern Relevance</h3>
+          <p>Tuesday, February 11th</p>
+          <a target="_blank" href="" className="register-button">
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={osp_why_lemons} alt="What lemons symbolize" />
+        <img src={messageCreatives} alt="OSP Gala 2025" />
         <div className="event-text">
-          <h3>Orphan Sponsorship Program</h3>
-          <p>Stay Tuned</p>
-          <a href="" className="register-button">
-            OSP
+          <h3>The Message Magazine: Creative Submissions</h3>
+          <p>Deadline: Thursday, February 13th</p>
+          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSckJOMOcVbRnQSapWZoQOOquPGteqOIoWFQ1tbc9Fm4SoZVUA/viewform" className="register-button">
+            Submit Here
           </a>
         </div>
       </div>

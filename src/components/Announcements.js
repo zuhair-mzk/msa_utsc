@@ -17,20 +17,20 @@ const Announcements = () => (
       </thead>
       <tbody>
         <tr>
-          <td>03:30pm, Mon Jan 13th, 20th, & 27th</td>
-          <td>Sisters, Seerah and Suhba</td>
+          <td>04:30pm, Mon Feb 10th</td>
+          <td>A History of Muslim Excellence in The Americas</td>
         </tr>
         <tr>
-          <td>04:00pm, Wed Jan 22nd & 29th</td>
-          <td>Sisters' Weekly Halaqah</td>
+          <td>04:45pm, Tue Feb 11th</td>
+          <td>Islamic Psychology: History, Contributions, and Modern Relevance</td>
         </tr>
         <tr>
-          <td>04:00pm, Thu Jan 16th, 23th, & 30th</td>
-          <td>Brothers' Quran Circles</td>
+          <td>Deadline at 11:59pm, Thu Feb 13th</td>
+          <td>The Message Magazine: Creative Submissions</td>
         </tr>
         <tr>
-          <td>01:00pm, Fri Jan 17th, 24th, & 31st</td>
-          <td>Sisters' Friday Dhikr Circles</td>
+          <td>2025, Wed Feb 19th</td>
+          <td>Ontario Inter-MSA Ski Trip</td>
         </tr>
       </tbody>
     </table>
