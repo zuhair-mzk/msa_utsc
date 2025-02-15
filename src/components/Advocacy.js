@@ -97,7 +97,7 @@ const Advocacy = () => (
             The UTSC MSA, along with members of the student body, held several
             protests across campus, calling for the divestment, support, and
             accountability of university staff and officials regarding the
-            University's stance on the Israel-Hamas conflict in Gaza.
+            University's stance on the Israel-Hamas conflict and Genocide in Gaza.
             </p>
           </div>
         </div>
