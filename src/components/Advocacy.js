@@ -4,7 +4,9 @@ import "../styles/advocacy.css";
 
 // Import image
 //2024
-import advocacyImage1 from "../images/advocacy-2024-palestine.jpg";
+import advocacyImage1 from "../images/p_protest_img.png";
+import advocacyImage2 from "../images/green_square_img.png"
+import advocacyImage3 from "../images/islamophobia panel img.png"
 
 import agenda1 from "../images/Advocacy Week Post (1).jpg";
 
@@ -85,12 +87,33 @@ const Advocacy = () => (
     </div>
 
     <div className="advocacy-content">
-      <h2 className="title-2">Last Year's Advocacy Initiatives</h2>
+      <h2 className="title-2">Past Advocacy Initiatives</h2>
       <div className="container">
+
+        <div className="grid-section">
+          <div className="grid-text">
+            <h2>Green Square Campaign</h2>
+            <p>UTSC MSA students tabled on campus, to commemorate the Muslims killed in the Quebec mass shooting on January 29th, 2027,
+              where 6 Muslims were killed in a masjid, atop the green carpets they prayed on. They wore and handed out green squares
+              to encourage others to stand in solidarity with Muslims.</p>
+          </div>
+          <div className="grid-img">
+          <img alt="Advocacy Image" src={advocacyImage2}></img>
+          </div>
+        </div>
+
         <div className="grid-section">
           <div className="grid-img">
-            <img alt="Advocacy Image" src={advocacyImage1}></img>
+            <img alt="Advocacy Image" src={advocacyImage3}></img>
           </div>
+          <div className="grid-text">
+            <h2>Islamophobia Panel</h2>
+            <p>During Isalmic Awareness Week, UTSC MSA students created and displayed an Islamophobia panel,
+               to bring awareness to the prejudice against Islam and Muslims.</p>
+          </div>
+        </div>
+
+        <div className="grid-section">
           <div className="grid-text">
             <h2>Protests for Palestine</h2>
             <p>
@@ -100,27 +123,11 @@ const Advocacy = () => (
             University's stance on the Israel-Hamas conflict and Genocide in Gaza.
             </p>
           </div>
-        </div>
-
-        {/* <div className="grid-section">
-          <div className="grid-text">
-            <h2>Initiative Two</h2>
-            <p>A recitation competition, where students could either recite from memory or read from the Mushaf within Quran circles and before judges</p>
-          </div>
           <div className="grid-img">
-          <img alt="Advocacy Image" src={ospImage2}></img>
+            <img alt="Advocacy Image" src={advocacyImage1}></img>
           </div>
         </div>
 
-        <div className="grid-section">
-          <div className="grid-img">
-            <img alt="Advocacy Image" src={ospImage3}></img>
-          </div>
-          <div className="grid-text">
-            <h2>Initiative Three</h2>
-            <p>A day long gala event featuring guest speakers, a grand dinner, and a live auction raising money for orphan sponsorhsip</p>
-          </div>
-        </div> */}
       </div>
     </div>
   </section>
