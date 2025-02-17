@@ -93,8 +93,8 @@ const Advocacy = () => (
         <div className="grid-section">
           <div className="grid-text">
             <h2>Green Square Campaign</h2>
-            <p>UTSC MSA students tabled on campus, to commemorate the Muslims killed in the Quebec mass shooting on January 29th, 2027,
-              where 6 Muslims were killed in a masjid, atop the green carpets they prayed on. They wore and handed out green squares
+            <p>UTSC MSA students tabled on campus, to commemorate the Muslims killed in the Quebec mass shooting on January 29th, 2017.
+              6 Muslims were killed in a masjid, atop the green carpets they prayed on. They wore and handed out green squares
               to encourage others to stand in solidarity with Muslims.</p>
           </div>
           <div className="grid-img">
