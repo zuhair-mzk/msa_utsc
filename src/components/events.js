@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/events.css";
-import cw_auction from "../images/cw_auction.png"
-import general_meeting from "../images/general_meeting.png"
-import dawah_training from "../images/msa_dawah.png"
-import lessonsSurahYusuf from "../images/24-25 COLORS AND FONTS (20).png"
+
+import messageCreatives from "../images/event-creative submissions.png"
+import IAW1 from "../images/Islam Awareness Week 2025 (1).png"
+import islamicPsych from "../images/Islamic Psych.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -25,36 +25,33 @@ const EventsSection = () => (
       </Link>
     </div>
     <div className="event-card-container">
-      <div className="event-card">
-        <img src={dawah_training} alt="MSA Dawah Training" />
+    <div className="event-card">
+        <img src={IAW1} alt="Islamic Awareness Week" />
         <div className="event-text">
-          <h3>Dawah Training</h3>
-          <p>Saturday, November 16th</p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdpYf_385h2ikz1dBsfqIxoUwQOhWez6Vxl55e2FRRKHED-HA/viewform"
-            className="register-button"
-          >
-            Register Here
+          <h3>A History of Muslim Excellence in The Americas</h3>
+          <p>Monday, February 10th</p>
+          <a target="_blank" href="" className="register-button">
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={general_meeting} alt="MSA General Meeting" />
+        <img src={islamicPsych} alt="Islamic Psychology: History, Contributions, and Relevance" />
         <div className="event-text">
-          <h3>MSA General Meeting</h3>
-          <p>Tuesday, November 19th</p>
-          <a href="" className="register-button">
-            Deadline: 11:59 PM
+          <h3>Islamic Psychology: History, Contributions, and Modern Relevance</h3>
+          <p>Tuesday, February 11th</p>
+          <a target="_blank" href="" className="register-button">
+            Drop In
           </a>
         </div>
       </div>
       <div className="event-card">
-        <img src={cw_auction} alt="Charity Week Auction Dinner" />
+        <img src={messageCreatives} alt="OSP Gala 2025" />
         <div className="event-text">
-          <h3>Charity Week Auction Dinner</h3>
-          <p>Sunday, October 27th</p>
-          <a href="" className="register-button">
-            Register Here
+          <h3>The Message Magazine: Creative Submissions</h3>
+          <p>Deadline: Thursday, February 13th</p>
+          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSckJOMOcVbRnQSapWZoQOOquPGteqOIoWFQ1tbc9Fm4SoZVUA/viewform" className="register-button">
+            Submit Here
           </a>
         </div>
       </div>

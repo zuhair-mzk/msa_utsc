@@ -1,0 +1,242 @@
+.advocacy-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    margin-top: 300px;
+  }
+
+#advocacy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.advocacy-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  
+.section-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+    color: #170827;
+    margin-bottom: 10px;
+    text-decoration: underline #ceb378 5px;
+  }
+
+.advocacy-container h3 {
+    color: #333;
+    font-size: 1.75em;
+    margin-top: 20px;
+  }
+  
+.advocacy-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+.advocacy-container blockquote {
+    border-left: 4px solid #0056b3;
+    padding-left: 20px;
+    font-style: italic;
+    margin: 20px 0;
+  }
+
+  .advocacy-content {
+    text-align: center;
+    width: 90%;
+    padding: 0px 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 50px;
+    /* color: #170827; */
+    
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid #ccc; */
+  }
+
+  /* CURRENT AGENDA */
+
+  .agenda-items {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .agenda-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .agenda-content {
+    flex: 0 0 calc(33.333% - 20px); /* Flex basis calculation to fit three cards accounting for gap */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 20px; /* Spacing at the bottom of each card */
+    padding: 20px; /* Space inside the card */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    transition: 0.3s;
+  }
+
+  .agenda-content:hover {
+    padding: 25px;
+  }
+
+  .agenda-content img {
+    max-width: 100%; /* This will make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px; /* Optional: rounded corners */
+  }
+
+  .agenda-text p {
+    width: 90%;
+    margin: auto;
+    font-size: 1.25rem; /* Use rem for responsive font size */
+  }
+  
+  /* HISTORY */
+  .grid-section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    height: auto;
+    gap: 20px;
+    border: 3px solid #ceb378;
+    border-radius: 8px;
+  }
+  
+  .grid-img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    /* border: 1px solid #ccc; */
+  }
+  
+  .grid-img img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .grid-text {
+    text-align: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 9;
+    /* border: 1px solid #ccc; */
+    color: #170827;
+  }
+  
+  .grid-text h2 {
+    font-size: 2.5rem;
+  }
+  
+  .grid-text p {
+    font-size: 1.4rem;
+    width: 90%;
+    color: #555;
+  }
+  
+  @media (max-width: 1515px) {
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1rem;
+    }
+    .grid-text {
+      width: 380px;
+    }
+    .grid-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+    .grid-text {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 0.6rem;
+    }
+    .grid-text {
+      width: 90%;
+    }
+    .grid-text p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .section-title {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: center;
+    }
+    .agenda-content {
+        flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  
+    .advocacy-section h3 {
+      text-align: center;
+    }
+  
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .grid-text {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .agenda-content {
+        flex: 0 0 calc(100% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  

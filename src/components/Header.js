@@ -16,6 +16,7 @@ import {
   faChild,
   faHandshake,
   faQuestion,
+  faPhotoFilm
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
@@ -171,6 +172,14 @@ const Header = () => {
               <FontAwesomeIcon icon={faQuestion} /> FAQ
             </Link>
           </div>
+        </li>
+        <li>
+          <Link
+            to="/gallery"
+            onClick={closeNav}
+          >
+            <FontAwesomeIcon icon={faPhotoFilm} /> Gallery
+          </Link>
         </li>
       </ul>
       <div className="icon-burger" onClick={toggleNav}>

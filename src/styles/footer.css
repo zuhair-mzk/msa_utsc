@@ -6,6 +6,9 @@
   text-align: center;
   overflow: auto;
   margin-top: 200px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-content {
@@ -18,6 +21,9 @@
 .footer-right,
 .footer-center {
   flex: 1;
+}
+.footer-center {
+  min-width: 400px;
 }
 
 .footer-logo {
@@ -73,6 +79,11 @@
 .sponsors img {
   max-width: 100px;
   margin: 0 10px;
+}
+
+.footer-right {
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 /* Responsive adjustments */

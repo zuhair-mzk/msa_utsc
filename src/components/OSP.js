@@ -1,13 +1,19 @@
 // src/components/OSP.js
-import React from "react";
 import "../styles/osp.css";
+import Osp_Banner from "./osp_banner"
 
 // Import image
-import ospPathImg from "../images/osp_path.JPG";
+//2024
+import ospImage1 from "../images/album/2024/osp/osp_barber_2024.png"
+import ospImage2 from "../images/album/2024/osp/osp_quran_comp.png"
+import ospImage3 from "../images/album/2024/osp/pic3.png"
 
-const OSP = () => (
-  <section id="osp" className="osp-section">
-    <div className="container">
+
+const OspSlide = () => {
+
+  return(
+  <section id="osp" >
+    <div className="osp-container">
       <h2 className="section-title">OSP History</h2>
       <h3>What is OSP?</h3>
       <p>
@@ -63,13 +69,53 @@ const OSP = () => (
         education instead of having to find ways to earn wages to support
         themselves at such young ages.
       </p>
+    </div>
+    <div className="osp-content">
+      <h2 className="title-2">Last Year's OSP Initiatives</h2>
+      <div className="container">
 
-      <div className="osp-history">
-        <h3>OSP history since Revamp (2018):</h3>
-        <img src={ospPathImg} alt="OSP Path" className="osp-path-image" />
+        <div className="grid-section">
+          <div className="grid-img">
+            <img alt="OSP Image" src={ospImage1}></img>
+          </div>
+          <div className="grid-text">
+            <h2>OSP Barbershop</h2>
+            <p>An event where brothers' on campus could drop by and pay for fresh haircuts from local barbers of Toronto</p> 
+          </div>
+        </div>
+
+        <div className="grid-section">
+          <div className="grid-text">
+            <h2>OSP Quran Competition</h2>
+            <p>A recitation competition, where students could either recite from memory or read from the Mushaf within Quran circles and before judges</p>
+          </div>
+          <div className="grid-img">
+          <img alt="OSP Image" src={ospImage2}></img>
+          </div>
+        </div>
+
+        <div className="grid-section">
+          <div className="grid-img">
+            <img alt="OSP Image" src={ospImage3}></img>
+          </div>
+          <div className="grid-text">
+            <h2>OSP Gala</h2>
+            <p>A day long gala event featuring guest speakers, a grand dinner, and a live auction raising money for orphan sponsorhsip</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+  )
+};
+
+const OSPSection = () => (
+  <div>
+    {/* <OSP /> */}
+    <OspSlide />
+    <Osp_Banner />
+  </div>
 );
 
-export default OSP;
+export default OSPSection;
