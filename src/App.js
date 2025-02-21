@@ -58,7 +58,6 @@ const Home = () => (
     <WelcomeSection />
     <Resources />
     <AnnouncementsSection />
-    <OspProgress />
     <EventsSection />
     <FeedSection />
   </div>
