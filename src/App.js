@@ -46,7 +46,6 @@ function App() {
           <Route path="/album-2023" element={<Album2023 />}/>
           <Route path="/album-2025" element={<Album2025 />}/>
         </Routes>
-        <SponsorSection />
         <Footer />
       </div>
     </Router>
