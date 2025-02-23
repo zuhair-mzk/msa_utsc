@@ -30,10 +30,10 @@ const KnowledgeDuas = () => {
                         رَبِّ زِدْنِي عِلْمًا
                         </Typography>
                         <Typography className="p">
-                        Rabbi zidnee ‘ilmaa
+                        Rabbi zidnee ‘ilmaa.
                         </Typography>
                         <Typography className="p">
-                        My Lord, increase me in knowledge
+                        My Lord, increase me in knowledge.
                         </Typography>
                         <Typography className="p dua-source">
                         Surah Taha (Chapter 20), verse:114 (excerpted)
@@ -54,10 +54,10 @@ const KnowledgeDuas = () => {
                         رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي يَفْقَهُوا قَوْلِي
                         </Typography>
                         <Typography className="p">
-                        Rabbishrah lee sadree Wayassir lee amree Wahlul ‘uqdatan min lisanee Yafqahoo qawlee
+                        Rabbishrah lee sadree Wayassir lee amree Wahlul ‘uqdatan min lisanee Yafqahoo qawlee.
                         </Typography>
                         <Typography className="p">
-                        O my Sustainer! Open up my heart and make my task easy for me, and loosen the knot from my tongue so that they might fully understand my speech
+                        O my Sustainer! Open up my heart and make my task easy for me, and loosen the knot from my tongue so that they might fully understand my speech.
                         </Typography>
                         <Typography className="p dua-source">
                         Surah Taha (Chapter 20), verses 25-28 (excerpted)
