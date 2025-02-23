@@ -15,6 +15,25 @@
     text-align: center; /* Centers the title */
     text-decoration: underline #ceb378 5px; /* Underline with color */
   }
+
+.back-btn {
+  padding: 10px 20px;
+  background-color: #ab8e4f;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.back-btn:hover {
+  color: black;
+  background-color: #ceb378;
+  opacity: 0.8;
+}
+.btn-container {
+  margin-bottom: 12px;
+}
 .accordion {
     max-width: 900px; /* Adjust width as necessary for a wider accordion */
     margin: 0 auto;
@@ -42,7 +61,7 @@
   
   .MuiAccordionDetails-root {
     background-color: #fafcfd;
-    color: #49484b;
+    color: #616064;
     font-size: 1em;
     padding: 20px;
     margin-left: auto;
@@ -52,10 +71,15 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-
   }
   .MuiAccordionDetails-root .dua-arabic {
     font-size: 1.5rem;
     color: black;
+  }
+  .MuiAccordionDetails-root .dua-source {
+    font-size: 0.8rem;
+    color: #49484b;
+  }
+  .MuiAccordionDetails-root .p {
+    padding: 8px;
   }
