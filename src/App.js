@@ -16,11 +16,17 @@ import WelcomeSection from "./components/WelcomeSection";
 import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
 import Advocacy from "./components/Advocacy";
+//ALBUM
 import Gallery from "./components/Gallery"
 import Album2024 from "./components/Album/Album_2024"
 import Album2023 from "./components/Album/Album_2023"
 import Album2025 from "./components/Album/Album_2025"
-import OspProgress from "./components/osp_banner"
+//DUAS
+import Duas from "./components/Duas"
+import KnowledgeDuas from "./components/Duas/Knowledge_Duas"
+import PrayerDuas from "./components/Duas/Prayer_Duas"
+import PraisingAllahDuas from "./components/Duas/Praisng_Allah_Duas"
+import DistressDuas from "./components/Duas/Distress_Duas"
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/main.css";
 
@@ -45,6 +51,11 @@ function App() {
           <Route path="/album-2024" element={<Album2024 />}/>
           <Route path="/album-2023" element={<Album2023 />}/>
           <Route path="/album-2025" element={<Album2025 />}/>
+          <Route path="/duas" element={<Duas />} />
+          <Route path="/duas/knowledge-duas" element={<KnowledgeDuas />} />
+          <Route path="/duas/prayer-duas" element={<PrayerDuas />} />
+          <Route path="/duas/praising-Allah-duas" element={<PraisingAllahDuas />} />
+          <Route path="/duas/distress-duas" element={<DistressDuas />} />
         </Routes>
         <Footer />
       </div>

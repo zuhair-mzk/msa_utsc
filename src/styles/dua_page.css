@@ -1,0 +1,61 @@
+#dua-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.dua-title {
+    color: #170827; /* Adjust the color to match your website's theme */
+    margin-bottom: 20px; /* Spacing between title and description */
+    font-size: 2.5em; /* Adjust size as needed */
+    text-align: center; /* Centers the title */
+    text-decoration: underline #ceb378 5px; /* Underline with color */
+  }
+.accordion {
+    max-width: 900px; /* Adjust width as necessary for a wider accordion */
+    margin: 0 auto;
+    text-align: left; /* Aligns the text of the accordion to the left */
+    margin-bottom: 40px;
+    margin-top: 25px;
+  }
+  
+  .MuiAccordion-root {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .MuiAccordionSummary-root {
+    background-color: #253e6d;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .MuiAccordionSummary-root:hover {
+    background-color: #ceb378;
+  }
+  
+  .MuiAccordionDetails-root {
+    background-color: #fafcfd;
+    color: #49484b;
+    font-size: 1em;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+  }
+  .MuiAccordionDetails-root .dua-arabic {
+    font-size: 1.5rem;
+    color: black;
+  }
