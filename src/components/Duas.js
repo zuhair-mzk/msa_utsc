@@ -56,6 +56,12 @@ const Duas = () => {
 Prayer
 Praising Allah
 Knowledge
-Distress*/
+Distress
+
+Sources:
+https://theislamicworkplace.com/2012/03/03/dua-for-studying-or-seeking-knowledge-and-taking-exams
+// 
+// 
+// */
 
 export default Duas
