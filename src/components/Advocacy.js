@@ -98,13 +98,13 @@ const Advocacy = () => (
               to encourage others to stand in solidarity with Muslims.</p>
           </div>
           <div className="grid-img">
-          <img alt="Advocacy Image" src={advocacyImage2}></img>
+          <img alt="Advocacy Image" src={advocacyImage2} className="r"></img>
           </div>
         </div>
 
         <div className="grid-section">
           <div className="grid-img">
-            <img alt="Advocacy Image" src={advocacyImage3}></img>
+            <img alt="Advocacy Image" src={advocacyImage3} className="l"></img>
           </div>
           <div className="grid-text">
             <h2>Islamophobia Panel</h2>
@@ -124,7 +124,7 @@ const Advocacy = () => (
             </p>
           </div>
           <div className="grid-img">
-            <img alt="Advocacy Image" src={advocacyImage1}></img>
+            <img alt="Advocacy Image" src={advocacyImage1} className="r"></img>
           </div>
         </div>
 
