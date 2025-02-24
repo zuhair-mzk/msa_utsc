@@ -1,5 +1,6 @@
 // src/components/MentalHealth.js
 import React, { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 import "../styles/mentalhealth.css";
 import canadianMuslimCounseling from "../images/canadian_muslim_counselling.png"
@@ -9,7 +10,6 @@ import cedarwayTherapy from "../images/cedarway_therapy.png"
 import muslimChaplaincy from "../images/muslim_chaplaincy.png"
 import ruhCare from "../images/ruh_care_logo.png"
 import khalil_centre from "../images/khalil_centre.png"
-import dua1 from "../images/mh-dua1.png"
 
   
 const MentalResource = () => (
@@ -76,7 +76,7 @@ const MentalHealthTips = () => {
 
   const showSlides = (n) => {
     const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
+    // const dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
       setSlideIndex(1);
     } else if (n < 1) {
@@ -87,9 +87,9 @@ const MentalHealthTips = () => {
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
+    // for (let i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(" active", "");
+    // }
     let inner_slides = document.getElementsByClassName(`slide${slideIndex-1}`)
     slides[slideIndex - 1].style.display = "block";
     inner_slides[0].style.display = "block"
@@ -102,7 +102,7 @@ const MentalHealthTips = () => {
     //   inner_slides[1].style.display = "none";
       // slides[slideIndex - 1].style.display = "block";
     
-    dots[slideIndex - 1].className += " active";
+    // dots[slideIndex - 1].className += " active";
   }
   // const toggleLanguage = () => {
   //   console.log(`Current Language is: ${language}`)
@@ -155,10 +155,15 @@ const MentalHealthTips = () => {
           ❯
         </a>
       </div>
-      <div className="dot-container">
+      {/* <div className="dot-container">
         <span className="dot" onClick={() => currentSlide(1)}></span>
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
+      </div> */}
+      <div className="btn-container">
+          <Link smooth to="/duas" style={{ textDecoration: 'none' }}>
+              <button className="back-btn">More Duas</button>
+          </Link>  
       </div>
       {/* <button onClick={toggleLanguage} className="language-btn">{language}</button> */}
 
