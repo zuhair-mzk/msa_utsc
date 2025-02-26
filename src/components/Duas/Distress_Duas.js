@@ -23,7 +23,7 @@ const DistressDuas = () => {
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
-                        <Typography>For anxiety and sorrow</Typography>
+                        <Typography>For anxiety and sorrow (1)</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className="p dua-arabic">
@@ -47,7 +47,7 @@ const DistressDuas = () => {
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
-                        <Typography>For anxiety and sorrow</Typography>
+                        <Typography>For anxiety and sorrow (2)</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className="p dua-arabic">
