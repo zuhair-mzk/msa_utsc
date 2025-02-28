@@ -17,10 +17,6 @@ const Announcements = () => (
       </thead>
       <tbody>
         <tr>
-          <td>Deadline at 11:59pm, Thu Feb 13th</td>
-          <td>The Message Magazine: Creative Submissions</td>
-        </tr>
-        <tr>
           <td>2025, Wed Feb 19th</td>
           <td>Ontario Inter-MSA Ski Trip</td>
         </tr>
@@ -31,6 +27,10 @@ const Announcements = () => (
         <tr>
           <td>02:15pm, Thu Feb 27th</td>
           <td>Islam Demystified. Beyond Stereotypes and Misconceptions</td>
+        </tr>
+        <tr>
+          <td>Now until the end of Ramadan</td>
+          <td>The MSA is collecting Ramadan <a href="https://www.zeffy.com/en-CA/fundraising/ramadan-iftaar-donations" target="_blank">donations</a> to help host free iftars on campus!</td>
         </tr>
       </tbody>
     </table>

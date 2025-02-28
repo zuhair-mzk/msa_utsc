@@ -45,3 +45,6 @@
 .announcements-table tr:hover {
   background-color: #ddd;
 }
+.announcements-table a {
+  text-decoration: none;
+}
