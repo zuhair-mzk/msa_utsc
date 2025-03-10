@@ -102,6 +102,11 @@ nav i {
   padding-right: 2px;
 }
 
+.donation-btn {
+  padding: 10;
+  border-radius: 12px;
+}
+
 .icon-burger {
   display: none;
   flex-direction: column;

@@ -17,7 +17,8 @@ import {
   faHandshake,
   faQuestion,
   faPhotoFilm,
-  faHandsHolding
+  faHandsHolding,
+  faHandsHelping
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
@@ -183,6 +184,14 @@ const Header = () => {
             onClick={closeNav}
           >
             <FontAwesomeIcon icon={faPhotoFilm} /> Gallery
+          </Link>
+        </li>
+        <li>
+        <Link
+            to=""
+            onClick={closeNav}
+          >
+            <FontAwesomeIcon icon={faHandsHelping} /> Donate
           </Link>
         </li>
       </ul>
