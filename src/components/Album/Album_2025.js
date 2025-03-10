@@ -1,6 +1,8 @@
 import "../../styles/album.css"
 import React, { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { HashLink as Link } from "react-router-hash-link";
+
 import {
     faPlay,
     faArrowLeft,
@@ -252,6 +254,11 @@ const ALBUM2025 = () => {
                             </li>
                         ))}
                     </ul>
+                    <div className="btn-container">
+                        <Link smooth to="/gallery" style={{ textDecoration: 'none' }}>
+                        <button className="back-btn">Back</button>
+                        </Link>  
+                    </div>
 
             </div>
 
@@ -277,6 +284,11 @@ const ALBUM2025 = () => {
                             </li>
                         ))}
                     </ul>
+                    <div className="btn-container">
+                        <Link smooth to="/gallery" style={{ textDecoration: 'none' }}>
+                        <button className="back-btn">Back</button>
+                        </Link>  
+                    </div>
 
             </div>
 
@@ -302,6 +314,11 @@ const ALBUM2025 = () => {
                             </li>
                         ))}
                     </ul>
+                    <div className="btn-container">
+                        <Link smooth to="/gallery" style={{ textDecoration: 'none' }}>
+                        <button className="back-btn">Back</button>
+                        </Link>  
+                    </div>
 
             </div>
             

@@ -23,10 +23,10 @@ const Gallery = () => {
 
     const slideData = {
         2025: (
-            <div className="gallery-preview-container">
+            <div className="gallery-preview-container" id="2025">
                 <Link smooth to="/album-2025#osp">
                     <div className="preview" id="">
-                        <img src={osp2025} alt="OSP Gala"></img>
+                        <img src={kyk2025} alt="OSP Gala"></img>
                     </div>
                 </Link>
                 <Link smooth to="/album-2025#cw">
@@ -36,13 +36,13 @@ const Gallery = () => {
                 </Link>
                 <Link smooth to="/album-2025#kyk">
                     <div className="preview" id="">
-                        <img src={kyk2025} alt="Kayaking"></img>
+                        <img src={osp2025} alt="Kayaking"></img>
                     </div>
                 </Link>
             </div>
         ),
         2024: (
-          <div className="gallery-preview-container">
+          <div className="gallery-preview-container" id="2024">
 
             <Link smooth to="/album-2024#osp">
                 <div className="preview" id="">
@@ -70,7 +70,7 @@ const Gallery = () => {
           </div>
         ),
         2023: (
-            <div className="gallery-preview-container">
+            <div className="gallery-preview-container" id="2023">
                 <Link smooth to="/album-2023#osp">
                     <div className="preview" id="">
                         <img src={osp2023} alt="OSP Gala"></img>

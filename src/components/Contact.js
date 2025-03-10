@@ -28,7 +28,7 @@ const Contact = () => (
           </p>
           <p>
             A membership card is valid for up to 5 years and available for
-            purchase at the price of $5. We’ll bet you haven’t heard of a deal
+            purchase at the price of $10. We’ll bet you haven’t heard of a deal
             this sweet. If you wish to purchase a card, please fill out the form
             below and refer to it for payment details. JazakAllah!
           </p>
