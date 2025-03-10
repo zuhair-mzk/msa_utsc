@@ -20,11 +20,12 @@ const NotificationBar = () => {
   return (
     visible && (
       <div id="notification-bar">
-        Check out the recent{" "}
+        Ramadan Mubarak
+        {/* Check out the recent{" "}
         <a href="#announcements" className="notification-link">
           charity week event
         </a>{" "}
-        as we raise $30,801.70! 🎉🎉
+        as we raise $30,801.70! 🎉🎉 */}
         <button
           id="close-notification"
           className="close-notification"

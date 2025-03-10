@@ -3,7 +3,7 @@
   color: #fafcfd;
   padding: 10px 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Brush Script MT', sans-serif;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 1000;
@@ -11,6 +11,7 @@
   top: 100px;
   left: 0;
   right: 0;
+  font-size: 2rem;
 }
 
 .notification-link {
