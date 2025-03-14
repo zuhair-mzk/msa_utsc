@@ -3,7 +3,7 @@ import "../styles/modal.css";
 
 const Modal = () => {
 
-
+    const [modalState, setModalState] = useState(0)
     
     return(
         <div>
