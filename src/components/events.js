@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/events.css";
 
-import messageCreatives from "../images/event-creative submissions.png"
-import IAW1 from "../images/Islam Awareness Week 2025 (1).png"
+import ramadan_checkin from "../images/mid_ramadan_checkin.png"
+import iftar_and_chill from "../images/iftar_and_chill.png"
 import islamicPsych from "../images/Islamic Psych.png"
 
 import { HashLink as Link } from "react-router-hash-link";
@@ -26,12 +26,22 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
     <div className="event-card">
-        <img src={IAW1} alt="Islamic Awareness Week" />
+        <img src={ramadan_checkin} alt="Mid Ramadan Check In" />
         <div className="event-text">
-          <h3>A History of Muslim Excellence in The Americas</h3>
-          <p>Monday, February 10th</p>
+          <h3>Mid Ramadan Check In</h3>
+          <p>Wednesday, March 12th</p>
           <a target="_blank" href="" className="register-button">
             Drop In
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={iftar_and_chill} alt="Iftar and Chill" />
+        <div className="event-text">
+          <h3>Iftar and Chill Movie Night</h3>
+          <p>Wednesday, March 12th</p>
+          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScKemzNC-HvtnmqrAGMkmU0aOUWHi-DjEZFPo5neN_W9X-B-Q/closedform" className="register-button">
+            Register Here
           </a>
         </div>
       </div>
@@ -42,16 +52,6 @@ const EventsSection = () => (
           <p>Tuesday, February 11th</p>
           <a target="_blank" href="" className="register-button">
             Drop In
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={messageCreatives} alt="OSP Gala 2025" />
-        <div className="event-text">
-          <h3>The Message Magazine: Creative Submissions</h3>
-          <p>Deadline: Thursday, February 13th</p>
-          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSckJOMOcVbRnQSapWZoQOOquPGteqOIoWFQ1tbc9Fm4SoZVUA/viewform" className="register-button">
-            Submit Here
           </a>
         </div>
       </div>
