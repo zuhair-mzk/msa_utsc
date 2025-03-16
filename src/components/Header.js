@@ -20,7 +20,7 @@ import {
   faHandsHolding,
   faHandsHelping
 } from "@fortawesome/free-solid-svg-icons";
-
+import Modal from "./Modal"
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState({
@@ -187,14 +187,10 @@ const Header = () => {
           </Link>
         </li>
         <li>
-        <Link
-            to=""
-            onClick={closeNav}
-          >
-            <FontAwesomeIcon icon={faHandsHelping} /> Donate
-          </Link>
+            <Modal/>
         </li>
       </ul>
+      
       <div className="icon-burger" onClick={toggleNav}>
         <div className="line"></div>
         <div className="line"></div>

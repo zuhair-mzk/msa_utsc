@@ -125,6 +125,8 @@ nav i {
   display: flex;
 }
 
+.modal-div {
+}
 @media (max-width: 1000px){
   nav .logo-text .main-text {
     font-size: 1.1rem;
