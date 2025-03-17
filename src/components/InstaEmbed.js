@@ -16,7 +16,7 @@ const InstagramEmbed = ({ url }) => {
   }, []);
 
   return (
-    <div>
+    <div style={{maxWidth: 540}}>
       <blockquote 
         className="instagram-media" 
         data-instgrm-permalink={`https://www.instagram.com/p/${url}`}
