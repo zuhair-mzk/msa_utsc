@@ -3,7 +3,7 @@ import "../styles/events.css";
 
 import ramadan_checkin from "../images/mid_ramadan_checkin.png"
 import iftar_and_chill from "../images/iftar_and_chill.png"
-import islamicPsych from "../images/Islamic Psych.png"
+import grandiftar from "../images/Grand Iftar Posts.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -46,12 +46,12 @@ const EventsSection = () => (
         </div>
       </div>
       <div className="event-card">
-        <img src={islamicPsych} alt="Islamic Psychology: History, Contributions, and Relevance" />
+        <img src={grandiftar} alt="Grand Iftar" />
         <div className="event-text">
-          <h3>Islamic Psychology: History, Contributions, and Modern Relevance</h3>
-          <p>Tuesday, February 11th</p>
-          <a target="_blank" href="" className="register-button">
-            Drop In
+          <h3>MSA Grand Iftar</h3>
+          <p>Sunday, March 16th</p>
+          <a target="_blank" href="https://www.zeffy.com/en-CA/ticketing/2025-grand-iftaar" className="register-button">
+            Register Here
           </a>
         </div>
       </div>
