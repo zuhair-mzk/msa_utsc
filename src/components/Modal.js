@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../styles/modal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHandsHelping
+  faHandsHelping,
+  faXmark
 } from "@fortawesome/free-solid-svg-icons";
 
 const Modal = () => {
@@ -26,9 +27,9 @@ const Modal = () => {
                 </div>
                 
                 <div className="modal-content">
-                    <p>Modal Info</p>
+                    <div style={{position:'relative',overflow:'hidden',height:'100%',width:'100%', maxHeight:'100%'}}><iframe title='Donation form powered by Zeffy' style={{position: 'absolute', border: 0, top:0,left:0,bottom:0,right:0,width:'100%',height:'100%'}} src='https://www.zeffy.com/embed/donation-form/donations-to-utsc-msa' allowpaymentrequest allowTransparency="true"></iframe></div>
                     <button onClick={toggleModal} className="close-modal">
-                    Close
+                    <FontAwesomeIcon icon={faXmark} />
                      </button>
 
                 </div>
