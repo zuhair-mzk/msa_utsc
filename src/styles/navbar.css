@@ -65,7 +65,7 @@ nav .links li {
 nav .links a {
   display: block;
   padding: 1em 1.5em;
-  font-size: 1rem; /* Use rem for responsive font size */
+  font-size: 0.9rem; /* Use rem for responsive font size */
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s, border-radius 0.3s;
@@ -136,13 +136,13 @@ nav i {
   }
 
   nav .links a {
-    font-size: 0.9rem; /* Use rem for responsive font size  1.125*/
+    font-size: 0.8rem; /* Use rem for responsive font size  1.125*/
     padding: 1em 1em;
     border-radius: 10px;
   }
 }
 /* Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -172,7 +172,7 @@ nav i {
   }
 
   nav .links a {
-    font-size: 0.8rem; /* Use rem for responsive font size  1.125*/
+    font-size: 0.6rem; /* Use rem for responsive font size  1.125*/
     padding: 0.5em 1em;
     border-radius: 10px;
   }
