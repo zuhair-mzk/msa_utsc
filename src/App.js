@@ -16,6 +16,7 @@ import WelcomeSection from "./components/WelcomeSection";
 import EventsCalendar from "./components/EventsCalendar";
 import MentalHealth from "./components/MentalHealth";
 import Advocacy from "./components/Advocacy";
+import SponsorBanner from "./components/SponsorsBanner"
 //ALBUM
 import Gallery from "./components/Gallery"
 import Album2024 from "./components/Album/Album_2024"
@@ -70,6 +71,7 @@ const Home = () => (
     <AnnouncementsSection />
     <EventsSection />
     <FeedSection />
+    <SponsorBanner />
   </div>
 );
 
