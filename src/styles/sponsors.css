@@ -33,45 +33,83 @@
   outline: 2px solid;
 }
 
-.sponsor-logos-scroller {
+.scroller {
   max-width: 700px;
   display: flex;
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 150px;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
 }
 
-.sponsor-logos-inner-scroller {
-  max-width: 90%;
-    width: 700px;
-    height: 60px;
-    /* border: 1px solid #ccc; */
-    overflow-x: auto;
-    scrollbar-width: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.sponsor-logos-inner-scroller li {
+.img_list {
   list-style: none;
 }
 
-.scrolll-image {
-  display: flex;
-  height: 40px;
-  width: 40px;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px;
+.scroller[data-animated=true] {
   overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.scroll-image img {
+.scroller[data-animated=true] .scroller__inner {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse
+}
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards
+}
+/* .scroller[data-speed="slow"] {
+  --_animation-duration: 50s
+}
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s
+} */
+
+
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+.test-img {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  border: 3px solid #ceb378;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #ceb378;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.scroll-img img {
   max-width: 100%;
   max-height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 50%;
 }

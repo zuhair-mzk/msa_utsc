@@ -12,51 +12,60 @@ const SponsorsBanner = () => {
   const sponsor_images = {
     2025: [
       {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
+        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
+        <div className="scroll-img"><img src={bboyz} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
+        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
+        <div className="scroll-img"><img src={bboyz} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
-      )},
-      {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
-      )},
-      {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
-      )},
-      {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
-      )},
-      {"image": (
-        <img alt="Sultan of Samosas" src={sultanSamosa}></img>
+        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
       )},
     ],
     2024: [
       {"image": (
-        <img alt="BBOYZ" src={bboyz}></img>
+        <div className="scroll-img"><img src={memon} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="BBOYZ" src={bboyz}></img>
+        <div className="scroll-img"><img src={iitLogo} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="BBOYZ" src={bboyz}></img>
+        <div className="scroll-img"><img src={memon} alt="Sultan Samosa"/></div>
       )},
       {"image": (
-        <img alt="BBOYZ" src={bboyz}></img>
-      )},
-      {"image": (
-        <img alt="BBOYZ" src={bboyz}></img>
+        <div className="scroll-img"><img src={iitLogo} alt="Sultan Samosa"/></div>
       )},
     ]
   }
+
+  const scrollers = document.querySelectorAll('.scroller')
+
+  const addAnimation = () => {
+    scrollers.forEach((scroller) => {
+      scroller.setAttribute("data-animated", true)
+
+      const scrollerInner = scroller.querySelector('.scroller__inner')
+      const scrollerContent = Array.from(scrollerInner.children)
+
+      scrollerContent.forEach((item)=> {
+        const duplicatedItem = item.cloneNode(true)
+        duplicatedItem.setAttribute("aria-hidden", true)
+        scrollerInner.appendChild(duplicatedItem)
+      })
+
+    })
+  }
+    
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+
+
 
 
 
@@ -68,19 +77,27 @@ const SponsorsBanner = () => {
         <button className="sponsor-btn" onClick={()=>{setSponsorYear(2025)}}>2025</button>
         <button className="sponsor-btn" onClick={()=>{setSponsorYear(2024)}}>2024</button>
         </div>
-        <div className="sponsor-logos-scroller">
-          <ul className="sponsor-logos-inner-scoller"> 
-          {sponsor_images[sponsorYear].map((image) => (
-              <li>
-                              <div className="scroll-image">
-                                {image["image"]}
-                              </div>             
-              </li>
-            ))}
+        <div className="scroller" data-direction="left">
+          <ul className="img_list scroller__inner"> 
+             {sponsor_images[sponsorYear].map((image) => (
+                <li>
+                      {image["image"]}
+                </li>
+              ))}
           </ul>
+          
         </div>    
     </div>
   </section>
 )};
 
 export default SponsorsBanner;
+
+
+// {sponsor_images[sponsorYear].map((image) => (
+//   <li>
+//         <div className="scroll-image">
+//           {image["image"]}
+//         </div>             
+//   </li>
+// ))}
