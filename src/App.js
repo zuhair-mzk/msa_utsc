@@ -71,7 +71,6 @@ const Home = () => (
     <AnnouncementsSection />
     <EventsSection />
     <FeedSection />
-    <SponsorBanner />
   </div>
 );
 
