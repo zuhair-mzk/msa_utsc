@@ -103,7 +103,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .footer-content {
+  .footer-bottom {
     flex-direction: column;
     text-align: center;
   }

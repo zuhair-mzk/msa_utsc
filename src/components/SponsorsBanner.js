@@ -14,15 +14,6 @@ const SponsorsBanner = () => {
       {"image": (
         <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
       )},
-      {"image": (
-        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
-      )},
-      {"image": (
-        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
-      )},
-      {"image": (
-        <div className="scroll-img"><img src={sultanSamosa} alt="Sultan Samosa"/></div>
-      )},
     ],
     2024: [
       {"image": (
@@ -75,13 +66,13 @@ const SponsorsBanner = () => {
         <button className={`sponsor-btn ${sponsorYear == 2024 ? 'selected-btn':''}`} onClick={()=>setSponsorYear(2024)}>2024</button>
       </div>
       <div className="scroller">
-          <ul className="img_list scroller__inner"> 
+          {/* <div className="img_list scroller__inner">  */}
              {sponsor_images[sponsorYear].map((image) => (
-                <li>
+                <div>
                       {image["image"]}
-                </li>
+                </div>
               ))}
-          </ul>  
+          {/* </div>   */}
       </div>    
     </div>
   </section>

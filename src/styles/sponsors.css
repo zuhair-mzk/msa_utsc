@@ -44,9 +44,10 @@ h2 {
   cursor: pointer;
   background-color: #ceb378;
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 6px 12px;
   transition: 5ms;
   text-decoration: none;
+  border: solid 4px #ceb378;
 }
 .sponsor-btn:hover {
   opacity: 0.8;
@@ -58,15 +59,18 @@ h2 {
 
 .scroller {
   max-width: 800px;
-  display: flex;
-  width: 90%;
+  display: grid;
+  place-items: center;
+  width: 80%;
   height: 170px;
   justify-content: center;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
   /* border: 1px solid #ccc; */
   height: auto;
+  gap: 1rem;
 }
 
 .img_list {
@@ -120,6 +124,7 @@ h2 {
 .scroll-img {
   height: 120px;
   width: 120px;
+  align-self: center;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -138,7 +143,8 @@ h2 {
 
 @media (max-width: 768px) {
   .scroll-img {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
   }
+
 }
