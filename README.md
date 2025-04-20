@@ -56,6 +56,9 @@ The custom domain `utscmsa.com` is managed through Namecheap. To configure the d
 1. Add the custom domain in the Vercel dashboard.
 2. Update the DNS settings in Namecheap to point to Vercel.
 
+## Search Engine Analytics 
+https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Autscmsa.com
+
 ## Project Structure
 
 - `node_modules`: Contains all the project dependencies.
