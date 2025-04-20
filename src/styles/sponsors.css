@@ -51,10 +51,11 @@ h2 {
 }
 .sponsor-btn:hover {
   opacity: 0.8;
+  text-decoration: none;
 }
 .selected-btn {
   background-color: white;
-
+  text-decoration: none;
 }
 
 .scroller {
