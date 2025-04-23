@@ -21,16 +21,16 @@ const Announcements = () => (
           <td>Anual General Meeting (Proposals Due)</td>
         </tr>
         <tr>
-          <td>02:00pm, Wed Mar 26th</td>
-          <td>Sisters Ramadan Halaqa</td>
+          <td>02:00pm, Wed Apr 9th</td>
+          <td>Gratitude Jar Making</td>
         </tr>
         <tr>
-          <td>08:50pm, Thu Mar 20th</td>
-          <td>Khatmah on Campus</td>
+          <td>04:00pm, Fri Apr 16th</td>
+          <td>Annual General Meeting</td>
         </tr>
-        <tr>
-          <td>Now until the end of Ramadan</td>
-          <td>The MSA is collecting Ramadan <a href="https://www.zeffy.com/en-CA/fundraising/ramadan-iftaar-donations" target="_blank">donations</a> to help host free iftars on campus!</td>
+        <tr>  
+          <td>Until April 26th, 2025</td>
+          <td>Final Exam Accomodations</td>
         </tr>
       </tbody>
     </table>

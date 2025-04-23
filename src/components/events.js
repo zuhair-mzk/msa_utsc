@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/events.css";
 
-import ramadan_checkin from "../images/mid_ramadan_checkin.png"
-import iftar_and_chill from "../images/iftar_and_chill.png"
-import grandiftar from "../images/Grand Iftar Posts.png"
+import exam_accomadation from "../images/msa_exam.png"
+import gratitude_jar from "../images/gratitude_jar.png"
+import election from "../images/msa_election.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -26,32 +26,32 @@ const EventsSection = () => (
     </div>
     <div className="event-card-container">
     <div className="event-card">
-        <img src={ramadan_checkin} alt="Mid Ramadan Check In" />
+        <img src={exam_accomadation} alt="Mid Ramadan Check In" />
         <div className="event-text">
-          <h3>Mid Ramadan Check In</h3>
-          <p>Wednesday, March 12th</p>
+          <h3>Final Exam Accomodations</h3>
+          <p>Available from 8 AM to 10 PM</p>
+          <a target="_blank" href="" className="register-button">
+            Until April 26th
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={election} alt="Iftar and Chill" />
+        <div className="event-text">
+          <h3>MSA AGM and Elections Timeline</h3>
+          <p>Friday, April 18th</p>
+          <a target="_blank" href="" className="register-button">
+            Follow @msa_utsc for more information
+          </a>
+        </div>
+      </div>
+      <div className="event-card">
+        <img src={gratitude_jar} alt="Grand Iftar" />
+        <div className="event-text">
+          <h3>Gratitude Jar Making</h3>
+          <p>Wednesday, April 9th</p>
           <a target="_blank" href="" className="register-button">
             Drop In
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={iftar_and_chill} alt="Iftar and Chill" />
-        <div className="event-text">
-          <h3>Iftar and Chill Movie Night</h3>
-          <p>Wednesday, March 12th</p>
-          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScKemzNC-HvtnmqrAGMkmU0aOUWHi-DjEZFPo5neN_W9X-B-Q/closedform" className="register-button">
-            Register Here
-          </a>
-        </div>
-      </div>
-      <div className="event-card">
-        <img src={grandiftar} alt="Grand Iftar" />
-        <div className="event-text">
-          <h3>MSA Grand Iftar</h3>
-          <p>Sunday, March 16th</p>
-          <a target="_blank" href="https://www.zeffy.com/en-CA/ticketing/2025-grand-iftaar" className="register-button">
-            Register Here
           </a>
         </div>
       </div>
