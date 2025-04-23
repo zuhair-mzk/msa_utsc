@@ -18,6 +18,13 @@
     margin-bottom: 70px;
 }   
 
+.challenge-container h2 {
+    font-size: 2em;
+    color: #170827;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
 .title {
     text-align: center;
   margin-left: auto;

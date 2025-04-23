@@ -169,16 +169,16 @@ const Resources = () => {
             <tbody>
               <tr>
                 <td>Jumu'ah 1</td>
-                <td>HW 305</td>
-                <td>12:30 PM</td>
-                <td>1:00 PM</td>
+                <td>SL 281 + SL 279</td>
+                <td>1:30 PM</td>
+                <td>2:00 PM</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Jumu'ah 2</td>
                 <td>HW 305</td>
                 <td>1:30 PM</td>
                 <td>2:00 PM</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
           <p className="jumuah-note">

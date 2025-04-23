@@ -20,7 +20,7 @@ const NotificationBar = () => {
   return (
     visible && (
       <div id="notification-bar">
-        Ramadan Mubarak
+        Goodluck on your Exams
         {/* Check out the recent{" "}
         <a href="#announcements" className="notification-link">
           charity week event
