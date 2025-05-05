@@ -114,7 +114,7 @@ const OSPSection = () => (
   <div>
     {/* <OSP /> */}
     <OspSlide />
-    <Osp_Banner />
+    {/* <Osp_Banner /> */}
   </div>
 );
 
