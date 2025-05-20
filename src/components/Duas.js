@@ -49,6 +49,27 @@ const Duas = () => {
 
             </div>
 
+            {/* <div className="dawah-container">
+                <div className="dawah-title-container">
+                    <h2>Da'wah</h2>
+                    <p>Here is a video of our Da'wah training session with the Muslim Hub Club.</p>
+                </div>
+                
+                <div className="dawah-video">
+                    <iframe
+                     width="1210"
+                     height="681"
+                     src="https://www.youtube.com/embed/r74JkBnqQSU"
+                     title="Da&#39;wah Training with MuslimHubClub!" 
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" 
+                     allowfullscreen>
+
+                     </iframe>
+                </div>
+
+            </div> */}
+
         </section>
     )
 }

@@ -208,6 +208,27 @@ const Resources = () => {
             ></iframe>
           </div>
         </section>
+
+        <section id="prayer-areas">
+          <h2 className="event-title">Da'wah</h2>
+          <p className="event-description">
+            Here is a video of our Da'wah training session with MuslimHubClub.
+          </p>
+          <div className="calendar-container">
+            <iframe
+              width="1210"
+              height="681"
+              src="https://www.youtube.com/embed/r74JkBnqQSU"
+              title="Da&#39;wah Training with MuslimHubClub!" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+
+              </iframe>
+          </div>
+        </section>
+
+        
       </div>
     </section>
   );
