@@ -32,6 +32,7 @@ const FeedSection = () => {
     
     return (
         <section id="feed-section">
+        <hr className="section-divider"></hr>
         <h2 className="feed-title">Our Feed</h2>
 
         <div className="feed-container">

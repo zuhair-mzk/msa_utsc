@@ -1,4 +1,5 @@
 #prayer-areas-page {
+  background: url('../../images/MSA_background.jpg');
   background-color: #fafcfd;
   padding: 50px;
   text-align: center;
@@ -6,17 +7,20 @@
 }
 
 .event-title {
-  color: #170827;
-  text-decoration: underline #ceb378 5px;
+  color: #00295cf2;
+  font-weight: bold;
   margin-bottom: 20px;
-  font-size: 2em;
-  font-family: Arial, sans-serif; /* Ensure consistent font */
+  margin-left: 320px;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
 
 .event-description {
   font-size: 1em; /* Ensure consistent font size */
   color: #170827;
   margin-bottom: 20px;
+  margin-left: 320px;
   font-family: Arial, sans-serif; /* Ensure consistent font */
 }
 
@@ -35,10 +39,12 @@ iframe {
 @media screen and (max-width: 768px) {
   .event-title {
     font-size: 1.5em;
+    margin-left: 5px;
   }
 
   .event-description {
     font-size: 0.9em;
+    margin-left: 5px;
   }
 
   iframe {

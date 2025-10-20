@@ -1,10 +1,10 @@
-import "../styles/osp_banner.css";
+import "../../styles/osp/osp_banner.css";
 
 // Milestones
-import milestone1 from "../images/osp_milestone1.png"
-import milestoneQmarkW2 from "../images/milestoneQMarksW2.png"
-import milestoneQmarkW3 from "../images/milestoneQMarksW3.png"
-import milestoneQmarkW4 from "../images/milestoneQMarksW4.png"
+import milestone1 from "../../images/osp_milestone1.png"
+import milestoneQmarkW2 from "../../images/milestoneQMarksW2.png"
+import milestoneQmarkW3 from "../../images/milestoneQMarksW3.png"
+import milestoneQmarkW4 from "../../images/milestoneQMarksW4.png"
 
 const Osp_Banner = () => {
     return(

@@ -1,20 +1,21 @@
 // src/components/Advocacy.js
 import React from "react";
-import "../styles/advocacy.css";
+import "../../styles/islamic-resources/advocacy.css";
 
 // Import image
 //2024
-import advocacyImage1 from "../images/p_protest_img.png";
-import advocacyImage2 from "../images/green_square_img.png"
-import advocacyImage3 from "../images/islamophobia panel img.png"
+import advocacyImage1 from "../../images/p_protest_img.png";
+import advocacyImage2 from "../../images/green_square_img.png"
+import advocacyImage3 from "../../images/islamophobia panel img.png"
 
-import agenda1 from "../images/Advocacy Week Post (1).jpg";
+import agenda1 from "../../images/Advocacy Week Post (1).jpg";
 
 const Advocacy = () => (
   <section id="advocacy">
     <div className="advocacy-container">
       <h2 className="section-title">MSA Advocacy</h2>
-      <h3>What is Advocacy to the MSA?</h3>
+      <div className="about-container">
+      <h3 className="section-subheading">What is Advocacy to the MSA?</h3>
       <p>
         Advocacy is at the heart of the Muslim Student Association (MSA). For
         us, it means raising awareness about issues affecting Muslim students
@@ -24,7 +25,7 @@ const Advocacy = () => (
         justice, equity, and understanding.
       </p>
 
-      <h3>Why is Advocacy Important?</h3>
+      <h3 className="section-subheading">Why is Advocacy Important?</h3>
       <p>
         Advocacy is essential because it builds bridges between communities and
         encourages meaningful dialogue. It allows us to highlight and address
@@ -34,7 +35,7 @@ const Advocacy = () => (
         campus environment.
       </p>
 
-      <h3>How can you be Involved?</h3>
+      <h3 className="section-subheading">How can you be Involved?</h3>
       <p>
         There are many ways for students to get involved in advocacy through the
         MSA. You can volunteer for events, join protests, or even lead your own
@@ -49,6 +50,7 @@ const Advocacy = () => (
           the poor and pat the head of the orphan.” (Musnad Ahmad )
         </p>
       </blockquote> */}
+    </div>
     </div>
 
     <div className="agenda-items">
@@ -92,7 +94,7 @@ const Advocacy = () => (
 
         <div className="grid-section">
           <div className="grid-text">
-            <h2>Green Square Campaign</h2>
+            <h2 className="initiative-title">Green Square Campaign</h2>
             <p>UTSC MSA students tabled on campus, to commemorate the Muslims killed in the Quebec mass shooting on January 29th, 2017.
               Six Muslims were killed in a masjid, atop the green carpets they prayed on. They wore and handed out green squares
               to encourage others to stand in solidarity with Muslims.</p>
@@ -107,7 +109,7 @@ const Advocacy = () => (
             <img alt="Advocacy Image" src={advocacyImage3} className="l"></img>
           </div>
           <div className="grid-text">
-            <h2>Islamophobia Panel</h2>
+            <h2 className="initiative-title">Islamophobia Panel</h2>
             <p>During Isalmic Awareness Week, UTSC MSA students created and displayed an Islamophobia panel,
                to bring awareness to the prejudice against Islam and Muslims.</p>
           </div>
@@ -115,7 +117,7 @@ const Advocacy = () => (
 
         <div className="grid-section">
           <div className="grid-text">
-            <h2>Protests for Palestine</h2>
+            <h2 className="initiative-title">Protests for Palestine</h2>
             <p>
             The UTSC MSA, along with members of the student body, held several
             protests across campus, calling for the divestment, support, and

@@ -1,15 +1,16 @@
 import React from "react";
-import "../styles/events.css";
+import "../../styles/programs-events/events.css";
 
-import exam_accomadation from "../images/msa_exam.png"
-import gratitude_jar from "../images/gratitude_jar.png"
-import election from "../images/msa_election.png"
+import exam_accomadation from "../../images/msa_exam.png"
+import gratitude_jar from "../../images/gratitude_jar.png"
+import election from "../../images/msa_election.png"
 
 import { HashLink as Link } from "react-router-hash-link";
 
 
 const EventsSection = () => (
   <section id="events">
+    <hr className="section-divider" />
     <div className="events-intro">
       <h2 className="event-title">Events</h2>
       <p className="event-p">

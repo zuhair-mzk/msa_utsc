@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../styles/footer.css";
-import logo from "../images/Logo.jpg";
+import logo from "../images/MSA_Logo.png";
 import sponsorBanner from "./SponsorsBanner"
 import SponsorsBanner from "./SponsorsBanner";
 

@@ -17,16 +17,18 @@ a i {
     right: 0;
     bottom: 0;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay {
     background: rgba(49,49,49,0.8);
+    position: absolute;
+    z-index: 999;
 }
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     line-height: 1.4;
     background: #f1f1f1;
     padding: 14px 28px;
@@ -36,6 +38,8 @@ a i {
     min-width: 300px;
     max-height: 600px;
     height: 100%;
+    z-index: 1000;
+    margin-left: -50%;
 }
 
 .close-modal {
@@ -44,4 +48,5 @@ a i {
     right: 11px;
     padding: 5px 8px;
     font-size: 1rem;
+    z-index: 1001;
 }

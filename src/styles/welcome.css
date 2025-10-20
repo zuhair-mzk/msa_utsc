@@ -3,6 +3,10 @@
   text-align: center;
   color: white;
   padding: 50px 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("https://landezine-award.com/wp-content/uploads/2020/04/UTSC-20.jpg")
+      no-repeat center center fixed;
+  background-size: cover;
 }
 
 .welcome-text {

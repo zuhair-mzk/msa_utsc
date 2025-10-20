@@ -1,0 +1,133 @@
+/* Prayer Times Widget Container */
+.prayertimes-container {
+  background-color: #00295C;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.prayertimes-container a {
+  display: block;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Instagram link - more specific selector */
+.prayertimes-container .instagram-link {
+  display: inline !important;
+  color: #5c96d1 !important;
+  text-decoration: none;
+  font-weight: 600;
+  width: auto !important;
+}
+
+.prayertimes-container .instagram-link:hover {
+  color: #156bc1 !important;
+  text-decoration: underline;
+}
+
+/* Ensure the widget iframe is fully responsive */
+.prayertimes-container iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none;
+  border-radius: 10px;
+  min-height: 350px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Jummah Information Section */
+.jummah-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.jummah-info .jummah-location {
+  font-size: 20px;
+}
+
+.jummah-info p {
+  font-size: 16px;
+  color: #f3f4f6;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.jummah-button,
+.feedback-button {
+  display: inline-block;
+  background-color: #5c96d1 !important;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.jummah-button:hover,
+.feedback-button:hover {
+  background-color: #397aca !important;
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+  .prayertimes-container {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .prayertimes-container iframe {
+    min-height: 500px;
+    width: 100% !important;
+  }
+
+  .jummah-info p {
+    font-size: 14px;
+  }
+
+  .jummah-button,
+  .feedback-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prayertimes-container {
+    margin: 0;
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  
+  .prayertimes-container iframe {
+    min-height: 500px;
+    width: 100% !important;
+  }
+
+  .jummah-info p {
+    font-size: 13px;
+  }
+}

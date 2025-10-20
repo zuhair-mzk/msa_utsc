@@ -1,4 +1,5 @@
 #album {
+    background: url('../images/MSA_background.jpg');
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -38,16 +39,18 @@
 }
 
 .title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #170827;
-  text-decoration: underline #ceb378 5px;
+  text-decoration: none !important;
   margin-bottom: 20px;
-  font-size: 2rem; /* Use rem for responsive font size */
+  font-size: 3rem !important; /* Use rem for responsive font size */
 }
 
 .title2 {
-    color: #170827;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #170827;
   margin-bottom: 20px;
-  font-size: 1.6rem; /* Use rem for responsive font size */
+  font-size: 3rem !important; /* Use rem for responsive font size */
 }
 
 .view-container {

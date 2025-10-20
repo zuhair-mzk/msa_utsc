@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/contact.css";
+import "../styles/connect.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -81,6 +81,7 @@ const Contact = () => (
     </section>
 
     <section id="faq-section">
+      <hr className="section-divider"></hr>
       <h2 className="faq-title">FAQ</h2>
       <div className="accordion">
         <Accordion>

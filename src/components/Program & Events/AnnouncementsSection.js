@@ -1,7 +1,7 @@
 // src/components/AnnouncementsSection.js
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import "../styles/announcementsSection.css";
+import "../../styles/programs-events/announcementsSection.css";
 
 const AnnouncementsSection = () => {
   const [slideIndex, setSlideIndex] = useState(1);

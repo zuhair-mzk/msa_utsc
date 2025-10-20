@@ -17,7 +17,7 @@ const Modal = () => {
     return(
         <>
             <a onClick={toggleModal} className="donate-btn">
-                <FontAwesomeIcon icon={faHandsHelping} />
+                
                 Donate
             </a>
             {modal &&(

@@ -1,10 +1,10 @@
 // src/components/ProgramsAndEvents.js
 import React from "react";
-import "../styles/programsAndEvents.css";
+import "../../styles/programs-events/programsAndEvents.css";
 import Announcements from "./Announcements";
 import EventsSection from "./events";
 import Programs from "./Programs";
-import OSP from "./OSP";
+import OSP from "../osp/OSP";
 import EventsCalendar from "./EventsCalendar";
 
 const ProgramsAndEvents = () => (

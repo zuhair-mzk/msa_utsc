@@ -5,6 +5,7 @@
 }
 
 #osp {
+  background: url('../../images/MSA_background.jpg');
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -42,13 +43,13 @@
 }
 
 .osp-container h3 {
-  color: #333;
+  color: #e7e4e4;
   font-size: 1.75em;
   margin-top: 20px;
 }
 
 .osp-container p {
-  color: #555;
+  color: #e7e4e4;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -140,7 +141,7 @@
 .grid-text p {
   font-size: 1.3rem;
   width: 90%;
-  color: #555;
+  color: #e8e4e4;
 }
 
 @media (max-width: 1515px) {
@@ -187,10 +188,19 @@
 
 /* Responsiveness */
 @media (max-width: 768px) {
+  #osp {
+    margin-top: -100px;
+  }
+
   .section-title {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    font-size: 2em;
+  }
+
+  .title-2 {
+    font-size: 1.8em;
   }
 
   .osp-section h3 {
@@ -198,9 +208,54 @@
   }
 
   .grid-section {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 10px;
   }
+  
   .grid-text {
-    width: 400px;
+    width: 100%;
+    max-width: none;
+    padding: 20px 15px;
+    aspect-ratio: auto;
+    min-height: auto;
+    margin: 10px 0;
+  }
+
+  .grid-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #170827;
+    font-weight: bold;
+  }
+
+  .grid-text p {
+    font-size: 1.1rem;
+    width: 100%;
+    line-height: 1.5;
+    color: #e8e4e4;
+    margin: 0;
+  }
+
+  /* OSP Image Mobile Section - Extended Width */
+  .grid-img {
+    width: 95%;
+    max-width: 350px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .grid-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .osp-content {
+    width: 95%;
+    padding: 0 10px;
   }
 }

@@ -1,6 +1,7 @@
 #about-us-section {
-  background-color: #e6e6e6;
-  margin-top: 300px;
+  background: url('../images/MSA_background.jpg');
+  background-color: #ffffff;
+  margin-top: 0;
   padding-top: 100px; /* Add this line to add space above the title */
 }
 
@@ -8,52 +9,71 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: #00295cf2;
+  font-weight: bold;
 }
 
 #about-us-section .section-title {
-  font-size: 1.5rem; /* Use rem for responsive font size */
-  color: #253e6d;
+  font-size: 2rem; /* Use rem for responsive font size */
+  color: #ced2d8 !important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 10px;
-  text-align: left;
-  margin-left: 15%;
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline #ced2d8 3px;
 }
 
 #about-us-section .section-description {
-  font-size: 1rem; /* Use rem for responsive font size */
-  color: #170827;
-  margin-bottom: 20px;
+  font-size: 1.2rem; /* Use rem for responsive font size */
+  color: #b5b9c0;
   text-align: justify;
-  padding: 0 15%;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.about-container {
+  background-color: #00295cf2;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem auto 0rem auto; /* reduced bottom margin from 0.5rem to 0rem */
+  max-width: 900px !important;
+  color: #fff;
 }
 
 #about-us-section .button-container {
   display: flex;
   justify-content: center; /* Center horizontally */
-  margin: 100px 0px; /* Add some vertical margin */
+  margin: 50px 0px 20px 0px; /* reduced top margin from 100px to 50px and bottom margin to 20px */
 }
 
 #about-us-section .button {
-  background-color: #ceb378;
-  color: #170827;
+  background-color: #5c96d1;
+  color: #e9e7ec;
   text-decoration: none;
-  padding: 0.625rem 1.25rem; /* Use rem for responsive padding */
-  border-radius: 5px;
+  padding: 1rem 3rem; /* increased padding from 0.625rem 1.25rem */
+  border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
-  margin-bottom: 100px;
+  margin-bottom: 20px; /* reduced bottom margin from 100px to 20px */
+}
+#about-us-section .button:hover {
+  background-color: #397aca;
 }
 
-#about-us-section .button:hover {
-  background-color: #ab8e4f;
-  text-decoration: none;
+.section-divider {
+  border: none;
+  height: 0.2rem;
+  width: 80%;
+  margin: 0.5rem auto;
+  background: linear-gradient(to right, transparent, #00295cf2 10%, #00295cf2 80%, transparent);
 }
 
 #team {
-  margin-top: 100px;
+  margin-top: 0;
+  background: url('../images/MSA_background.jpg');
   text-align: center;
   padding: 100px 0; /* Add padding to separate from the other sections */
-  background-color: #e6e6e6; /* Keep the same background color */
+  background-color: #ffffff; /* Keep the same background color */
 }
 
 #team img {
@@ -61,19 +81,20 @@
 }
 
 #team .about-title {
-  color: #170827;
-  text-decoration: underline #ceb378 5px;
-  margin-bottom: 20px;
+  color: #00295cf2;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
-  font-size: 2rem; /* Use rem for responsive font size */
+  font-size: 3rem; /* Use rem for responsive font size */
+  text-decoration: none;
 }
 
 #team .team-title {
   color: #253e6d;
-  text-decoration: underline #ceb378 5px;
+  text-decoration: none;
   font-size: 1.8rem;
   text-align: center;
-  margin-top: 40px;
 }
 
 /* Responsiveness */

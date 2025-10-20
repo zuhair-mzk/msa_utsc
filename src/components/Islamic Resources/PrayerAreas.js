@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/prayerareas.css";
+import "../../styles/islamic-resources/prayerareas.css";
 
 const PrayerAreas = () => (
   <section id="prayer-areas-page">

@@ -1,5 +1,6 @@
 
 #gallery-home {
+    background: url('../images/MSA_background.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,10 +21,12 @@
 }
 
 .gallery-title {
-    color: #170827;
-    text-decoration: underline #ceb378 5px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #00295cf2;
+    font-weight: bold;
+    text-decoration: none;
     margin-bottom: 20px;
-    font-size: 2rem; /* Use rem for responsive font size */
+    font-size: 3rem; /* Use rem for responsive font size */
   }
 
 .gallery-year-container {
@@ -98,7 +101,7 @@
   cursor: pointer;
 }
 .selected-btn {
-  text-decoration: underline #ceb378 5px;
+  text-decoration: underline #5c96d1 5px;
   color: #170827;
 }
 
