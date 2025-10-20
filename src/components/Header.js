@@ -23,12 +23,19 @@ import {
 import Modal from "./Modal"
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
   const [dropdownOpen, setDropdownOpen] = useState({
     aboutUs: false,
     resources: false,
     programs: false,
     contact: false,
   });
+
+  React.useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth <= 800);
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
   const toggleNav = () => {
     if (!navOpen) {
@@ -109,20 +116,20 @@ const Header = () => {
       </div>
       <ul className={`links ${navOpen ? "open" : ""}`}>
         <li className={`has-dropdown ${dropdownOpen.aboutUs ? 'dropdown-open' : ''}`}>
-          <Link
-            to="/aboutus#our-mission"
-            onClick={(e) => {
-              handleDropdownToggle("aboutUs", e);
-              // Scroll to top specifically for About Us page (only on desktop)
-              if (window.innerWidth > 800) {
-                setTimeout(() => {
-                  window.scrollTo(0, 0);
-                }, 100);
-              }
-            }}
-          >
-             About Us
-          </Link>
+          {isMobile ? (
+            <button
+              className="dropdown-toggle"
+              onClick={(e) => handleDropdownToggle("aboutUs", e)}
+            >About Us</button>
+          ) : (
+            <Link
+              to="/aboutus#our-mission"
+              onClick={(e) => handleDropdownToggle("aboutUs", e)}
+            >
+              About Us
+            </Link>
+          )}
+
           <div
             className={`dropdown-content ${dropdownOpen.aboutUs ? "open" : ""}`}
           >
@@ -138,12 +145,19 @@ const Header = () => {
           </div>
         </li>
         <li className={`has-dropdown ${dropdownOpen.resources ? 'dropdown-open' : ''}`}>
-          <Link
-            to="/resources#prayer-timings"
-            onClick={(e) => handleDropdownToggle("resources", e)}
-          >
-             Islamic Resources
-          </Link>
+          {isMobile ? (
+            <button
+              className="dropdown-toggle"
+              onClick={(e) => handleDropdownToggle("resources", e)}
+            >Resources</button>
+          ) : (
+            <Link
+              to="/resources#prayer-timings"
+              onClick={(e) => handleDropdownToggle("resources", e)}
+            >
+              Resources
+            </Link>
+          )}
           <div
             className={`dropdown-content ${
               dropdownOpen.resources ? "open" : ""
@@ -185,12 +199,19 @@ const Header = () => {
           </div>
         </li>
         <li className={`has-dropdown ${dropdownOpen.programs ? 'dropdown-open' : ''}`}>
-          <Link
-            to="/programs-events#announcements-page"
-            onClick={(e) => handleDropdownToggle("programs", e)}
-          >
-             Programs & Events
-          </Link>
+          {isMobile ? (
+            <button
+              className="dropdown-toggle"
+              onClick={(e) => handleDropdownToggle("programs", e)}
+            >Programs & Events</button>
+          ) : (
+            <Link
+              to="/programs-events#announcements-page"
+              onClick={(e) => handleDropdownToggle("programs", e)}
+            >
+              Programs & Events
+            </Link>
+          )}
           <div
             className={`dropdown-content ${
               dropdownOpen.programs ? "open" : ""
@@ -222,12 +243,19 @@ const Header = () => {
           </div>
         </li>
         <li className={`has-dropdown ${dropdownOpen.contact ? 'dropdown-open' : ''}`}>
-          <Link
-            to="/contact#get-involved"
-            onClick={(e) => handleDropdownToggle("contact", e)}
-          >
-             Connect
-          </Link>
+          {isMobile ? (
+            <button
+              className="dropdown-toggle"
+              onClick={(e) => handleDropdownToggle("contact", e)}
+            >Connect</button>
+          ) : (
+            <Link
+              to="/contact#get-involved"
+              onClick={(e) => handleDropdownToggle("contact", e)}
+            >
+              Connect
+            </Link>
+          )}
           <div
             className={`dropdown-content ${dropdownOpen.contact ? "open" : ""}`}
           >
@@ -240,15 +268,22 @@ const Header = () => {
           </div>
         </li>
         <li>
-          <Link
-            to="/gallery"
-            onClick={closeNav}
-          >
-             Gallery
-          </Link>
+          {isMobile ? (
+            <button
+              className="dropdown-toggle"
+              onClick={(e) => handleDropdownToggle("gallery", e)}
+            >Gallery</button>
+          ) : (
+            <Link
+              to="/gallery"
+              onClick={(e) => handleDropdownToggle("gallery", e)}
+            >
+              Gallery
+            </Link>
+          )}
         </li>
         <li>
-            <Modal/>
+          <Modal isMobile={isMobile} />
         </li>
       </ul>
       

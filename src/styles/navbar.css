@@ -245,6 +245,27 @@ nav .links .dropdown-content:hover {
   display: flex;
 }
 
+.dropdown-toggle {
+  width: 100%;
+  background: #00295cf2;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background: #003b8e;
+  color: #fff;
+  outline: none;
+}
+
 @media (max-width: 1000px) {
   nav {
     padding: 0 1.5rem;
