@@ -1,8 +1,9 @@
 // src/components/resources.js
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import "../styles/resources.css";
-import salam from "../images/salam.png"; // Adjust path as needed
+import PrayertimesWidget from "../PrayertimesWidget";
+import "../../styles/islamic-resources/resources.css";
+import salam from "../../images/salam.png"; // Adjust path as needed
 import moment from "moment";
 
 const Resources = () => {
@@ -10,6 +11,9 @@ const Resources = () => {
   const [hijriDate, setHijriDate] = useState("");
 
   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+    
     fetch("/prayer_times.csv")
       .then((response) => response.text())
       .then((text) => {
@@ -37,6 +41,7 @@ const Resources = () => {
 
     fetchHijriDate();
   }, []);
+
 
   const addMinutesToTime = (timeStr, minutesToAdd) => {
     const timeParts = timeStr.match(/(\d+):(\d+) (AM|PM)/);
@@ -86,111 +91,12 @@ const Resources = () => {
   return (
     <section id="resources" className="resources">
       <div className="resources-content">
-        <div className="greeting-container">
+        <div id="prayer-timings" className="greeting-container">
           <img src={salam} alt="Salam" className="salam-image" />
-          <h1 className="greeting-title">Assalamu Alaikum</h1>
-          <p>
-            Welcome to the website of the University of Toronto Scarborough's
-            Muslim Students’ Association!
-          </p>
-          <p>
-            At UTSC MSA, we seek to create a community that is open and dynamic,
-            which caters to the best interests of all Muslims on campus.{" "}
-            <HashLink to="/aboutus#about-us-section" className="mission-link">
-              Read more on our mission here.
-            </HashLink>
-          </p>
+          <p className="prayertimesTitle">Prayer Times</p>
         </div>
-        <h2 id="prayer-timings" className="table-title left-aligned">
-          Prayer Times
-        </h2>
-        <p className="table-subtitle">{hijriDate}</p>
-        <table className="prayer-table">
-          <thead>
-            <tr className="prayer-table-row">
-              <th className="prayer-table-heading">Salat</th>
-              <th className="prayer-table-heading">Begins</th>
-              <th className="prayer-table-heading">Iqamah</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="fajr-time">Fajr</td>
-              <td id="fajr-begins">{prayerTimes.fajrBegins}</td>
-              <td id="fajr-iqamah">{prayerTimes.fajrIqamah}</td>
-            </tr>
-            <tr>
-              <td>Sunrise</td>
-              <td id="sunrise-time" colSpan="2">
-                {prayerTimes.sunrise}
-              </td>
-            </tr>
-            <tr>
-              <td id="dhuhr-time">Dhuhr</td>
-              <td id="dhuhr-begins">{prayerTimes.dhuhrBegins}</td>
-              <td id="dhuhr-iqamah">{prayerTimes.dhuhrIqamah}</td>
-            </tr>
-            <tr>
-              <td id="asr-time">Asr</td>
-              <td id="asr-begins">{prayerTimes.asrBegins}</td>
-              <td id="asr-iqamah">{prayerTimes.asrIqamah}</td>
-            </tr>
-            <tr>
-              <td id="maghrib-time">Maghrib</td>
-              <td id="maghrib-begins">{prayerTimes.maghribBegins}</td>
-              <td id="maghrib-iqamah">{prayerTimes.maghribIqamah}</td>
-            </tr>
-            <tr>
-              <td id="isha-time">Isha</td>
-              <td id="isha-begins">{prayerTimes.ishaBegins}</td>
-              <td id="isha-iqamah">{prayerTimes.ishaIqamah}</td>
-            </tr>
-          </tbody>
-        </table>
-        <p className="iqamah-note">
-          All iqamah prayers are held in SL 281. Timings are based on{" "}
-          <a href="https://masjidomarfarooq.com/">Masjid Omar Farooq.</a>{" "}
-          <HashLink to="/resources#prayer-areas" className="prayer-spaces-link">
-            View all prayer spaces here.
-          </HashLink>
-        </p>
+        <PrayertimesWidget />
 
-        <div className="jumuah-info">
-          <h2 className="table-title">Jumu'ah on Campus</h2>
-          <table className="prayer-table jumuah-table">
-            <thead>
-              <tr className="prayer-table-row">
-                <th className="prayer-table-heading">Jumu'ah</th>
-                <th className="prayer-table-heading">Location</th>
-                <th className="prayer-table-heading">Khutbah Time</th>
-                <th className="prayer-table-heading">Salah Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Jumu'ah 1</td>
-                <td>SL 281 + SL 279</td>
-                <td>1:30 PM</td>
-                <td>2:00 PM</td>
-              </tr>
-              {/* <tr>
-                <td>Jumu'ah 2</td>
-                <td>HW 305</td>
-                <td>1:30 PM</td>
-                <td>2:00 PM</td>
-              </tr> */}
-            </tbody>
-          </table>
-          <p className="jumuah-note">
-            Please note that these timings may not be completely accurate. Check
-            our Instagram page for the latest updates @msa_utsc.
-          </p>
-          <br />
-          <br />
-          <button className="feedback-button" onClick={handleFeedbackClick}>
-            Jumu'ah Feedback
-          </button>
-        </div>
         <section id="prayer-areas">
           <h2 className="event-title">Prayer Areas</h2>
           <p className="event-description">
@@ -209,7 +115,7 @@ const Resources = () => {
           </div>
         </section>
 
-        <section id="prayer-areas">
+        <section id="dawah">
           <h2 className="event-title">Da'wah</h2>
           <p className="event-description">
             Here is a video of our Da'wah training session with MuslimHubClub.

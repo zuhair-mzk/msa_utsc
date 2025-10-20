@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/dua_page.css";
+import "../../styles/duas/dua_page.css";
 import { HashLink as Link } from "react-router-hash-link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";

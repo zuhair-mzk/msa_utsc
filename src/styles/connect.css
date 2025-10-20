@@ -1,18 +1,21 @@
 /* Get Involved Section Styles */
 
 #get-involved {
-  background-color: #f4f4f4; /* Or any other color you used in the Resources section */
+  background: url('../images/MSA_background.jpg');
+  background-color: #ffffff; /* Or any other color you used in the Resources section */
   padding: 50px 0;
   text-align: center; /* Centering the title and description */
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .get-involved-title {
-  color: #170827; /* Adjust the color to match your website's theme */
+  color: #00295cf2;
+  font-weight: bold; /* Adjust the color to match your website's theme */
   margin-bottom: 10px; /* Spacing between title and description */
-  font-size: 2.5em; /* Adjust size as needed */
-  text-decoration: underline #ceb378 5px;
+  font-size: 3em; /* Adjust size as needed */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
 
 .get-involved-description {
@@ -28,7 +31,7 @@
 }
 
 .get-involved-section {
-  background-color: #fff; /* White background for each section */
+  background-color: #00295cf2; /* White background for each section */
   padding: 20px;
   margin: 20px; /* Spacing between sections */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -38,19 +41,20 @@
 }
 
 .get-involved-section h2 {
-  color: #253e6d; /* Color for headings, matching the Resources section */
+  color: #fffefe; /* Color for headings, matching the Resources section */
   margin-bottom: 15px;
+  text-decoration: none;
 }
 
 .get-involved-section p {
-  color: #666; /* Paragraph color, for readability */
+  color: #c6cad2; /* Paragraph color, for readability */
   line-height: 1.6;
   text-align: left; /* Aligning text to the left within the section */
 }
 
 .register-button {
-  background-color: #ab8e4f; /* Button color */
-  color: #fafcfd; /* Text color */
+  background-color: #5c96d1 !important; /* Button color */
+  color: #ffffff; /* Text color */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -61,24 +65,27 @@
 }
 
 .register-button:hover {
-  background-color: #ceb378; /* Button hover color */
-  color: #170827; /* Button text hover color */
+  background-color: #397aca !important; /* Button hover color */
+  color: #ffffff; /* Button text hover color */
 }
 
 /* FAQ Section Styles */
 #faq-section {
-  background-color: #f4f4f4; /* This should match your website's color scheme */
+  background: url('../images/MSA_background.jpg');
+  background-color: #ffffff; /* This should match your website's color scheme */
   padding: 50px;
   text-align: center; /* Center aligns the title */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .faq-title {
-  color: #170827; /* Adjust the color to match your website's theme */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #00295cf2;
+  font-weight: bold; /* Adjust the color to match your website's theme */
   margin-bottom: 20px; /* Spacing between title and description */
   font-size: 2.5em; /* Adjust size as needed */
   text-align: center; /* Centers the title */
-  text-decoration: underline #ceb378 5px; /* Underline with color */
+  text-decoration: none; /* Underline with color */
 }
 
 .accordion {
@@ -95,13 +102,26 @@
 }
 
 .MuiAccordionSummary-root {
-  background-color: #253e6d;
-  color: #fff;
+  background-color: #253e6d !important;
+  color: #fff !important;
   border-radius: 5px;
 }
 
+.MuiAccordionSummary-root.Mui-expanded {
+  background-color: #253e6d !important;
+  color: #fff !important;
+}
+
+.MuiAccordionSummary-root .MuiAccordionSummary-expandIconWrapper {
+  color: #fff !important;
+}
+
+.MuiAccordionSummary-root .MuiSvgIcon-root {
+  color: #fff !important;
+}
+
 .MuiAccordionSummary-root:hover {
-  background-color: #ceb378;
+  background-color: #397aca !important;
 }
 
 .MuiAccordionDetails-root {

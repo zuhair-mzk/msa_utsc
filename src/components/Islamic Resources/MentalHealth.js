@@ -2,31 +2,35 @@
 import React, { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-import "../styles/mentalhealth.css";
-import canadianMuslimCounseling from "../images/canadian_muslim_counselling.png"
-import naseehaMentalHealth from "../images/naseeha_mental_health.png"
-import nisaHelpline from "../images/nisa_helpline.png"
-import cedarwayTherapy from "../images/cedarway_therapy.png"
-import muslimChaplaincy from "../images/muslim_chaplaincy.png"
-import ruhCare from "../images/ruh_care_logo.png"
-import khalil_centre from "../images/khalil_centre.png"
+import "../../styles/islamic-resources/mentalhealth.css";
+import canadianMuslimCounseling from "../../images/canadian_muslim_counselling.png"
+import naseehaMentalHealth from "../../images/naseeha_mental_health.png"
+import nisaHelpline from "../../images/nisa_helpline.png"
+import cedarwayTherapy from "../../images/cedarway_therapy.png"
+import muslimChaplaincy from "../../images/muslim_chaplaincy.png"
+import ruhCare from "../../images/ruh_care_logo.png"
+import khalil_centre from "../../images/khalil_centre.png"
 
   
 const MentalResource = () => (
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
-      <h2 className="mental-health-title">Mental Health</h2>
+      <div className="mental-health-title">Mental Health</div>
 
       <p className="banner-msg"> If you or anyone you know needs help, a reminder that supports are available. Did you know many therapy sessions are covered by your UofT student Greenshield Insurance? See below for details. If you have opted out of your student insurance, you may book a counselling session for free  through Muslim Chaplaincy @ UofT (McUofT) anytime, more details below. </p>
 
-      <h3 className="emergency-contacts">Emergency Contacts</h3>
-      <ul className="mental-health-contacts">
-        <li>Good2Talk: <a href="tel:+18669255454">1 866-925-5454</a></li>
-        <li>NISA HELPLINE: <a href="tel:+18883156472">1 888-315-6472</a></li>
-        <li>NASEEHA HELPLINE: <a href="tel:+18666273342">1 866-627-3342</a></li>
-      </ul>
+      <div className="emergency-contacts">Emergency Contacts</div>
+      <div className="emergency-container">
+        <div className="emergency-resource">
+          <ul>
+            <li>Good2Talk: <a href="tel:+18669255454">1 866-925-5454</a></li>
+            <li>NISA HELPLINE: <a href="tel:+18883156472">1 888-315-6472</a></li>
+            <li>NASEEHA HELPLINE: <a href="tel:+18666273342">1 866-627-3342</a></li>
+          </ul>
+        </div>
+      </div>
 
-      <h3>On Campus Resources</h3>
+      <div className="on-campus-resources-title">On Campus Resources</div>
       <div className="resource-container">
             <div className="on-campus-resource">
               {/* <h3>On Campus</h3> */}
@@ -116,6 +120,7 @@ const MentalHealthTips = () => {
   return(
   <section id="mental-health" className="mental-health-section">
     <div className="mental-health-content">
+      <hr className="section-divider"></hr>
       <h2 className="selfcare-title">Mental Health Duas</h2>
       
       <div className="slideshow-container-mh">

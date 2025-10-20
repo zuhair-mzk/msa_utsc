@@ -1,12 +1,12 @@
 #footer {
-  background-color: #170827;
-  color: #fafcfd;
+  background-color: #00295C;
+  color: #00295C;
   font-family: Arial, sans-serif;
   padding: 40px 0;
   padding-top: 0;
   text-align: center;
   overflow: auto;
-  margin-top: 200px;
+  margin-top: 0px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
 }
 
 .signup-button {
-  background-color: #ceb378;
+  background-color: #5c96d1;
   color: #170827;
   border: none;
   padding: 0.625rem 1.25rem; /* Use rem for responsive padding */
@@ -60,7 +60,7 @@
 }
 
 .signup-button:hover {
-  background-color: #ab8e4f;
+  background-color: #397aca;
 }
 
 .social-links {
@@ -76,7 +76,7 @@
 }
 
 .social-icon:hover {
-  color: #ceb378;
+  color: #397aca;
 }
 
 .linktree-link {
@@ -88,7 +88,7 @@
 }
 
 .linktree-link:hover {
-  color: #ceb378;
+  color: #397aca;
 }
 
 .sponsors img {

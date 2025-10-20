@@ -1,9 +1,10 @@
 // src/components/EventsCalendar.js
 import React from "react";
-import "../styles/eventsCalendar.css";
+import "../../styles/programs-events/eventsCalendar.css";
 
 const EventsCalendar = () => (
   <section id="events-calendar">
+    <hr className="section-divider" />
     <h2 className="event-title">Events Calendar</h2>
     <p className="event-description">
       Check out the calendar below to see the dates of our programs and events.

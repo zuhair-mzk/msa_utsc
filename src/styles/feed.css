@@ -1,5 +1,6 @@
 /* FEED SECTION */
 #feed-section {
+  background: url('../images/MSA_background.jpg');
     background-color: #fafcfd;
     padding: 50px;
     text-align: center;
@@ -7,9 +8,10 @@
   }
   .feed-title {
     color: #170827;
-    text-decoration: underline #ceb378 5px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-decoration: none;
     margin-bottom: 20px;
-    font-size: 2rem; /* Use rem for responsive font size */
+    font-size: 2.5rem; /* Use rem for responsive font size */
   }
 
 .feed-container {
@@ -39,11 +41,43 @@
 @media screen and (max-width: 768px) {
     .feed-card {
       flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+      min-height: 450px; /* Reduced container height */
+      height: auto; /* Allow height to expand based on content */
+    }
+    
+    /* Instagram embed specific styling */
+    .feed-card .instagram-media {
+      min-width: 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      height: 600px !important;
+    }
+    
+    .feed-card iframe {
+      max-width: 100% !important;
+      width: 100% !important;
+      height: 600px !important;
     }
   }
   
   @media screen and (max-width: 480px) {
     .feed-card {
       flex: 0 0 calc(100% - 20px); /* One card per row on small screens */
+      min-height: 500px; /* Reduced container height for small screens */
+      height: auto; /* Allow height to expand based on content */
+    }
+    
+    /* Instagram embed specific styling */
+    .feed-card .instagram-media {
+      min-width: 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      height: 450px !important;
+    }
+    
+    .feed-card iframe {
+      max-width: 100% !important;
+      width: 100% !important;
+      height: 450px !important;
     }
   }

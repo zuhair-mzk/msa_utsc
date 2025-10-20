@@ -5,25 +5,26 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotificationBar from "./components/NotificationBar";
 import { AboutUsWithTeam } from "./components/about";
-import Contact from "./components/Contact";
-import ProgramsAndEvents from "./components/ProgramsAndEvents";
-import Resources from "./components/resources";
-import PrayerAreas from "./components/PrayerAreas";
-import AnnouncementsSection from "./components/AnnouncementsSection";
-import EventsSection from "./components/events";
+import Contact from "./components/Connect";
+import ProgramsAndEvents from "./components/Program & Events/ProgramsAndEvents";
+import Resources from "./components/Islamic Resources/resources";
+import PrayerAreas from "./components/Islamic Resources/PrayerAreas";
+import AnnouncementsSection from "./components/Program & Events/AnnouncementsSection";
+import EventsSection from "./components/Program & Events/events";
 import FeedSection from "./components/Feed"
 import WelcomeSection from "./components/WelcomeSection";
-import EventsCalendar from "./components/EventsCalendar";
-import MentalHealth from "./components/MentalHealth";
-import Advocacy from "./components/Advocacy";
+import EventsCalendar from "./components/Program & Events/EventsCalendar";
+import MentalHealth from "./components/Islamic Resources/MentalHealth";
+import Advocacy from "./components/Islamic Resources/Advocacy";
 import SponsorBanner from "./components/SponsorsBanner"
+import PrayertimesWidget from "./components/PrayertimesWidget"
 //ALBUM
 import Gallery from "./components/Gallery"
 import Album2024 from "./components/Album/Album_2024"
 import Album2023 from "./components/Album/Album_2023"
 import Album2025 from "./components/Album/Album_2025"
 //DUAS
-import Duas from "./components/Duas"
+import Duas from "./components/Duas/Duas"
 import KnowledgeDuas from "./components/Duas/Knowledge_Duas"
 import PrayerDuas from "./components/Duas/Prayer_Duas"
 import PraisingAllahDuas from "./components/Duas/Praisng_Allah_Duas"
@@ -37,7 +38,7 @@ function App() {
       <div>
         <SpeedInsights />
         <Header />
-        <NotificationBar />
+        {/* <NotificationBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUsWithTeam />} />
@@ -67,9 +68,9 @@ function App() {
 const Home = () => (
   <div>
     <WelcomeSection />
-    <Resources />
-    <AnnouncementsSection />
-    <EventsSection />
+    <PrayertimesWidget />
+    {/* <AnnouncementsSection />
+    <EventsSection /> */}
     <FeedSection />
   </div>
 );

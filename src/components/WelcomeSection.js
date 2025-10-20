@@ -10,8 +10,8 @@ const WelcomeSection = () => (
         src={bismillah}
         alt="Bismillah Image"
       />
-      <p className="p3">Muslim Students' Association</p>
-      <p className="p2">University of Toronto Scarborough</p>
+      <p className="p3"> University of Toronto Scarborough</p>
+      <p className="p3"> Muslim Student Association</p>
     </div>
   </section>
 );

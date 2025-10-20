@@ -1,14 +1,16 @@
 /* src/styles/resources.css */
 .resources {
-  padding: 50px;
-  background-color: #e6e6e6;
+  background: url('../../images/MSA_background.jpg');
+  padding: 20px 10px;
+  background-color: #ffffff;
   margin-top: 20px; /* Add top margin */
 }
 
 .resources-content {
-  max-width: 1200px;
+  max-width: 100%;
+  width: 98%;
   margin: auto;
-  padding: 20px; /* Add some padding for content spacing */
+  padding: 10px; /* Add some padding for content spacing */
   border-radius: 10px; /* Add some border-radius for better aesthetics */
 }
 
@@ -28,7 +30,18 @@
   color: #170827;
   margin: 10px 0;
   font-size: 2em;
-  font-family: Arial, sans-serif; /* Ensure consistent font */
+  font-family: var(--header-font)
+}
+
+.prayertimesTitle {
+  font-size: 3rem;
+  color: #00295cf2;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .table-title {
@@ -121,6 +134,7 @@
   font-size: 1em; /* Ensure consistent font size */
   font-family: Arial, sans-serif; /* Ensure consistent font */
 }
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {

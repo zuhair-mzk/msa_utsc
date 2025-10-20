@@ -1,23 +1,33 @@
 /* src/styles/eventsCalendar.css */
 #events-calendar {
   text-align: center;
+  background: url('../../images/MSA_background.jpg');
   padding: 50px;
   background-color: #e6e6e6; /* Or any color from your theme */
-  margin-top: 200px;
   margin-bottom: 100px;
 }
 
-.event-title {
-  color: #170827; /* Or any color from your theme */
-  text-decoration: underline #ceb378 5px;
+#events-calendar .event-title {
+  color: #00295cf2; /* Or any color from your theme */
+  text-decoration: none;
   margin-bottom: 20px;
   font-size: 2.5em; /* Adjust size as needed */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
 }
 
-.event-description {
+#events-calendar .event-description {
   margin-bottom: 20px;
   color: black; /* Or any color from your theme */
   font-size: 1.1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  display: block;
 }
 
 .calendar-container {
@@ -40,11 +50,11 @@
     height: 600px; /* Adjust height as needed */
   }
 
-  .event-title {
+  #events-calendar .event-title {
     font-size: 2em; /* Adjust font size for smaller screens */
   }
 
-  .event-description {
+  #events-calendar .event-description {
     font-size: 1em; /* Adjust font size for smaller screens */
   }
 }

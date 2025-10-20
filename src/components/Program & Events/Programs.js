@@ -1,17 +1,18 @@
 // src/components/Programs.js
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import "../styles/programs.css";
+import "../../styles/programs-events/programs.css";
 
 // Import images
 
-import sisterSeerahImage from "../images/Sister, Seerah & Suhba.png"
-import sisterDhikrCircles from "../images/Sisters Friday Dhikr (2).jpg"
-import surahYusuf from "../images/surah_yusuf.png"
-import reflectAndConnect from "../images/reflection&connections.png"
+import sisterSeerahImage from "../../images/Sister, Seerah & Suhba.png"
+import sisterDhikrCircles from "../../images/Sisters Friday Dhikr (2).jpg"
+import surahYusuf from "../../images/surah_yusuf.png"
+import reflectAndConnect from "../../images/reflection&connections.png"
 
 const Programs = () => (
   <section id="programs">
+    <hr className="section-divider" />
     <div className="events-intro">
       <h2 className="event-title">Programs</h2>
       <p className="event-p">

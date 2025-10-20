@@ -1,20 +1,22 @@
 // src/components/OSP.js
-import "../styles/osp.css";
+import "../../styles/osp/osp.css";
 import Osp_Banner from "./osp_banner"
 
 // Import image
 //2024
-import ospImage1 from "../images/album/2024/osp/osp_barber_2024.png"
-import ospImage2 from "../images/album/2024/osp/osp_quran_comp.png"
-import ospImage3 from "../images/album/2024/osp/pic3.png"
+import ospImage1 from "../../images/album/2024/osp/osp_barber_2024.png"
+import ospImage2 from "../../images/album/2024/osp/osp_quran_comp.png"
+import ospImage3 from "../../images/album/2024/osp/pic3.png"
 
 
 const OspSlide = () => {
 
   return(
   <section id="osp" >
+    <hr className="section-divider" />
     <div className="osp-container">
       <h2 className="section-title">OSP History</h2>
+      <div className="about-container">
       <h3>What is OSP?</h3>
       <p>
         The University of Toronto Scarborough Campus' Muslim Students'
@@ -69,6 +71,7 @@ const OspSlide = () => {
         education instead of having to find ways to earn wages to support
         themselves at such young ages.
       </p>
+    </div>
     </div>
     <div className="osp-content">
       <h2 className="title-2">Last Year's OSP Initiatives</h2>

@@ -1,9 +1,9 @@
-/* EVENTS SECTION */
-#events {
+/* src/styles/programs.css */
+#programs {
+  background: url('../../images/MSA_background.jpg');
   background-color: #fafcfd;
   padding: 50px;
   text-align: center;
-  margin-top: 150px;
 }
 
 .events-intro {
@@ -17,11 +17,13 @@
   gap: 20px; /* Space between the cards */
 }
 
-.event-title {
-  color: #170827;
-  text-decoration: underline #ceb378 5px;
+ #programs .event-title {
+  color: #00295cf2;
+  text-decoration: none;
   margin-bottom: 20px;
-  font-size: 2rem; /* Use rem for responsive font size */
+  font-size: 2.5rem; /* Use rem for responsive font size */
+  text-align: center;
+  margin-left: 0;
 }
 
 .event-card {
@@ -32,6 +34,14 @@
   margin-bottom: 20px; /* Spacing at the bottom of each card */
   padding: 20px; /* Space inside the card */
   box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  flex-direction: column;
+}
+
+.event-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .event-text h3 {
@@ -39,8 +49,14 @@
   margin: 10px 0;
 }
 
+.event-text p {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
 .event-text a {
   color: #ab8e4f;
+  margin-top: auto;
 }
 
 .event-p {
@@ -49,14 +65,14 @@
   font-size: 1.25rem; /* Use rem for responsive font size */
 }
 
-#events img {
+#programs img {
   max-width: 100%; /* This will make the image responsive */
   height: auto; /* Maintain aspect ratio */
   border-radius: 16px; /* Optional: rounded corners */
 }
 
 .view-all-events-button,
-.event-text .register-button {
+.register-button {
   background-color: #ab8e4f;
   color: #fafcfd;
   border: none;
@@ -72,18 +88,18 @@
 }
 
 .view-all-events-button:hover,
-.event-text .register-button:hover {
+.register-button:hover {
   background-color: #ceb378;
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .event-card {
     flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .event-card {
     flex: 0 0 calc(100% - 20px); /* One card per row on small screens */
   }

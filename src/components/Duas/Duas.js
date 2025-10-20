@@ -1,12 +1,12 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-import "../styles/duas.css";
+import "../../styles/duas/duas.css";
 //IMAGES
-import prayerDuaImage from "../images/Prayer Duas.png"
-import praiseAllahDuaImage from "../images/Praise Allah Duas.png"
-import knowledgeDuaImage from "../images/Knowledge Duas.png"
-import distressDuaImage from "../images/Distress Duas.png"
+import prayerDuaImage from "../../images/Prayer Duas.png"
+import praiseAllahDuaImage from "../../images/Praise Allah Duas.png"
+import knowledgeDuaImage from "../../images/Knowledge Duas.png"
+import distressDuaImage from "../../images/Distress Duas.png"
 
 const Duas = () => {
 

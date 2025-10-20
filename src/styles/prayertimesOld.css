@@ -1,0 +1,116 @@
+/* Prayer Times Widget Container */
+.prayertimes-container {
+  background-color: white;
+  padding: 30px;
+  margin: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: none;
+  width: calc(100% - 40px);
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.prayertimes-container a {
+  display: block;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Ensure the widget iframe is fully responsive */
+.prayertimes-container iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none;
+  border-radius: 10px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* Jummah Information Section */
+.jummah-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.jummah-info p {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.instagram-link {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: #ad1457;
+  text-decoration: underline;
+}
+
+.jummah-button,
+.feedback-button {
+  display: inline-block;
+  background-color: #5c96d1;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.jummah-button:hover,
+.feedback-button:hover {
+  background-color: #201986;
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+  .prayertimes-container {
+    margin: 20px 10px;
+    padding: 20px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .prayertimes-container iframe {
+    min-height: 250px;
+  }
+
+  .jummah-info p {
+    font-size: 14px;
+  }
+
+  .jummah-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prayertimes-container {
+    margin: 15px 5px;
+    padding: 15px;
+    width: calc(100% - 10px);
+    border-radius: 10px;
+  }
+  
+  .prayertimes-container iframe {
+    min-height: 200px;
+  }
+}
