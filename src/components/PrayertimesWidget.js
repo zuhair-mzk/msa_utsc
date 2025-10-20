@@ -49,7 +49,7 @@ export default function PrayertimesWidget() {
       </a>
       
       <div className="jummah-info">
-        <p className="jummah-location">Jummah is held in SL 281 + SL 279.</p>
+        <p className="jummah-location">Jummah is held in HW 305.</p>
         <p>
           Any updates will be posted{" "}
           <a 
