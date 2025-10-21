@@ -268,19 +268,12 @@ const Header = () => {
           </div>
         </li>
         <li>
-          {isMobile ? (
-            <button
-              className="dropdown-toggle"
-              onClick={(e) => handleDropdownToggle("gallery", e)}
-            >Gallery</button>
-          ) : (
-            <Link
-              to="/gallery"
-              onClick={(e) => handleDropdownToggle("gallery", e)}
-            >
-              Gallery
-            </Link>
-          )}
+          <Link
+            to="/gallery"
+            onClick={closeNav}
+          >
+            Gallery
+          </Link>
         </li>
         <li>
           <Modal isMobile={isMobile} />
