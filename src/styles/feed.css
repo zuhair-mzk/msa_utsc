@@ -29,6 +29,7 @@
     margin-bottom: 20px; /* Spacing at the bottom of each card */
     padding: 20px; /* Space inside the card */
     box-sizing: border-box; /* Include padding in the width calculation */
+    overflow: visible; /* Ensure full content is displayed */
 }
 
 #feed-section img {
@@ -43,6 +44,7 @@
       flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
       min-height: 450px; /* Reduced container height */
       height: auto; /* Allow height to expand based on content */
+      overflow: visible; /* Ensure full content is displayed */
     }
     
     /* Instagram embed specific styling */
@@ -61,23 +63,30 @@
   }
   
   @media screen and (max-width: 480px) {
-    .feed-card {
-      flex: 0 0 calc(100% - 20px); /* One card per row on small screens */
-      min-height: 500px; /* Reduced container height for small screens */
-      height: auto; /* Allow height to expand based on content */
+    #feed-section {
+      margin-top: 0px;
+      /* Reduce top margin for mobile to decrease gap */
     }
-    
-    /* Instagram embed specific styling */
+    .feed-card {
+      flex: 0 0 calc(100% - 20px);
+      min-height: 460px;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
+      max-height: none;
+    }
     .feed-card .instagram-media {
       min-width: 100% !important;
       max-width: 100% !important;
       width: 100% !important;
-      height: 450px !important;
+      height: 550px !important;
+      min-height: 460px !important;
     }
-    
     .feed-card iframe {
       max-width: 100% !important;
       width: 100% !important;
-      height: 450px !important;
+      height: 5500px !important;
+      min-height: 460px !important;
+      display: block;
     }
   }
