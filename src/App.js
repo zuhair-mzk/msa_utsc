@@ -38,7 +38,7 @@ function App() {
       <div>
         <SpeedInsights />
         <Header />
-        {/* <NotificationBar /> */}
+        <NotificationBar />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/aboutus" element={<AboutUsWithTeam />} /> */}
