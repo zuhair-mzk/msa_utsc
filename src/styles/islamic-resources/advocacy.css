@@ -27,7 +27,7 @@
   background-color: #00295cf2;
   padding: 2rem;
   border-radius: 16px;
-  margin: 2rem auto 0rem auto; /* reduced bottom margin from 0.5rem to 0rem */
+  margin: 2rem auto 5px auto; /* reduced bottom margin from 0.5rem to 0rem */
   max-width: 1200px;
   color: #fff;
 }

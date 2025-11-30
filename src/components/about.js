@@ -63,50 +63,52 @@ const AboutUs = () => (
   </section>
 );
 
-const MeetTheTeam = () => (
-  <div>
-    <section id="team">
-      <hr className="section-divider" />
-      <h2 className="about-title">Meet The Team</h2>
-      <div>
-        <h2 className="team-title">President, Senior Advisors, and First Year Reps</h2>
-        <img src={president} alt="President, Senior Advisors, and First Year Reps"></img>
-      </div>
-      <div>
-        <h2 className="team-title">Marketing and Communications</h2>
-        <img src={comms_team} alt="Marketing and Communications Team"></img>
-      </div>
-      <div>
-        <h2 className="team-title">Religious Affairs</h2>
-        <img src={ra_team} alt="Religious Affairs Team"></img>
-      </div>
-      <div>
-        <h2 className="team-title">Community Services</h2>
-        <img src={cs_team} alt="Community Services Team"></img>
-      </div>
-      <div>
-        <h2 className="team-title">Finance</h2>
-        <img src={fin_team} alt="Finance Team"></img>
-      </div>
-      <div>
-        <h2 className="team-title">Internal</h2>
-        <img src={internal_team} alt="Internal Team"></img>
-      </div>
-      <div>
-        <h2 className="team-title">External</h2>
-        <img src={external_team} alt="External Team"></img>
-      </div>
-    </section>
-  </div>
-);
+// Meet The Team Section
+// const MeetTheTeam = () => (
+//   <div>
+//     <section id="team">
+//       <hr className="section-divider" />
+//       <h2 className="about-title">Meet The Team</h2>
+//       <div>
+//         <h2 className="team-title">President, Senior Advisors, and First Year Reps</h2>
+//         <img src={president} alt="President, Senior Advisors, and First Year Reps"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">Marketing and Communications</h2>
+//         <img src={comms_team} alt="Marketing and Communications Team"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">Religious Affairs</h2>
+//         <img src={ra_team} alt="Religious Affairs Team"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">Community Services</h2>
+//         <img src={cs_team} alt="Community Services Team"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">Finance</h2>
+//         <img src={fin_team} alt="Finance Team"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">Internal</h2>
+//         <img src={internal_team} alt="Internal Team"></img>
+//       </div>
+//       <div>
+//         <h2 className="team-title">External</h2>
+//         <img src={external_team} alt="External Team"></img>
+//       </div>
+//     </section>
+//   </div>
+// );
 
-const AboutUsWithTeam = () => (
-  <div>
-    <AboutUs />
-    <MeetTheTeam />
-  </div>
-);
+// const AboutUsWithTeam = () => (
+//   <div>
+//     <AboutUs />
+//     <MeetTheTeam />
+//   </div>
+// );
 
-export { AboutUsWithTeam, AboutUs, MeetTheTeam };
+// export { AboutUsWithTeam, AboutUs, MeetTheTeam };
+export { AboutUs };
 
 

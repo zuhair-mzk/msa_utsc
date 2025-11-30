@@ -139,9 +139,9 @@ const Header = () => {
             {/* <Link smooth to="/aboutus#our-constitution" onClick={handleDropdownItemClick}>
               <FontAwesomeIcon icon={faMosque} /> Constitution
             </Link> */}
-            <Link smooth to="/aboutus#team" onClick={handleDropdownItemClick}>
+            {/* <Link smooth to="/aboutus#team" onClick={handleDropdownItemClick}>
               <FontAwesomeIcon icon={faHeart} /> The Team
-            </Link>
+            </Link> */}
           </div>
         </li>
         <li className={`has-dropdown ${dropdownOpen.resources ? 'dropdown-open' : ''}`}>

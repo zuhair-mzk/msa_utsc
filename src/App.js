@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotificationBar from "./components/NotificationBar";
-import { AboutUsWithTeam } from "./components/about";
+import { AboutUs } from "./components/about";
 import Contact from "./components/Connect";
 import ProgramsAndEvents from "./components/Program & Events/ProgramsAndEvents";
 import Resources from "./components/Islamic Resources/resources";
@@ -41,7 +41,8 @@ function App() {
         {/* <NotificationBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUsWithTeam />} />
+          {/* <Route path="/aboutus" element={<AboutUsWithTeam />} /> */}
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/programs-events" element={<ProgramsAndEvents />} />
           <Route path="/resources" element={<Resources />} />
