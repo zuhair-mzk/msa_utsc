@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/duas/dua_page.css";
 import { HashLink as Link } from "react-router-hash-link";
 import Accordion from "@mui/material/Accordion";
@@ -8,6 +8,12 @@ import Typography from "@mui/material/Typography";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const PrayerDuas = () => {
+    const [expanded, setExpanded] = useState("panel1");
+
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
     return(
         <section id="dua-section">
             <h2 className="dua-title">Duas for Prayer</h2>
@@ -17,7 +23,7 @@ const PrayerDuas = () => {
                         <button className="back-btn">Back</button>
                     </Link>  
                 </div>
-                <Accordion>
+                <Accordion expanded={expanded === "panel1"} onChange={handleChange("panel1")}>
                     <AccordionSummary
                         expandIcon={<ArrowDropDownIcon />}
                         aria-controls="panel1-content"
