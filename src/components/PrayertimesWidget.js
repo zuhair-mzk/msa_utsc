@@ -61,9 +61,14 @@ export default function PrayertimesWidget() {
             @msa_utsc
           </a>
         </p>
-        <button className="feedback-button" onClick={handleFeedbackClick}>
-            Jumu'ah Feedback
-          </button>
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdmpU9pSxBCV51KkPSZkE3rtR4RqZYwFqcgUaZNBSzLTOCM7A/viewform"
+          className="feedback-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Jumu'ah Feedback
+        </a>
       </div>
     </div>
   );

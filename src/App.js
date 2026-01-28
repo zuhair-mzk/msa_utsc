@@ -38,7 +38,8 @@ function App() {
       <div>
         <SpeedInsights />
         <Header />
-        <NotificationBar />
+        {/* Good Luck on Exam Bar */}
+        {/* <NotificationBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/aboutus" element={<AboutUsWithTeam />} /> */}

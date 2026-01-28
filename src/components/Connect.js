@@ -20,17 +20,13 @@ const Contact = () => (
         <div className="get-involved-section">
           <h2>Membership</h2>
           <p>
-            The MSA general membership card grants students a variety of
-            benefits which include discounts at paid entry events, a discount at
-            our annual halal food fest, being entitled to vote in MSA's yearly
-            elections, and of course having the opportunity to voice your
-            opinions and thoughts at our bi-weekly board meetings.
+            The MSA general membership card gives students access to exclusive benefits, 
+            including discounts on paid events, voting rights in annual MSA elections, 
+            and the opportunity to share your ideas and feedback at our triannual General Meetings.
           </p>
           <p>
-            A membership card is valid for up to 5 years and available for
-            purchase at the price of $10. We’ll bet you haven’t heard of a deal
-            this sweet. If you wish to purchase a card, please fill out the form
-            below and refer to it for payment details. JazakAllah!
+            Membership cards are valid for up to five years and available for just $10. To purchase one, 
+            please complete the form below and follow the payment instructions provided. JazakAllah!
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdb2E8Mwa_wv53wjFyNH8xbXw-8PBhfWyjfetgcyiLz2yVPTg/viewform"
@@ -44,21 +40,18 @@ const Contact = () => (
         <div className="get-involved-section">
           <h2>Volunteering</h2>
           <p>
-            Do you wish to give back to your community and aid in virtuous
-            causes? Well good news, the MSA is always looking for volunteers who
-            can help out not only with setting up our various events (both
-            virtual and in-person) but also individuals who wish to come out to
-            our monthly excursions.
+            Looking to give back and contribute to meaningful causes? The MSA is 
+            always seeking volunteers to support our events and take part in our 
+            monthly excursions.
           </p>
           <p>
-            Monthly excursions are group activities to serve and improve the
-            community and environment such as planting trees, helping the
-            homeless, volunteering at recycle management facilities, and even
-            rescuing animals! Reach out to us through the contact page to join
-            us!
+            These excursions are group initiatives focused on serving and improving 
+            our community and environment, such as tree planting, supporting the unhoused, 
+            and volunteering at recycling facilities. To get involved, fill out the form below 
+            and join our community Discord.
           </p>
           <a
-            href="https://docs.google.com/forms/d/1fwNxlOoIcFn0Tbi5Op8nddx7Qy6-UqxHv-F9SiqiFOQ/viewform?edit_requested=true"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeM2MKyuDkXQdjrj_12_7g-rBnnXhZK9aVDBiKBD8wAndHV9g/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,12 +62,11 @@ const Contact = () => (
         <div className="get-involved-section">
           <h2>Executive Team</h2>
           <p>
-            MSA's executive team consists of a Co-President, several
-            Vice-Presidents (VPs), and several more Directors. Together, this
-            team works to plan, execute, and host events and initiatives that
-            add value to a student’s undergraduate experience. Our executive
-            team also consists of The Message team, which works to create an MSA
-            magazine by the end of each academic year.
+            The MSA Board is led by a President and several Vice-Presidents (VPs),
+             each overseeing a team of Directors. Together, they plan and execute
+              events and initiatives that enhance the undergraduate student experience.
+              The Board also includes The Message team, which produces the MSA magazine 
+              published at the end of each academic year.
           </p>
         </div>
       </div>
