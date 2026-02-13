@@ -62,8 +62,8 @@ const SponsorsBanner = () => {
     <h2>Our Proud Sponsors</h2>
     <div className="container">
       <div className="sponsor-btn-container">
-        <button className={`sponsor-btn ${sponsorYear == 2025 ? 'select-btn':''}`} onClick={()=>setSponsorYear(2025)}>2025</button>
-        <button className={`sponsor-btn ${sponsorYear == 2024 ? 'select-btn':''}`} onClick={()=>setSponsorYear(2024)}>2024</button>
+        <button className={`sponsor-btn ${sponsorYear === 2025 ? 'select-btn':''}`} onClick={()=>setSponsorYear(2025)}>2025</button>
+        <button className={`sponsor-btn ${sponsorYear === 2024 ? 'select-btn':''}`} onClick={()=>setSponsorYear(2024)}>2024</button>
       </div>
       <div className="scroller">
           {/* <div className="img_list scroller__inner">  */}
